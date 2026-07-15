@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The AI Agent Agent</title>
+  <meta name="description" content="I build and run AI agents that cut grunt work and raise the quality of real work." />
+  <link rel="canonical" href="https://theaiagentagent.com/" />
+  <meta property="og:url" content="https://theaiagentagent.com/" />
+  <meta property="og:title" content="The AI Agent Agent" />
+  <meta property="og:description" content="I build and run AI agents that cut grunt work and raise the quality of real work." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The AI Agent Agent" />
+  <meta name="twitter:description" content="I build and run AI agents that cut grunt work and raise the quality of real work." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0c0c0c;
+      --fg: #f4f1ea;
+      --muted: #a39e94;
+      --line: #2a2a2a;
+      --accent: #c4a574;
+      --card: #141414;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: "IBM Plex Sans", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.55;
+      min-height: 100vh;
+    }
+
+    a { color: inherit; }
+
+    .wrap {
+      width: min(920px, calc(100% - 2.5rem));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 1.5rem 0 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .mark {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 1.15rem;
+      letter-spacing: 0.02em;
+      font-weight: 600;
+    }
+
+    nav {
+      display: flex;
+      gap: 1.25rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    nav a {
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+
+    nav a:hover { color: var(--fg); border-bottom-color: var(--line); }
+
+    .hero {
+      padding: 5.5rem 0 4rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 0.72rem;
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+    }
+
+    h1 {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-weight: 600;
+      font-size: clamp(2.8rem, 8vw, 5.2rem);
+      line-height: 0.95;
+      letter-spacing: -0.02em;
+      max-width: 12ch;
+      margin-bottom: 1.5rem;
+    }
+
+    .lede {
+      font-size: clamp(1.05rem, 2.2vw, 1.25rem);
+      color: var(--muted);
+      max-width: 36rem;
+      margin-bottom: 2rem;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.85rem 1.2rem;
+      border: 1px solid var(--fg);
+      background: var(--fg);
+      color: var(--bg);
+      text-decoration: none;
+      font-size: 0.92rem;
+      font-weight: 500;
+    }
+
+    .btn.secondary {
+      background: transparent;
+      color: var(--fg);
+      border-color: var(--line);
+    }
+
+    .btn:hover { opacity: 0.9; }
+
+    section {
+      padding: 3.5rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    h2 {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: clamp(1.8rem, 4vw, 2.4rem);
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+      letter-spacing: -0.01em;
+    }
+
+    p + p { margin-top: 1rem; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 1.75rem;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      padding: 1.35rem;
+      min-height: 10.5rem;
+    }
+
+    .card h3 {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 1.45rem;
+      font-weight: 600;
+      margin-bottom: 0.55rem;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .steps {
+      list-style: none;
+      display: grid;
+      gap: 0.85rem;
+      margin-top: 1.25rem;
+    }
+
+    .steps li {
+      display: grid;
+      grid-template-columns: 2rem 1fr;
+      gap: 0.75rem;
+      align-items: start;
+      color: var(--muted);
+    }
+
+    .steps strong { color: var(--fg); font-weight: 500; }
+
+    .num {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      color: var(--accent);
+      font-size: 1.25rem;
+      line-height: 1.2;
+    }
+
+    .cta-box {
+      background: var(--card);
+      border: 1px solid var(--line);
+      padding: 2rem;
+      margin-top: 1.5rem;
+    }
+
+    .cta-box p { color: var(--muted); max-width: 34rem; }
+
+    .cta-box .actions { margin-top: 1.25rem; }
+
+    footer {
+      padding: 2.5rem 0 3rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    footer .love { color: var(--fg); }
+
+    @media (max-width: 760px) {
+      .grid { grid-template-columns: 1fr; }
+      nav { display: none; }
+      .hero { padding-top: 3.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="mark">The AI Agent Agent</div>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#how">How</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" style="border-bottom: 1px solid var(--line); padding-bottom: 4rem;">
+        <p class="eyebrow">New business · 2026</p>
+        <h1>The AI Agent Agent</h1>
+        <p class="lede">I build and run AI agents that cut grunt work and raise the quality of real work. Design them. Stand them up. Keep them useful.</p>
+        <div class="actions">
+          <a class="btn" href="#contact">Start a conversation</a>
+          <a class="btn secondary" href="#work">See the offer</a>
+        </div>
+      </section>
+
+      <section id="work">
+        <h2>What I do</h2>
+        <p style="color: var(--muted); max-width: 36rem;">Most teams do not need another model. They need someone who will design the agent, ship it into a real workflow, and stay with it until it behaves like good service.</p>
+        <div class="grid">
+          <article class="card">
+            <h3>Design</h3>
+            <p>Map one painful process. Decide what the agent owns and what stays human. Write the brief before anyone builds.</p>
+          </article>
+          <article class="card">
+            <h3>Build</h3>
+            <p>Ship a working agent with tools, handoffs, and failure modes documented. No demo theater.</p>
+          </article>
+          <article class="card">
+            <h3>Ops</h3>
+            <p>Keep it useful after launch: monitoring, updates, and a human still in the loop on a Tuesday.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="how">
+        <h2>How it works</h2>
+        <ol class="steps">
+          <li><span class="num">01</span><span><strong>Design sprint</strong> on one workflow that is drowning in repeatable work.</span></li>
+          <li><span class="num">02</span><span><strong>Fixed-scope build</strong> only if the agent is worth building.</span></li>
+          <li><span class="num">03</span><span><strong>Optional ops</strong> once it is live and tied to real work.</span></li>
+        </ol>
+        <p style="margin-top: 1.5rem; color: var(--muted); max-width: 36rem;">For operators who want agents in real workflows. Not for people building foundation models.</p>
+      </section>
+
+      <section id="contact" style="border-bottom: none; padding-bottom: 1rem;">
+        <h2>If you have a mess, send it</h2>
+        <div class="cta-box">
+          <p>Tell me the process that keeps stealing hours. I will tell you if an agent should touch it, and what good looks like when it fails.</p>
+          <div class="actions">
+            <a class="btn" href="https://www.linkedin.com/in/noaheweiss" target="_blank" rel="noopener">Message on LinkedIn</a>
+            <a class="btn secondary" href="mailto:?subject=The%20AI%20Agent%20Agent">Email</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="love">I spread love. The garnish is there.</div>
+      <div>© 2026 The AI Agent Agent</div>
+    </footer>
+  </div>
+</body>
+</html>
