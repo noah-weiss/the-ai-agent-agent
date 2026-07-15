@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brand Options A–E · The AI Agent Agent</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=Special+Elite&family=Caveat:wght@500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0c0c0c;
+      --fg: #f4f1ea;
+      --muted: #a39e94;
+      --line: #2a2a2a;
+      --accent: #c4a574;
+      --card: #141414;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "IBM Plex Sans", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.5;
+    }
+    .wrap { width: min(1180px, calc(100% - 2rem)); margin: 0 auto; padding: 2.25rem 0 4rem; }
+    h1 {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: clamp(2.2rem, 5vw, 3.2rem);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+    .lede { color: var(--muted); max-width: 40rem; margin: 0.75rem 0 2rem; }
+    .note {
+      border: 1px solid var(--line);
+      background: var(--card);
+      padding: 1rem 1.15rem;
+      margin-bottom: 2rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .note strong { color: var(--accent); }
+    .grid { display: grid; gap: 1.25rem; }
+    .option {
+      border: 1px solid var(--line);
+      background: var(--card);
+      overflow: hidden;
+    }
+    .meta {
+      padding: 1rem 1.15rem 0.75rem;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: baseline;
+    }
+    .meta h2 {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 1.55rem;
+      font-weight: 600;
+    }
+    .tag {
+      color: var(--accent);
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    .desc { padding: 0.85rem 1.15rem 1.1rem; color: var(--muted); font-size: 0.95rem; }
+    .stage {
+      min-height: 280px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      position: relative;
+    }
+
+    /* A Hand */
+    .stage-a {
+      background:
+        radial-gradient(ellipse at 30% 20%, rgba(196,165,116,0.08), transparent 50%),
+        #0c0c0c;
+    }
+    .hand-block { text-align: center; max-width: 34rem; }
+    .hand-script {
+      font-family: "Caveat", cursive;
+      font-size: clamp(2.8rem, 7vw, 4.2rem);
+      line-height: 1.05;
+      color: var(--fg);
+      transform: rotate(-1.5deg);
+    }
+    .hand-sub {
+      margin-top: 1rem;
+      font-family: "Caveat", cursive;
+      font-size: 1.6rem;
+      color: var(--accent);
+      transform: rotate(0.8deg);
+    }
+    .hand-note {
+      margin-top: 1.25rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+      font-family: "IBM Plex Sans", sans-serif;
+    }
+
+    /* B Plaque */
+    .stage-b {
+      background: #0a0a0a;
+    }
+    .plaque {
+      border: 1.5px solid var(--accent);
+      padding: 2rem 2.5rem;
+      text-align: center;
+      box-shadow: inset 0 0 0 6px #0c0c0c, inset 0 0 0 7px #2a2a2a;
+      background: linear-gradient(180deg, #161616, #0e0e0e);
+      min-width: min(90%, 420px);
+    }
+    .plaque .name {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 2rem;
+      letter-spacing: 0.04em;
+    }
+    .plaque .line {
+      width: 64px;
+      height: 1px;
+      background: var(--accent);
+      margin: 0.9rem auto;
+    }
+    .plaque .small {
+      font-size: 0.78rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* C Stamp */
+    .stage-c {
+      background: #111;
+    }
+    .stamp {
+      width: 220px;
+      height: 220px;
+      border: 4px solid #c45c4a;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #c45c4a;
+      transform: rotate(-8deg);
+      opacity: 0.92;
+      font-family: "Special Elite", monospace;
+      box-shadow: 0 0 0 3px rgba(196,92,74,0.15);
+    }
+    .stamp .top { font-size: 0.72rem; letter-spacing: 0.14em; margin-bottom: 0.4rem; }
+    .stamp .mid { font-size: 1.35rem; line-height: 1.15; font-weight: 700; }
+    .stamp .bot { font-size: 0.72rem; letter-spacing: 0.12em; margin-top: 0.45rem; }
+
+    /* D Black Book */
+    .stage-d {
+      background: #1a1814;
+      background-image:
+        linear-gradient(rgba(244,241,234,0.05) 1px, transparent 1px);
+      background-size: 100% 28px;
+    }
+    .book {
+      width: min(100%, 420px);
+      padding: 1.5rem 1.75rem;
+      border-left: 3px solid #6b3f2a;
+      background: rgba(20,18,14,0.75);
+    }
+    .book .label {
+      font-size: 0.72rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+    .book .title {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    .book .entry {
+      font-family: "Special Elite", monospace;
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    /* E Flyer */
+    .stage-e {
+      background: #050505;
+    }
+    .flyer {
+      width: min(100%, 360px);
+      background: #f4f1ea;
+      color: #0c0c0c;
+      padding: 1.75rem 1.5rem;
+      text-align: center;
+      box-shadow: 12px 12px 0 #c4a574;
+      transform: rotate(-1deg);
+    }
+    .flyer .big {
+      font-family: "Bebas Neue", Impact, sans-serif;
+      font-size: 3.4rem;
+      line-height: 0.92;
+      letter-spacing: 0.02em;
+    }
+    .flyer .mid {
+      margin: 0.85rem 0;
+      font-family: "IBM Plex Sans", sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+    .flyer .tiny {
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #5a554c;
+    }
+
+    .pick {
+      margin-top: 2rem;
+      border: 1px solid var(--line);
+      padding: 1.25rem;
+      background: var(--card);
+    }
+    .pick h3 {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+    .pick p { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <p class="tag">Brand options · real directions</p>
+    <h1>Five ways this can look</h1>
+    <p class="lede">Not five tints of the same SaaS mark. Pick with your gut. Hybrid is allowed. Handwriting can sit on top of any of these.</p>
+
+    <div class="note">
+      <strong>Handwriting is the unlock.</strong> Option A is the primary bet once we have your real hand.
+      Caveat below is a stand-in only. Write the lines, photo them, drop in chat or Notion.
+      Capture sheet: <code>brand/handwriting/CAPTURE.md</code>
+    </div>
+
+    <div class="grid">
+      <article class="option">
+        <div class="meta">
+          <h2>A — Your Hand</h2>
+          <span class="tag">Primary bet</span>
+        </div>
+        <div class="stage stage-a">
+          <div class="hand-block">
+            <div class="hand-script">The AI Agent Agent</div>
+            <div class="hand-sub">one session. one change.</div>
+            <div class="hand-note">PLACEHOLDER SCRIPT · replace with Noah’s actual handwriting</div>
+          </div>
+        </div>
+        <p class="desc">Most you. Talent agent who writes the note himself. Signature becomes the brand. Hard to copy. Needs your pen on paper.</p>
+      </article>
+
+      <article class="option">
+        <div class="meta">
+          <h2>B — Agency Plaque</h2>
+          <span class="tag">Classic / boardroom</span>
+        </div>
+        <div class="stage stage-b">
+          <div class="plaque">
+            <div class="name">The AI Agent Agent</div>
+            <div class="line"></div>
+            <div class="small">Results-driven · Los Angeles</div>
+          </div>
+        </div>
+        <p class="desc">Brass plate on a dark door. Serious without stiff. Clean for LinkedIn, site header, pitch decks. Pairs well with handwritten signature under it.</p>
+      </article>
+
+      <article class="option">
+        <div class="meta">
+          <h2>C — Deal Stamp</h2>
+          <span class="tag">Results artifact</span>
+        </div>
+        <div class="stage stage-c">
+          <div class="stamp">
+            <div class="top">THE AI AGENT AGENT</div>
+            <div class="mid">ONE SESSION<br/>ONE CHANGE</div>
+            <div class="bot">RESULTS DRIVEN</div>
+          </div>
+        </div>
+        <p class="desc">Closed deal. Stamped. Product model becomes the mark. Great for receipts, session notes, “shipped” moments. Raw, physical, anti-demo.</p>
+      </article>
+
+      <article class="option">
+        <div class="meta">
+          <h2>D — Black Book</h2>
+          <span class="tag">Access / hospitality</span>
+        </div>
+        <div class="stage stage-d">
+          <div class="book">
+            <div class="label">Private book · LA</div>
+            <div class="title">The AI Agent Agent</div>
+            <div class="entry">
+              Noah Weiss<br/>
+              Full-service · results-driven<br/>
+              One session. One change.<br/>
+              theaiagentagent.com
+            </div>
+          </div>
+        </div>
+        <p class="desc">You’re in the book. Quiet power. Hospitality meets representation. Feels exclusive without influencer energy.</p>
+      </article>
+
+      <article class="option">
+        <div class="meta">
+          <h2>E — Street Flyer</h2>
+          <span class="tag">Loud / content</span>
+        </div>
+        <div class="stage stage-e">
+          <div class="flyer">
+            <div class="big">EVERYONE<br/>WANTS AN<br/>AGENT</div>
+            <div class="mid">Now the word on the street is AI agents.</div>
+            <div class="tiny">the ai agent agent · let’s get after it</div>
+          </div>
+        </div>
+        <p class="desc">Wheatpaste LA. Campaign energy. Best for posts and posters. Maybe too loud for the core mark, perfect as a content system.</p>
+      </article>
+    </div>
+
+    <div class="pick">
+      <h3>How we lock it</h3>
+      <p>1) Capture handwriting. 2) Gut-rank A–E (1–5). 3) Hybrid if you want (A+B or A+C is strong). 4) We kill the rest and build the full kit.</p>
+    </div>
+  </div>
+</body>
+</html>
