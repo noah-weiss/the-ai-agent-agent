@@ -2,43 +2,60 @@
 
 ## The product
 
-**Results-driven agent.**  
-**One session. One change.**
+**I become your agent for all things AI.**
 
-Not a buffet. Not a 12-week transformation theater.
+Not a one-off workshop.
+Not "let's build a bot this afternoon and good luck."
 
-You bring the work. We pick one change that moves results. We run a session. We ship that change.
+Representation.
 
-## What a session is
+## How people work with me
 
-- Clear target: one workflow, one agent, one painful process
-- Focused build or setup that produces a visible result
-- You leave with something working, not a strategy PDF
+### 1. Representation (core)
+Ongoing AI agent relationship.
+I stay in your corner across tools, workflows, builds, vendors, and decisions.
 
-## What "one change" means
+Includes:
+- priority access
+- judgment on what is worth doing
+- hands-on execution when needed
+- continuous improvement as the landscape moves
 
-One real upgrade:
-- an agent that handles a job you used to do by hand
-- a workflow that removes a daily grind
-- a system that makes the next ten hours easier than the last ten
+This is the main business.
 
-If you need more, we book another session. Or we talk about ongoing access. No fake unlimited promises that hide fuzzy scope.
+### 2. Working session (entry / activation)
+A sharp session to establish the relationship and ship immediate value.
+Used to get into the work fast, not as the whole brand.
 
-## How I show up
+### 3. Scoped build (as needed)
+When representation calls for a specific agent, workflow, or system, we scope it and ship it.
 
-Full-service agent energy. Fast. Hands-on. LA agent posture: looking for the best next move for you, then executing it.
+## Language to use
 
-## Pricing (draft)
+Use:
+- I become your agent for all things AI
+- full-service representation
+- in your corner
+- opportunity, judgment, execution
+- secret weapon
 
-**One session. One change.** Fixed fee.  
-Number locked by Noah after first real conversations. Do not invent a public price yet.
+Avoid as headline:
+- "we build an agent together"
+- "AI workshop"
+- "pair-building session" as the identity
+- consulting menu theater
 
-Optional later:
-- multi-session package
-- retainer for people who want ongoing agent work after the first win
+## Pricing posture
 
-## How someone starts
+- Representation: monthly or quarterly relationship fee (number TBD by Noah)
+- Session: activation / intensive entry (number TBD)
+- Build: scoped when needed
 
-1. Tell me the result you want
-2. We pick the one change
-3. One session. Ship it.
+Do not publish numbers until Noah locks them.
+
+## Proof
+
+Show judgment.
+Show speed.
+Show shipped outcomes inside a real relationship.
+No fake case studies.

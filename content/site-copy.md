@@ -1,35 +1,43 @@
-# Site copy — The AI Agent Agent
+# Messaging kit
 
-## Hero
-Everyone wants an agent in LA.
+## Elevator (10 seconds)
 
-The best agent. The one who books the best gigs in town.
+I become your agent for all things AI. Full-service. Results-driven. Los Angeles.
 
-Now the word on the street is AI agents.
-Everything is moving fast.
+## Elevator (30 seconds)
 
-What if you had someone who could get you up to speed and get you agentic?
+Everyone wants an agent in LA. Now the word on the street is AI agents. I don't sell a one-off build and disappear. I become your agent for all things AI: what to use, what to ignore, what to build, and what to ship. I make AI your secret weapon.
 
-That's where I come in.
+## One-liners
 
-## Name
-The AI Agent Agent
+- I become your agent for all things AI.
+- Full-service AI representation.
+- Not a workshop. An agent in your corner.
+- I make AI your secret weapon.
+- Judgment, execution, and taste for the AI era.
+- Let's get after it.
 
-## Body
-I don't work for a big studio or a big agency.
-It's just me.
+## Clarifier (when people misunderstand)
 
-I'm here to make AI your secret weapon.
-I'm your full-service, results-driven agent.
+If someone hears "AI agent" and thinks chatbot demo:
 
-## How I work
-Results-driven agent.
-One session. One change.
+"I'm not here to build one bot with you and leave. I become your agent for all things AI."
 
-We pick the thing that matters.
-We run a session.
-We ship one real upgrade.
+## Audience language
 
-## Closer
-I'm here to get you excited and get you moving.
-Let's get after it.
+**They say:** "Can you help us build an agent?"  
+**We say:** "Yes, when that's the right move. More important: I become your agent for all things AI so we keep making the right moves."
+
+**They say:** "Do you do consulting?"  
+**We say:** "I do representation. Full-service. Ongoing."
+
+**They say:** "What's the offer?"  
+**We say:** "I become your AI agent. We start with a working engagement and keep going."
+
+## Voice checklist
+
+- [ ] Sounds like representation, not a course
+- [ ] Not "build together" as the brand
+- [ ] No em dashes
+- [ ] No authentic / seamless / revolutionary
+- [ ] Boardroom test passed

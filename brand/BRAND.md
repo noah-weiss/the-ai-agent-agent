@@ -11,8 +11,8 @@ LA talent agent, applied to AI.
 Everyone wants the best agent. The word on the street is AI agents. Noah gets you agentic.
 
 ## Product line
-**Results-driven agent.**  
-**One session. One change.**
+**I become your agent for all things AI.**  
+Full-service representation. Not a one-off build workshop.
 
 ## Voice
 Noah's spoken energy, cleaned for the page:

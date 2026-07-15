@@ -8,23 +8,21 @@ The one who books the best gigs in town.
 Now the word on the street is AI agents.
 Everything is moving fast.
 
-What if you had someone who could get you up to speed and get you agentic?
+I'm not here to build one bot with you and disappear.
 
-That's where I come in.
+I become your agent for all things AI.
 
-Introducing The AI Agent Agent.
+Full-service.
+Results-driven.
+In your corner on tools, workflows, builds, and decisions.
 
-I don't work for a big studio or a big agency.
+I make AI your secret weapon.
+
 It's just me.
+No big studio.
+No big agency.
 
-I'm here to make AI your secret weapon.
-Results-driven agent.
-One session. One change.
-
-We pick the thing that matters.
-We ship one real upgrade.
-
-I'm here to get you excited and get you moving.
+If you want representation for the AI era, let's talk.
 
 Let's get after it.
 

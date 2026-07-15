@@ -6,7 +6,7 @@ Operator: Noah Weiss
 
 ## One line
 
-Results-driven agent. One session. One change. I make AI your secret weapon.
+I become your agent for all things AI.
 
 ## The pitch
 
@@ -16,31 +16,42 @@ The best agent. The one who books the best gigs in town.
 Now the word on the street is AI agents.
 Everything is moving fast.
 
-What if you had someone who could get you up to speed and get you agentic?
+What if you had someone in your corner for all of it?
 
 That's where I come in.
 
 I don't work for a big studio or a big agency.
 It's just me.
 
-I'm here to make AI your secret weapon.
-I'm your full-service, results-driven agent: constantly looking for the best things you need, constantly serving the best results possible.
-I want to make you the best version of yourself.
+I'm not here to "build one bot with you" and disappear.
+I become your agent for all things AI.
 
-## How I work
+I make AI your secret weapon.
+Full-service representation: what to use, what to ignore, what to build, what to buy, what to ship, and how to stay ahead without drowning.
 
-**Results-driven agent.**  
-**One session. One change.**
+## What "your AI agent" means
 
-We pick the thing that matters. We run a session. We ship one real upgrade.
+- Ongoing judgment on tools, workflows, and opportunities
+- Hands-on build when something should exist
+- Taste and refusal: protect you from AI theater
+- Fast response when AI questions hit
+- A real representative, not a project vendor
 
-No vague retainers as the headline. No menu theater. Motion and results.
+## Offer posture
+
+Representation first.
+Engagements can include sessions, builds, and retainers, but the relationship is the product:
+
+**I am your agent for all things AI.**
+
+Entry can still be sharp and concrete.
+The brand is not "pair-programming an agent once."
 
 ## Who it is for
 
-Operators, founders, and professionals who feel the AI wave and want a real agent in their corner. Not another tool stack. Not a 40-person "AI practice." One person who picks up, builds, and gets you a result.
+Operators, founders, and professionals who want a permanent AI edge and someone accountable for it.
 
-Not for: free ChatGPT tutorials. Not for pure research lab work.
+Not for: free ChatGPT lessons. Not for pure research lab work.
 
 ## Brand rules
 
@@ -55,20 +66,9 @@ Not for: free ChatGPT tutorials. Not for pure research lab work.
 
 ## Boardroom test
 
-> "Everyone wants a great agent. In this market, that means AI. I'm The AI Agent Agent: results-driven. One session. One change. I make AI your secret weapon."
+> "I become your agent for all things AI. Full-service. Results-driven. Los Angeles."
 
-## First ship targets
+## Visual
 
-1. Name + domain (done: theaiagentagent.com)
-2. Site that sounds like Noah
-3. Session fee locked
-4. LinkedIn launch post
-5. Intake path
-6. First clients from real relationships
-
-## Not yet
-
-- Marketplace of agents
-- Multi-tenant SaaS
-- Open-source framework
-- Investor deck theater
+CAA restraint. White / black / green. Handwriting mark.
+See `brand/style-guide.html` and `brand/STYLE-GUIDE.md`.
