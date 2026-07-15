@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The AI Agent Agent · Full Review Packet for Markup</title>
+  <style>
+    :root {
+      --ink: #111;
+      --muted: #555;
+      --line: #ccc;
+      --soft: #f5f5f5;
+      --green: #0b6b3a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      line-height: 1.45;
+      font-size: 12.5pt;
+      background: #fff;
+    }
+    .page {
+      width: 8.5in;
+      min-height: 11in;
+      margin: 0 auto;
+      padding: 0.7in 0.75in 0.8in;
+      border-bottom: 1px dashed #ddd;
+    }
+    @media print {
+      body { font-size: 11pt; }
+      .page {
+        width: auto;
+        min-height: auto;
+        margin: 0;
+        padding: 0.55in 0.6in;
+        border: 0;
+        page-break-after: always;
+      }
+      .page:last-child { page-break-after: auto; }
+      .no-print { display: none !important; }
+      a { color: inherit; text-decoration: none; }
+    }
+    .toolbar {
+      max-width: 8.5in;
+      margin: 16px auto;
+      padding: 12px 16px;
+      background: #111;
+      color: #fff;
+      font-size: 13px;
+    }
+    .toolbar strong { color: #9fe0b8; }
+    h1 {
+      font-size: 26pt;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin: 0 0 8px;
+      font-weight: 600;
+    }
+    h2 {
+      font-size: 14pt;
+      margin: 0 0 10px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid #111;
+      letter-spacing: 0.01em;
+    }
+    h3 {
+      font-size: 11.5pt;
+      margin: 16px 0 6px;
+      font-weight: 700;
+    }
+    p { margin: 0 0 9px; }
+    .meta {
+      color: var(--muted);
+      font-size: 10pt;
+      margin-bottom: 18px;
+    }
+    .kicker {
+      font-size: 9.5pt;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--green);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .box {
+      border: 1px solid #111;
+      padding: 12px 14px;
+      margin: 12px 0;
+      background: #fff;
+    }
+    .box.soft { background: var(--soft); border-color: var(--line); }
+    .markbox {
+      border: 1.5px solid #111;
+      min-height: 1.35in;
+      margin-top: 10px;
+      padding: 8px 10px;
+      position: relative;
+    }
+    .markbox::before {
+      content: "MARKUP / NOTES";
+      position: absolute;
+      top: -8px;
+      left: 10px;
+      background: #fff;
+      font-size: 8pt;
+      letter-spacing: 0.08em;
+      color: #666;
+      padding: 0 4px;
+      font-weight: 700;
+    }
+    .markbox.tall { min-height: 2.1in; }
+    .markbox.short { min-height: 0.9in; }
+    ul, ol { margin: 0 0 10px 1.15em; padding: 0; }
+    li { margin: 0 0 4px; }
+    .two {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .score {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 8px;
+      align-items: center;
+      padding: 7px 0;
+      border-bottom: 1px solid var(--line);
+      font-size: 11pt;
+    }
+    .score:last-child { border-bottom: 0; }
+    .dots {
+      letter-spacing: 0.18em;
+      color: #999;
+      font-size: 12pt;
+    }
+    .footer-line {
+      margin-top: 18px;
+      padding-top: 8px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 9pt;
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .big {
+      font-size: 15pt;
+      font-weight: 600;
+      line-height: 1.2;
+      margin: 8px 0 12px;
+    }
+    .small { font-size: 10pt; color: var(--muted); }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 8px 0 12px;
+      font-size: 10.5pt;
+    }
+    th, td {
+      border: 1px solid #bbb;
+      padding: 7px 8px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: var(--soft); font-size: 9.5pt; letter-spacing: 0.04em; text-transform: uppercase; }
+    .checkline {
+      display: grid;
+      grid-template-columns: 16px 1fr;
+      gap: 8px;
+      margin: 6px 0;
+      align-items: start;
+    }
+    .check {
+      width: 14px;
+      height: 14px;
+      border: 1.5px solid #111;
+      margin-top: 2px;
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar no-print">
+    <strong>Print this:</strong> File → Print → Save as PDF (or print double-sided).
+    Wide markup boxes on every page. Built for pen markup by Dad.
+  </div>
+
+  <!-- PAGE 1 -->
+  <section class="page">
+    <div class="kicker">Review packet · confidential</div>
+    <h1>The AI Agent Agent</h1>
+    <p class="meta">
+      Full business + brand review for markup<br />
+      Prepared for: Dad &nbsp;|&nbsp; From: Noah Weiss &nbsp;|&nbsp; Date: July 15, 2026<br />
+      Domain: theaiagentagent.com &nbsp;|&nbsp; Status: pre-launch
+    </p>
+
+    <div class="box">
+      <p class="big">I become your agent for all things AI.</p>
+      <p style="margin:0;">
+        Not a chatbot company. Not a one-off “let’s build a bot” workshop.
+        Full-service AI representation: judgment, execution, and ongoing edge.
+      </p>
+    </div>
+
+    <h3>Why this packet exists</h3>
+    <p>
+      I want your eyes on the whole thing before it goes public: the idea, the offer,
+      the brand, the website language, and the risks. Please mark it up hard.
+      Cross things out. Write in the boxes. Be blunt.
+    </p>
+
+    <h3>How to mark it up</h3>
+    <ul>
+      <li>Circle anything confusing</li>
+      <li>Cross out anything weak or fake</li>
+      <li>Star anything strong</li>
+      <li>Use the markup boxes for notes</li>
+      <li>Score the last page</li>
+    </ul>
+
+    <h3>Open questions I especially want your take on</h3>
+    <ol>
+      <li>Is the core idea clear in one sentence?</li>
+      <li>Does “agent for all things AI” sound premium or vague?</li>
+      <li>Would a serious operator pay for this?</li>
+      <li>What feels off, try-hard, or unclear?</li>
+      <li>What would you cut immediately?</li>
+    </ol>
+
+    <div class="markbox tall"></div>
+    <div class="footer-line">
+      <span>The AI Agent Agent · Review Packet</span>
+      <span>Page 1 of 6</span>
+    </div>
+  </section>
+
+  <!-- PAGE 2 -->
+  <section class="page">
+    <h2>1. The business idea</h2>
+
+    <h3>The metaphor</h3>
+    <p>
+      Everyone wants an agent in LA: the person who gets you the best opportunities.
+      Right now, the hot version of that is AI. I become that agent for all things AI.
+    </p>
+
+    <h3>What I actually do</h3>
+    <ul>
+      <li>Help clients decide what AI is worth using and what is noise</li>
+      <li>Build or set up agents and workflows when something should exist</li>
+      <li>Stay in their corner as tools, vendors, and needs change</li>
+      <li>Protect them from AI theater and bad decisions</li>
+    </ul>
+
+    <h3>What this is not</h3>
+    <ul>
+      <li>Not “we build one agent together and goodbye”</li>
+      <li>Not a generic AI consulting menu</li>
+      <li>Not a software product launch (service / representation first)</li>
+      <li>Not free ChatGPT tutoring</li>
+    </ul>
+
+    <div class="two">
+      <div class="box soft">
+        <h3 style="margin-top:0;">Who it is for</h3>
+        <p class="small" style="margin:0;">
+          Operators, founders, and professionals who want a permanent AI edge
+          and someone accountable for it.
+        </p>
+      </div>
+      <div class="box soft">
+        <h3 style="margin-top:0;">Why now</h3>
+        <p class="small" style="margin:0;">
+          AI is moving fast. People are overwhelmed. They need representation,
+          not more tabs and tools.
+        </p>
+      </div>
+    </div>
+
+    <h3>Boardroom sentence</h3>
+    <div class="box">
+      “I become your agent for all things AI. Full-service. Results-driven. Los Angeles.”
+    </div>
+
+    <div class="markbox tall"></div>
+    <div class="footer-line">
+      <span>Section 1 · Business idea</span>
+      <span>Page 2 of 6</span>
+    </div>
+  </section>
+
+  <!-- PAGE 3 -->
+  <section class="page">
+    <h2>2. Offer and money model</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th style="width:22%">Piece</th>
+          <th style="width:48%">What it is</th>
+          <th>Notes / price later</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Representation</strong><br /><span class="small">Core product</span></td>
+          <td>Ongoing AI agent relationship. Judgment + execution across tools, workflows, builds, vendors, decisions.</td>
+          <td>Monthly / quarterly fee TBD</td>
+        </tr>
+        <tr>
+          <td><strong>Working session</strong><br /><span class="small">Entry</span></td>
+          <td>Sharp activation session to start the relationship and create immediate value.</td>
+          <td>Fee TBD</td>
+        </tr>
+        <tr>
+          <td><strong>Scoped build</strong><br /><span class="small">As needed</span></td>
+          <td>When representation requires a specific agent/system, scope it and ship it.</td>
+          <td>Quoted as needed</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Language rules</h3>
+    <div class="two">
+      <div>
+        <p><strong>Use</strong></p>
+        <ul>
+          <li>I become your agent for all things AI</li>
+          <li>Full-service representation</li>
+          <li>In your corner</li>
+          <li>Judgment + execution</li>
+          <li>Secret weapon</li>
+        </ul>
+      </div>
+      <div>
+        <p><strong>Avoid as the brand</strong></p>
+        <ul>
+          <li>“We build an agent together”</li>
+          <li>AI workshop</li>
+          <li>Pair-building as identity</li>
+          <li>Consulting menu theater</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Dad questions on offer</h3>
+    <div class="checkline"><div class="check"></div><div>Is representation clear enough to sell?</div></div>
+    <div class="checkline"><div class="check"></div><div>Should the entry offer be more concrete before launch?</div></div>
+    <div class="checkline"><div class="check"></div><div>Any pricing instincts (too soft / too premium / missing)?</div></div>
+
+    <div class="markbox tall"></div>
+    <div class="footer-line">
+      <span>Section 2 · Offer</span>
+      <span>Page 3 of 6</span>
+    </div>
+  </section>
+
+  <!-- PAGE 4 -->
+  <section class="page">
+    <h2>3. Brand and visual direction</h2>
+
+    <h3>Inspiration</h3>
+    <p>
+      CAA / UTA / Roc Nation energy: prestige, restraint, representation.
+      Not startup gradients. Not “AI purple.”
+    </p>
+
+    <h3>Visual system</h3>
+    <ul>
+      <li><strong>White / black / green</strong> only</li>
+      <li><strong>Primary mark:</strong> my real handwriting of “The AI Agent Agent”</li>
+      <li><strong>Institutional lockup:</strong> clean uppercase wordmark + green rule + Los Angeles</li>
+      <li><strong>Type:</strong> clean grotesk (Inter / Helvetica style), not decorative AI fonts</li>
+      <li><strong>Space:</strong> sparse, agency-like, lots of room</li>
+    </ul>
+
+    <h3>Color</h3>
+    <table>
+      <tr><th>Color</th><th>Hex</th><th>Use</th></tr>
+      <tr><td>White</td><td>#FFFFFF</td><td>Background</td></tr>
+      <tr><td>Black</td><td>#000000</td><td>Type / structure</td></tr>
+      <tr><td>Muted</td><td>#666666</td><td>Secondary text</td></tr>
+      <tr><td>Green</td><td>#0B6B3A</td><td>Accent / authority only</td></tr>
+    </table>
+
+    <h3>Voice rules</h3>
+    <ul>
+      <li>Direct, confident, short</li>
+      <li>No fake authenticity language</li>
+      <li>No baseless claims</li>
+      <li>No em dashes</li>
+      <li>Boardroom test on everything</li>
+    </ul>
+
+    <div class="markbox">
+      <span class="small">Does the brand feel premium, clear, and like Noah? Or does it feel try-hard / vague?</span>
+    </div>
+    <div class="markbox short"></div>
+
+    <div class="footer-line">
+      <span>Section 3 · Brand</span>
+      <span>Page 4 of 6</span>
+    </div>
+  </section>
+
+  <!-- PAGE 5 -->
+  <section class="page">
+    <h2>4. Website and public language</h2>
+
+    <h3>Current public promise</h3>
+    <div class="box">
+      <p style="margin:0 0 6px;"><strong>Headline:</strong> I become your agent for all things AI.</p>
+      <p style="margin:0 0 6px;"><strong>Support:</strong> Everyone wants an agent in LA. Now the word on the street is AI agents. I make AI your secret weapon.</p>
+      <p style="margin:0;"><strong>CTA:</strong> Get representation</p>
+    </div>
+
+    <h3>Site structure</h3>
+    <ol>
+      <li>Hero with handwriting mark + promise</li>
+      <li>About: full-service, just me</li>
+      <li>Method: judgment / execution / ongoing edge</li>
+      <li>Offer: representation details</li>
+      <li>FAQ</li>
+      <li>Contact</li>
+    </ol>
+
+    <h3>Domain / assets</h3>
+    <ul>
+      <li>Domain owned: <strong>theaiagentagent.com</strong></li>
+      <li>Site drafted and SEO structured</li>
+      <li>DNS still needs final pointing for public launch</li>
+      <li>LinkedIn launch draft ready (not posted)</li>
+    </ul>
+
+    <h3>LinkedIn launch core</h3>
+    <div class="box soft small">
+      I’m not here to build one bot with you and disappear.<br />
+      I become your agent for all things AI.<br />
+      Full-service. Results-driven. In your corner.
+    </div>
+
+    <div class="markbox tall">
+      <span class="small">What would you change on the website language or launch post?</span>
+    </div>
+
+    <div class="footer-line">
+      <span>Section 4 · Website / public language</span>
+      <span>Page 5 of 6</span>
+    </div>
+  </section>
+
+  <!-- PAGE 6 -->
+  <section class="page">
+    <h2>5. Risks, open items, and your scores</h2>
+
+    <h3>Known open items</h3>
+    <div class="checkline"><div class="check"></div><div>Lock representation pricing</div></div>
+    <div class="checkline"><div class="check"></div><div>Point domain DNS and launch site live</div></div>
+    <div class="checkline"><div class="check"></div><div>Finalize professional agent portrait (optional but useful)</div></div>
+    <div class="checkline"><div class="check"></div><div>First 3 target clients / warm outreach list</div></div>
+    <div class="checkline"><div class="check"></div><div>Legal / entity / banking when first paid work is real</div></div>
+
+    <h3>Risks I want you to challenge</h3>
+    <ul>
+      <li>Is “all things AI” too broad to sell?</li>
+      <li>Does the LA agent metaphor help or distract outside entertainment circles?</li>
+      <li>Is solo delivery credible at the price we may need?</li>
+      <li>Where does this conflict with law school timing / bandwidth?</li>
+    </ul>
+
+    <div class="markbox">
+      <span class="small">Biggest risk you see:</span>
+    </div>
+
+    <h3>Scorecard (1–5)</h3>
+    <div class="box soft">
+      <div class="score"><span>Clarity of the idea</span><span class="dots">1 2 3 4 5</span></div>
+      <div class="score"><span>Believability / trust</span><span class="dots">1 2 3 4 5</span></div>
+      <div class="score"><span>Premium brand feel</span><span class="dots">1 2 3 4 5</span></div>
+      <div class="score"><span>Market need</span><span class="dots">1 2 3 4 5</span></div>
+      <div class="score"><span>Launch readiness</span><span class="dots">1 2 3 4 5</span></div>
+      <div class="score"><span>Overall: would you tell a friend to hire this?</span><span class="dots">1 2 3 4 5</span></div>
+    </div>
+
+    <h3>Final recommendation</h3>
+    <div class="checkline"><div class="check"></div><div><strong>Ship now</strong> (with minor fixes)</div></div>
+    <div class="checkline"><div class="check"></div><div><strong>Ship after changes</strong> (list below)</div></div>
+    <div class="checkline"><div class="check"></div><div><strong>Pause / rethink</strong></div></div>
+
+    <div class="markbox tall">
+      <span class="small">Final notes / must-change list:</span>
+    </div>
+
+    <div class="footer-line">
+      <span>Section 5 · Risks + scores · End of packet</span>
+      <span>Page 6 of 6</span>
+    </div>
+  </section>
+</body>
+</html>
