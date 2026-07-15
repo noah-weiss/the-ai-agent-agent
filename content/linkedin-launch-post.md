@@ -1,29 +1,37 @@
 # LinkedIn launch post (draft)
 
-I am launching a business.
+Everyone wants an agent in LA.
 
-The AI Agent Agent.
+The best agent.
+The one who books the best gigs in town.
 
-I build and run AI agents that remove grunt work and protect judgment.
+Now the word on the street is AI agents.
+Everything is moving fast.
 
-Not chat wrappers.
-Not strategy decks that never ship.
-Agents that sit inside real workflows, with clear handoffs and clear failure modes.
+What if you had someone who could get you up to speed and get you agentic?
 
-Most people do not need more AI tools.
-They need someone who will:
-- pick the right work for an agent
-- refuse the wrong work
-- design the human/machine line
-- stay after launch so it still works on a Tuesday
+That's where I come in.
 
-That is the job.
+Introducing The AI Agent Agent.
 
-If you run ops, sales systems, service, or any process full of repeatable pain, send me the mess.
-I will tell you if an agent should own it.
+I don't work for a big studio or a big agency.
+It's just me.
 
-Design sprint.
-Build.
-Ops.
+I'm here to make AI your secret weapon.
+Full-service agent.
+Constantly looking for the best things you need.
+Constantly serving the best results possible.
 
-More soon.
+I want to make you the best version of yourself.
+
+How I work:
+• Concierge access
+• One fee
+• Unlimited access
+
+My friends will tell you I am always quick to respond.
+I'm here to get you excited and get you moving.
+
+Let's get after it.
+
+theaiagentagent.com

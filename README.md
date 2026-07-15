@@ -24,16 +24,17 @@ ai-agent-agent/
 ## Status
 
 - [x] Project scaffold
-- [x] Founding thesis draft
+- [x] Founding thesis (LA agent metaphor, Noah raw voice)
 - [x] One-page site (`site/index.html`)
-- [x] 3 offers drafted (`product/OFFERS.md`)
+- [x] Offer model: concierge / one fee / unlimited
 - [x] Launch post draft (`content/linkedin-launch-post.md`)
 - [x] Domain owned: theaiagentagent.com
-- [ ] Final prices locked
-- [ ] Sample agent #1 (public-safe demo)
-- [ ] Intake email on domain
+- [x] GitHub + Pages deploy
+- [ ] One fee number locked
 - [ ] DNS pointed at GitHub Pages
 - [ ] Public site live on theaiagentagent.com
+- [ ] LinkedIn launch posted
+- [ ] Intake email on domain
 
 ## Work from here
 

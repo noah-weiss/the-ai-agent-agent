@@ -4,15 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>The AI Agent Agent</title>
-  <meta name="description" content="I build and run AI agents that cut grunt work and raise the quality of real work." />
+  <meta name="description" content="I'm your full-service agent for AI. Concierge access. One fee. Unlimited access. I make AI your secret weapon." />
   <link rel="canonical" href="https://theaiagentagent.com/" />
   <meta property="og:url" content="https://theaiagentagent.com/" />
   <meta property="og:title" content="The AI Agent Agent" />
-  <meta property="og:description" content="I build and run AI agents that cut grunt work and raise the quality of real work." />
+  <meta property="og:description" content="Everyone wants an agent in LA. Now the word on the street is AI agents. I make AI your secret weapon." />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="The AI Agent Agent" />
-  <meta name="twitter:description" content="I build and run AI agents that cut grunt work and raise the quality of real work." />
+  <meta name="twitter:description" content="Full-service AI agent. Concierge access. One fee. Unlimited access." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -27,7 +27,6 @@
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
-
     html { scroll-behavior: smooth; }
 
     body {
@@ -41,7 +40,7 @@
     a { color: inherit; }
 
     .wrap {
-      width: min(920px, calc(100% - 2.5rem));
+      width: min(880px, calc(100% - 2.5rem));
       margin: 0 auto;
     }
 
@@ -75,7 +74,7 @@
     nav a:hover { color: var(--fg); border-bottom-color: var(--line); }
 
     .hero {
-      padding: 5.5rem 0 4rem;
+      padding: 4.5rem 0 3.5rem;
       border-bottom: 1px solid var(--line);
     }
 
@@ -91,24 +90,27 @@
     h1 {
       font-family: "Cormorant Garamond", Georgia, serif;
       font-weight: 600;
-      font-size: clamp(2.8rem, 8vw, 5.2rem);
-      line-height: 0.95;
+      font-size: clamp(2.6rem, 7.5vw, 4.6rem);
+      line-height: 0.98;
       letter-spacing: -0.02em;
-      max-width: 12ch;
-      margin-bottom: 1.5rem;
+      max-width: 14ch;
+      margin-bottom: 1.75rem;
     }
 
-    .lede {
-      font-size: clamp(1.05rem, 2.2vw, 1.25rem);
-      color: var(--muted);
+    .pitch {
       max-width: 36rem;
-      margin-bottom: 2rem;
+      font-size: clamp(1.05rem, 2.1vw, 1.2rem);
+      color: var(--muted);
     }
+
+    .pitch p + p { margin-top: 0.9rem; }
+    .pitch .hit { color: var(--fg); }
 
     .actions {
       display: flex;
       flex-wrap: wrap;
       gap: 0.85rem;
+      margin-top: 2rem;
     }
 
     .btn {
@@ -133,19 +135,26 @@
     .btn:hover { opacity: 0.9; }
 
     section {
-      padding: 3.5rem 0;
+      padding: 3.25rem 0;
       border-bottom: 1px solid var(--line);
     }
 
     h2 {
       font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: clamp(1.8rem, 4vw, 2.4rem);
+      font-size: clamp(1.8rem, 4vw, 2.35rem);
       font-weight: 600;
       margin-bottom: 1.25rem;
       letter-spacing: -0.01em;
     }
 
-    p + p { margin-top: 1rem; }
+    .body-copy {
+      color: var(--muted);
+      max-width: 36rem;
+      font-size: 1.05rem;
+    }
+
+    .body-copy p + p { margin-top: 0.95rem; }
+    .body-copy .hit { color: var(--fg); }
 
     .grid {
       display: grid;
@@ -157,15 +166,15 @@
     .card {
       background: var(--card);
       border: 1px solid var(--line);
-      padding: 1.35rem;
-      min-height: 10.5rem;
+      padding: 1.4rem 1.25rem;
+      min-height: 8.5rem;
     }
 
     .card h3 {
       font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: 1.45rem;
+      font-size: 1.5rem;
       font-weight: 600;
-      margin-bottom: 0.55rem;
+      margin-bottom: 0.4rem;
     }
 
     .card p {
@@ -173,39 +182,14 @@
       font-size: 0.95rem;
     }
 
-    .steps {
-      list-style: none;
-      display: grid;
-      gap: 0.85rem;
-      margin-top: 1.25rem;
-    }
-
-    .steps li {
-      display: grid;
-      grid-template-columns: 2rem 1fr;
-      gap: 0.75rem;
-      align-items: start;
-      color: var(--muted);
-    }
-
-    .steps strong { color: var(--fg); font-weight: 500; }
-
-    .num {
-      font-family: "Cormorant Garamond", Georgia, serif;
-      color: var(--accent);
-      font-size: 1.25rem;
-      line-height: 1.2;
-    }
-
     .cta-box {
       background: var(--card);
       border: 1px solid var(--line);
       padding: 2rem;
-      margin-top: 1.5rem;
+      margin-top: 1.25rem;
     }
 
     .cta-box p { color: var(--muted); max-width: 34rem; }
-
     .cta-box .actions { margin-top: 1.25rem; }
 
     footer {
@@ -223,7 +207,7 @@
     @media (max-width: 760px) {
       .grid { grid-template-columns: 1fr; }
       nav { display: none; }
-      .hero { padding-top: 3.5rem; }
+      .hero { padding-top: 3.25rem; }
     }
   </style>
 </head>
@@ -232,56 +216,60 @@
     <header>
       <div class="mark">The AI Agent Agent</div>
       <nav>
-        <a href="#work">Work</a>
-        <a href="#how">How</a>
-        <a href="#contact">Contact</a>
+        <a href="#how">How I work</a>
+        <a href="#contact">Get after it</a>
       </nav>
     </header>
 
     <main>
-      <section class="hero" style="border-bottom: 1px solid var(--line); padding-bottom: 4rem;">
-        <p class="eyebrow">New business · 2026</p>
+      <section class="hero">
+        <p class="eyebrow">Los Angeles · theaiagentagent.com</p>
         <h1>The AI Agent Agent</h1>
-        <p class="lede">I build and run AI agents that cut grunt work and raise the quality of real work. Design them. Stand them up. Keep them useful.</p>
+        <div class="pitch">
+          <p class="hit">Everyone wants an agent in LA.</p>
+          <p>The best agent. The one who books the best gigs in town.</p>
+          <p>Now the word on the street is AI agents. Everything is moving fast.</p>
+          <p class="hit">What if you had someone who could get you up to speed and get you agentic?</p>
+          <p>That's where I come in.</p>
+        </div>
         <div class="actions">
-          <a class="btn" href="#contact">Start a conversation</a>
-          <a class="btn secondary" href="#work">See the offer</a>
+          <a class="btn" href="#contact">Let's get after it</a>
+          <a class="btn secondary" href="#how">How I work</a>
         </div>
       </section>
 
-      <section id="work">
-        <h2>What I do</h2>
-        <p style="color: var(--muted); max-width: 36rem;">Most teams do not need another model. They need someone who will design the agent, ship it into a real workflow, and stay with it until it behaves like good service.</p>
-        <div class="grid">
-          <article class="card">
-            <h3>Design</h3>
-            <p>Map one painful process. Decide what the agent owns and what stays human. Write the brief before anyone builds.</p>
-          </article>
-          <article class="card">
-            <h3>Build</h3>
-            <p>Ship a working agent with tools, handoffs, and failure modes documented. No demo theater.</p>
-          </article>
-          <article class="card">
-            <h3>Ops</h3>
-            <p>Keep it useful after launch: monitoring, updates, and a human still in the loop on a Tuesday.</p>
-          </article>
+      <section>
+        <h2>It's just me</h2>
+        <div class="body-copy">
+          <p>I don't work for a big studio or a big agency.</p>
+          <p class="hit">I'm here to make AI your secret weapon.</p>
+          <p>I'm your full-service agent: constantly looking for the best things you need, constantly serving the best results possible.</p>
+          <p>I want to make you the best version of yourself.</p>
         </div>
       </section>
 
       <section id="how">
-        <h2>How it works</h2>
-        <ol class="steps">
-          <li><span class="num">01</span><span><strong>Design sprint</strong> on one workflow that is drowning in repeatable work.</span></li>
-          <li><span class="num">02</span><span><strong>Fixed-scope build</strong> only if the agent is worth building.</span></li>
-          <li><span class="num">03</span><span><strong>Optional ops</strong> once it is live and tied to real work.</span></li>
-        </ol>
-        <p style="margin-top: 1.5rem; color: var(--muted); max-width: 36rem;">For operators who want agents in real workflows. Not for people building foundation models.</p>
+        <h2>How I work</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Concierge access</h3>
+            <p>You get me. Fast. My friends will tell you I am always quick to respond.</p>
+          </article>
+          <article class="card">
+            <h3>One fee</h3>
+            <p>Simple. Clear. No menu of fake tiers. One relationship.</p>
+          </article>
+          <article class="card">
+            <h3>Unlimited access</h3>
+            <p>Full-service agent energy. We keep building and refining as your work moves.</p>
+          </article>
+        </div>
       </section>
 
       <section id="contact" style="border-bottom: none; padding-bottom: 1rem;">
-        <h2>If you have a mess, send it</h2>
+        <h2>Get excited. Get moving.</h2>
         <div class="cta-box">
-          <p>Tell me the process that keeps stealing hours. I will tell you if an agent should touch it, and what good looks like when it fails.</p>
+          <p>I'm here to get you excited and get you moving. Tell me what you want AI to unlock for your work. Let's get after it.</p>
           <div class="actions">
             <a class="btn" href="https://www.linkedin.com/in/noaheweiss" target="_blank" rel="noopener">Message on LinkedIn</a>
             <a class="btn secondary" href="mailto:?subject=The%20AI%20Agent%20Agent">Email</a>
@@ -292,7 +280,7 @@
 
     <footer>
       <div class="love">I spread love. The garnish is there.</div>
-      <div>© 2026 The AI Agent Agent</div>
+      <div>© 2026 The AI Agent Agent · theaiagentagent.com</div>
     </footer>
   </div>
 </body>

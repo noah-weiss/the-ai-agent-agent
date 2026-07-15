@@ -6,24 +6,28 @@
 **The AI Agent Agent**  
 Recursive on purpose. Memorable. True to the work.
 
+### Domain
+**theaiagentagent.com** (GoDaddy)
+
 ### Shape
-Service-led business first. Product optional later.
+Full-service personal agency for AI.
+Not a product menu. Concierge relationship.
 
-### Audience
-AI-curious operators (workflows, service, automation). Not AI lab founders.
+### Metaphor (locked)
+LA talent agent. Everyone wants the best agent. Word on the street is AI agents. Noah gets you agentic.
 
-### Offer structure (draft)
-1. Agent Design Sprint (fixed)
-2. Agent Build (scoped)
-3. Agent Ops (retainer)
+### Offer structure
+- Concierge access
+- One fee
+- Unlimited access
 
-Exact prices TBD after packaging copy.
-
-### Entity
-Do not form an entity before first real paid engagement or clear need. Capture revenue cleanly under existing consulting structure if needed short-term. Revisit when cash is real.
+No Bronze/Silver/Gold ladder. Monthly fee number TBD by Noah.
 
 ### Site
-One page on **theaiagentagent.com**. Black/white editorial feel per Noah visual direction. Serif + restrained palette. Direct ask.
+One page on theaiagentagent.com. Sounds like Noah speaking. Editorial dark page.
 
 ### Content
-LinkedIn is the launch channel. Learning in public. No manufactured hooks that tear anyone down.
+LinkedIn is the launch channel. Use his raw positioning, cleaned, not rewritten into SaaS.
+
+### Entity
+Do not form an entity before first real paid engagement or clear need.

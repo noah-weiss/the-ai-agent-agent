@@ -3,30 +3,44 @@
 ## Name
 The AI Agent Agent
 
+## Domain
+theaiagentagent.com
+
+## Core metaphor
+LA talent agent, applied to AI.
+Everyone wants the best agent. The word on the street is AI agents. Noah is that guy for getting you agentic.
+
 ## Voice
-Brief. Direct. Real. Hospitality under the hood.
-No posing. No corporate AI soup.
-Vulnerable when it matters. Never bashful.
+Noah's spoken energy, cleaned for the page:
+- Direct
+- Warm
+- Competitive without posing
+- Service-first ("full-service agent")
+- Motion: get excited, get moving, get after it
+
+Short lines. Real talk. No corporate AI soup.
 
 ## Visual
 - Black and white editorial base
 - Large serif headlines
-- Restrained palette (near-black, warm off-white, one quiet accent max)
+- Restrained palette (near-black, warm off-white, quiet gold accent)
 - Moody, not cheerful
-- Space to breathe; no dashboard clutter on the marketing site
+- Space. Not dashboard clutter.
 
-## Taglines (working)
-1. The agent for AI agents.
-2. Build the agent. Run the agent. Make it feel like service.
-3. Practical agents for real workflows.
+## Lines that land
+- Everyone wants an agent in LA.
+- Now the word on the street is AI agents.
+- I make AI your secret weapon.
+- Full-service agent.
+- Concierge access. One fee. Unlimited access.
+- Let's get after it.
 
 ## Do not say
 - authentic
-- revolutionary
-- seamless
-- leverage / utilize
-- AI-powered (unless forced by a platform)
-- any claim without evidence
+- revolutionary / seamless / leverage / utilize
+- AI-powered (unless forced)
+- big agency cosplay
+- baseless claims
 
 ## Positioning sentence
-The AI Agent Agent builds and operates AI agents that cut grunt work and raise the quality of human work.
+I'm The AI Agent Agent: full-service AI help, one fee, unlimited access. I make AI your secret weapon.

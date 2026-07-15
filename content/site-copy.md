@@ -1,39 +1,38 @@
 # Site copy — The AI Agent Agent
 
-## Headline
-The AI Agent Agent
+## Hero
+Everyone wants an agent in LA.
 
-## Subhead
-I build and run AI agents that cut grunt work and raise the quality of real work.
+The best agent. The one who books the best gigs in town.
 
-## Hero body
-Most teams do not need another model.
-They need someone who will design the agent, stand it up, and stay with it until it behaves like good service.
+Now the word on the street is AI agents.
+Everything is moving fast.
 
-That is the job.
+What if you had someone who could get you up to speed and get you agentic?
 
-## What I do
-**Design.** Map the workflow. Decide what the agent owns and what stays human.
-**Build.** Ship a working agent with tools, handoffs, and failure modes written down.
-**Ops.** Keep it useful after launch: monitoring, updates, and a human still in the loop.
+That's where I come in.
 
-## Who it is for
-Operators who want AI in real workflows.
-Not people building foundation models. Not demo theater.
+## Name line
+Introducing The AI Agent Agent.
 
-## How it works
-1. Paid design sprint on one painful process
-2. Fixed-scope build if it is worth building
-3. Optional ops retainer once it is live
+## Body
+I don't work for a big studio or a big agency.
+It's just me.
 
-## Proof posture
-No fake case studies.
-No inflated metrics.
-Show the system. Show the runbook. Show what happens when it is wrong.
+I'm here to make AI your secret weapon.
+I'm your full-service agent: constantly looking for the best things you need, constantly serving the best results possible.
+I want to make you the best version of yourself.
+
+## How I work
+- Concierge access
+- One fee
+- Unlimited access
+
+## Closer
+My friends will tell you I am always quick to respond.
+I'm here to get you excited and get you moving.
+
+Let's get after it.
 
 ## CTA
-If you have a process drowning in repeatable work, tell me what it is.
-I will tell you if an agent should touch it.
-
-## Footer line
-I spread love. The garnish is there.
+Message me. Tell me what you want AI to do for your work.
