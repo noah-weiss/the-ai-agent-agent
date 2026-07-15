@@ -85,7 +85,8 @@ If I say this in a room of serious operators, it has to land:
 3. 2 sample agent builds (dogfooded or real client)
 4. LinkedIn launch post
 5. Simple intake form / booking path
-6. Entity + banking when first paid engagement is real (not before)
+6. Domain: **theaiagentagent.com** (owned)
+7. Entity + banking when first paid engagement is real (not before)
 
 ## Not yet
 
