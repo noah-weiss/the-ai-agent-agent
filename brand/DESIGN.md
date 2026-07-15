@@ -1,59 +1,38 @@
 # DESIGN.md — The AI Agent Agent
 
-Bright system. Real brand. Black, white, green.
+CAA-grade restraint. White field. Black type. Green as controlled authority.
 
-## Identity
-
-| Token | Value |
-|-------|--------|
-| Brand name | The AI Agent Agent |
-| Domain | theaiagentagent.com |
-| City | Los Angeles |
-| Tagline | Results-driven agent. One session. One change. |
-| Promise | I make AI your secret weapon. |
-| Mark | Noah handwriting (primary) |
+## Essence
+Prestige representation for AI agents. Not startup cosplay.
 
 ## Color
+| Token | Hex | Role |
+|-------|-----|------|
+| White | `#FFFFFF` | Field |
+| Off | `#F7F7F7` | Band |
+| Black | `#000000` | Ink |
+| Muted | `#666666` | Secondary |
+| Line | `#E6E6E6` | Rules |
+| Green | `#0B6B3A` | Authority accent |
+| Green deep | `#08522C` | Hover |
 
-| Token | Hex | Use |
-|-------|-----|-----|
-| `--bg` | `#FFFFFF` | Page |
-| `--bg-soft` | `#F4F7F5` | Soft bands |
-| `--ink` | `#0A0A0A` | Primary text / buttons |
-| `--muted` | `#4A4F4C` | Secondary text |
-| `--line` | `#E4E8E5` | Borders |
-| `--green` | `#0D7A45` | Primary CTA / accent |
-| `--green-deep` | `#095C34` | Hover / deep accent |
-| `--green-soft` | `#E8F5EE` | Pills / soft fills |
-
-Rules:
-- White is default. Bright, open, premium.
-- Green is the only accent color.
-- No neon AI purple. No dark-mode default.
-- Handwriting stays blue-ink on white when possible.
+Green is never wallpaper. One decision color per view.
 
 ## Type
+Inter / Helvetica Neue / Helvetica / Arial  
+Handwriting is the only expressive type object.
 
-| Role | Family |
-|------|--------|
-| Display | Instrument Serif |
-| Body / UI | DM Sans |
+## Logo
+1. Primary: Noah handwriting wordmark
+2. Institutional: uppercase wordmark + green rule + Los Angeles
 
-## SEO baseline
+## Space
+Huge margins. 1px rules. Max width ~1120. If busy, cut.
 
-- Title: brand + benefit + city
-- Meta description under ~160 chars with primary terms
-- One H1, logical H2s
-- FAQ block for long-tail
-- JSON-LD ProfessionalService + WebSite + WebPage
-- Canonical: https://theaiagentagent.com/
-- Alt text on handwriting mark
-- Internal anchors: about, how, faq, contact
+## Components
+Sharp buttons (not pills). Sparse nav. Letterhead footer.
 
-## Do not
+## SEO
+Brand | Benefit | City titles. One H1. FAQ. JSON-LD. Canonical. Sitemap.
 
-- Generic AI gradients
-- Robot mascots
-- Fake testimonials
-- Dark “AI lab” cosplay as the default site
-- Em dashes in copy
+Full visual system: `brand/style-guide.html`
