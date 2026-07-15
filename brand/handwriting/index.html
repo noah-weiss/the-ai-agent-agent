@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your hand · The AI Agent Agent</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root { --bg:#0c0c0c; --fg:#f4f1ea; --muted:#a39e94; --line:#2a2a2a; --accent:#c4a574; --card:#141414; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:"IBM Plex Sans",system-ui,sans-serif; background:var(--bg); color:var(--fg); line-height:1.5; }
+    .wrap { width:min(980px, calc(100% - 2rem)); margin:0 auto; padding:2.25rem 0 4rem; }
+    h1 { font-family:"Cormorant Garamond",Georgia,serif; font-size:clamp(2rem,5vw,3rem); font-weight:600; }
+    .lede { color:var(--muted); margin:0.75rem 0 2rem; max-width:36rem; }
+    .card { border:1px solid var(--line); background:var(--card); margin-bottom:1.25rem; overflow:hidden; }
+    .meta { padding:0.9rem 1.1rem; border-bottom:1px solid var(--line); display:flex; justify-content:space-between; gap:1rem; flex-wrap:wrap; }
+    .meta h2 { font-family:"Cormorant Garamond",Georgia,serif; font-size:1.35rem; }
+    .tag { color:var(--accent); font-size:0.72rem; letter-spacing:0.12em; text-transform:uppercase; font-weight:600; }
+    .stage { background:#fff; padding:1.5rem; display:flex; justify-content:center; align-items:center; min-height:160px; }
+    .stage.dark { background:#0c0c0c; }
+    .stage img { max-width:100%; height:auto; display:block; }
+    .stage.dark img { filter: invert(1) hue-rotate(180deg); opacity:0.95; }
+    .note { padding:0.9rem 1.1rem; color:var(--muted); font-size:0.95rem; }
+    .pick { border:1px solid var(--line); padding:1.2rem; margin-top:1.5rem; color:var(--muted); }
+    .pick strong { color:var(--fg); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <p class="tag">Handwriting intake · live</p>
+    <h1>This is the brand spine</h1>
+    <p class="lede">Your actual hand. Not a script font. Ranked crops from the page you sent.</p>
+
+    <article class="card">
+      <div class="meta"><h2>1 · Hero signature</h2><span class="tag">Master mark</span></div>
+      <div class="stage"><img src="crops/01-hero-signature-top.jpg" alt="Hero signature" /></div>
+      <div class="stage dark"><img src="crops/01-hero-signature-top.jpg" alt="Hero signature inverted" /></div>
+      <p class="note">Top line. Full “The AI Agent Agent.” Signature energy. Big g-tails. This is the wordmark.</p>
+    </article>
+
+    <article class="card">
+      <div class="meta"><h2>2 · Stack lockup</h2><span class="tag">Header / card</span></div>
+      <div class="stage"><img src="crops/02-stack-left.jpg" alt="Stack lockup" /></div>
+      <p class="note">“The AI Agent” with second “Agent” dropped under. Natural logo shape. Strong for site header and cards.</p>
+    </article>
+
+    <article class="card">
+      <div class="meta"><h2>3 · Caps block</h2><span class="tag">Stamp / plaque utility</span></div>
+      <div class="stage"><img src="crops/03-caps-right.jpg" alt="Caps block" /></div>
+      <p class="note">THE / AI AGENT / AGENT. More architectural. Use inside stamp or plaque systems, not as the only face.</p>
+    </article>
+
+    <article class="card">
+      <div class="meta"><h2>4 · Lowercase whisper</h2><span class="tag">Footer / soft</span></div>
+      <div class="stage"><img src="crops/04-lowercase-bottom.jpg" alt="Lowercase" /></div>
+      <p class="note">Quiet hospitality energy. Footer, email sign-off, black-book line.</p>
+    </article>
+
+    <div class="pick">
+      <p><strong>Call:</strong> Master = #1. Lockup = #2. Whisper = #4. Caps = utility only.</p>
+      <p style="margin-top:0.5rem;">Next: vector clean + drop onto the live site hero so placeholder Caveat dies forever.</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -29,13 +29,17 @@ Full kit: `MESSAGING.md`
 Tokens: `DESIGN.md`  
 Visual board: open `board.html`
 
-## Visual
-- Black and white editorial base (warm paper on near-black)
-- Large serif headlines (Cormorant Garamond)
-- Body: IBM Plex Sans
-- Gold accent `#C4A574` as garnish only
-- Moody, not cheerful
-- Space. Not dashboard clutter.
+## Chosen hybrid
+**Roc Nation confidence + CAA restraint + UTA lockup clarity + Noah’s hand.**
+
+Primary surface:
+- Black field
+- Handwritten master wordmark
+- One agency lockup line
+- One product line: Results-driven. One session. One change.
+- City stamp: Los Angeles
+
+See also: `AGENCY-INSPO.md`
 
 ## Logo
 Monogram **AA** (Agent Agent): two interlocking A strokes, second in gold. Plaque frame optional for avatars.

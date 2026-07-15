@@ -3,305 +3,704 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The AI Agent Agent</title>
-  <meta name="description" content="Results-driven agent. One session. One change. I make AI your secret weapon." />
+  <title>The AI Agent Agent | AI Agents for Real Work | Los Angeles</title>
+  <meta name="description" content="The AI Agent Agent builds results-driven AI agents for operators and founders in Los Angeles. One session. One change. Full-service AI help that ships." />
+  <meta name="keywords" content="AI agent, AI agents, AI automation, AI consulting Los Angeles, build AI agents, AI workflows, results-driven AI, Noah Weiss" />
+  <meta name="author" content="Noah Weiss" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
   <link rel="canonical" href="https://theaiagentagent.com/" />
-  <meta property="og:url" content="https://theaiagentagent.com/" />
-  <meta property="og:title" content="The AI Agent Agent" />
-  <meta property="og:description" content="Everyone wants an agent in LA. Results-driven. One session. One change. I make AI your secret weapon." />
+
   <meta property="og:type" content="website" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="The AI Agent Agent" />
-  <meta name="twitter:description" content="Results-driven agent. One session. One change." />
+  <meta property="og:url" content="https://theaiagentagent.com/" />
+  <meta property="og:site_name" content="The AI Agent Agent" />
+  <meta property="og:title" content="The AI Agent Agent | AI Agents for Real Work" />
+  <meta property="og:description" content="Results-driven AI agent. One session. One change. I make AI your secret weapon. Los Angeles." />
+  <meta property="og:locale" content="en_US" />
   <meta property="og:image" content="https://theaiagentagent.com/assets/og-image.svg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The AI Agent Agent | AI Agents for Real Work" />
+  <meta name="twitter:description" content="Results-driven AI agent. One session. One change. Los Angeles." />
   <meta name="twitter:image" content="https://theaiagentagent.com/assets/og-image.svg" />
+
+  <meta name="theme-color" content="#ffffff" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://theaiagentagent.com/#business",
+        "name": "The AI Agent Agent",
+        "url": "https://theaiagentagent.com/",
+        "description": "Results-driven AI agent design and build for operators and founders. One session. One change.",
+        "image": "https://theaiagentagent.com/assets/og-image.svg",
+        "areaServed": {
+          "@type": "City",
+          "name": "Los Angeles"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Los Angeles",
+          "addressRegion": "CA",
+          "addressCountry": "US"
+        },
+        "founder": {
+          "@type": "Person",
+          "name": "Noah Weiss",
+          "url": "https://www.linkedin.com/in/noaheweiss"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/noaheweiss",
+          "https://github.com/noah-weiss/the-ai-agent-agent"
+        ],
+        "priceRange": "$$",
+        "slogan": "Results-driven agent. One session. One change."
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://theaiagentagent.com/#website",
+        "url": "https://theaiagentagent.com/",
+        "name": "The AI Agent Agent",
+        "publisher": { "@id": "https://theaiagentagent.com/#business" },
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://theaiagentagent.com/#webpage",
+        "url": "https://theaiagentagent.com/",
+        "name": "The AI Agent Agent | AI Agents for Real Work | Los Angeles",
+        "isPartOf": { "@id": "https://theaiagentagent.com/#website" },
+        "about": { "@id": "https://theaiagentagent.com/#business" },
+        "description": "Build results-driven AI agents with The AI Agent Agent in Los Angeles. One session. One change."
+      }
+    ]
+  }
+  </script>
+
   <style>
     :root {
-      --bg: #0c0c0c;
-      --fg: #f4f1ea;
-      --muted: #a39e94;
-      --line: #2a2a2a;
-      --accent: #c4a574;
-      --card: #141414;
+      --bg: #ffffff;
+      --bg-soft: #f4f7f5;
+      --ink: #0a0a0a;
+      --muted: #4a4f4c;
+      --line: #e4e8e5;
+      --green: #0d7a45;
+      --green-deep: #095c34;
+      --green-soft: #e8f5ee;
+      --white: #ffffff;
+      --shadow: 0 18px 50px rgba(10, 10, 10, 0.06);
+      --radius: 18px;
+      --max: 1120px;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
-
     body {
-      font-family: "IBM Plex Sans", system-ui, sans-serif;
+      font-family: "DM Sans", system-ui, -apple-system, sans-serif;
       background: var(--bg);
-      color: var(--fg);
+      color: var(--ink);
       line-height: 1.55;
-      min-height: 100vh;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
     }
-
+    img { max-width: 100%; display: block; }
     a { color: inherit; }
-
     .wrap {
-      width: min(880px, calc(100% - 2.5rem));
+      width: min(var(--max), calc(100% - 2.5rem));
       margin: 0 auto;
     }
 
-    header {
-      padding: 1.5rem 0 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 1rem;
-    }
-
-    .mark {
-      font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: 1.15rem;
-      letter-spacing: 0.02em;
-      font-weight: 600;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.65rem;
-    }
-
-    .mark img {
-      width: 28px;
-      height: 28px;
-      display: block;
-    }
-
-    nav {
-      display: flex;
-      gap: 1.25rem;
-      font-size: 0.9rem;
-      color: var(--muted);
-    }
-
-    nav a {
-      text-decoration: none;
-      border-bottom: 1px solid transparent;
-    }
-
-    nav a:hover { color: var(--fg); border-bottom-color: var(--line); }
-
-    .hero {
-      padding: 4.5rem 0 3.5rem;
+    /* Header */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--line);
     }
-
-    .eyebrow {
-      color: var(--accent);
-      text-transform: uppercase;
-      letter-spacing: 0.14em;
+    .topbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      min-height: 68px;
+    }
+    .brand {
+      display: flex;
+      flex-direction: column;
+      gap: 0.05rem;
+      text-decoration: none;
+    }
+    .brand-name {
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      font-size: 1rem;
+    }
+    .brand-city {
       font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-weight: 500;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 1.35rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+    nav a {
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+    nav a:hover { color: var(--ink); }
+    .nav-cta {
+      background: var(--ink);
+      color: var(--white) !important;
+      padding: 0.65rem 0.95rem;
+      border-radius: 999px;
+      font-size: 0.9rem;
+    }
+    .nav-cta:hover { background: var(--green-deep); color: var(--white) !important; }
+
+    /* Hero */
+    .hero {
+      padding: 4.5rem 0 3.5rem;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--green-soft);
+      color: var(--green-deep);
+      font-size: 0.78rem;
       font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.45rem 0.75rem;
+      border-radius: 999px;
       margin-bottom: 1.25rem;
     }
-
+    .eyebrow::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--green);
+    }
     h1 {
-      font-family: "Cormorant Garamond", Georgia, serif;
-      font-weight: 600;
-      font-size: clamp(2.6rem, 7.5vw, 4.6rem);
+      font-family: "Instrument Serif", Georgia, serif;
+      font-weight: 400;
+      font-size: clamp(2.8rem, 6vw, 4.4rem);
       line-height: 0.98;
-      letter-spacing: -0.02em;
-      max-width: 14ch;
+      letter-spacing: -0.03em;
+      margin-bottom: 1.1rem;
+      max-width: 11ch;
+    }
+    .lede {
+      color: var(--muted);
+      font-size: 1.12rem;
+      max-width: 34rem;
       margin-bottom: 1.75rem;
     }
-
-    .pitch {
-      max-width: 36rem;
-      font-size: clamp(1.05rem, 2.1vw, 1.2rem);
-      color: var(--muted);
-    }
-
-    .pitch p + p { margin-top: 0.9rem; }
-    .pitch .hit { color: var(--fg); }
-
+    .lede strong { color: var(--ink); font-weight: 600; }
     .actions {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.85rem;
-      margin-top: 2rem;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
     }
-
     .btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      padding: 0.85rem 1.2rem;
-      border: 1px solid var(--fg);
-      background: var(--fg);
-      color: var(--bg);
+      padding: 0.9rem 1.2rem;
+      border-radius: 999px;
       text-decoration: none;
-      font-size: 0.92rem;
-      font-weight: 500;
-    }
-
-    .btn.secondary {
-      background: transparent;
-      color: var(--fg);
-      border-color: var(--line);
-    }
-
-    .btn:hover { opacity: 0.9; }
-
-    section {
-      padding: 3.25rem 0;
-      border-bottom: 1px solid var(--line);
-    }
-
-    h2 {
-      font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: clamp(1.8rem, 4vw, 2.35rem);
       font-weight: 600;
-      margin-bottom: 1.25rem;
-      letter-spacing: -0.01em;
+      font-size: 0.95rem;
+      transition: transform 0.15s ease, background 0.15s ease, color 0.15s ease;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-primary {
+      background: var(--green);
+      color: var(--white);
+    }
+    .btn-primary:hover { background: var(--green-deep); }
+    .btn-secondary {
+      background: var(--bg);
+      color: var(--ink);
+      border: 1px solid var(--line);
+    }
+    .btn-secondary:hover { border-color: var(--ink); }
+    .trust {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.25rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    .trust span {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .trust span::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--green);
     }
 
-    .body-copy {
+    .hero-card {
+      background: var(--bg-soft);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 1.5rem;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-card::after {
+      content: "";
+      position: absolute;
+      inset: auto -20% -30% auto;
+      width: 220px;
+      height: 220px;
+      background: radial-gradient(circle, rgba(13,122,69,0.16), transparent 70%);
+      pointer-events: none;
+    }
+    .sig-frame {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 1.5rem 1.25rem;
+      min-height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .sig-frame img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+    .hero-card-meta {
+      margin-top: 1rem;
+      display: grid;
+      gap: 0.35rem;
+    }
+    .hero-card-meta strong {
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+    .hero-card-meta span {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    /* Sections */
+    section { padding: 4.25rem 0; }
+    .section-label {
+      color: var(--green);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+    h2 {
+      font-family: "Instrument Serif", Georgia, serif;
+      font-weight: 400;
+      font-size: clamp(2rem, 4vw, 3rem);
+      letter-spacing: -0.02em;
+      line-height: 1.05;
+      margin-bottom: 1rem;
+      max-width: 16ch;
+    }
+    .section-intro {
       color: var(--muted);
       max-width: 36rem;
+      margin-bottom: 2rem;
       font-size: 1.05rem;
     }
 
-    .body-copy p + p { margin-top: 0.95rem; }
-    .body-copy .hit { color: var(--fg); }
+    .band {
+      background: var(--bg-soft);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
 
-    .grid {
+    .story {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+      align-items: start;
+    }
+    .story p {
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+    .story p + p { margin-top: 1rem; }
+    .story .hit { color: var(--ink); font-weight: 600; }
+
+    .pillars {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 1rem;
-      margin-top: 1.75rem;
     }
-
-    .card {
-      background: var(--card);
+    .pillar {
+      background: var(--white);
       border: 1px solid var(--line);
+      border-radius: var(--radius);
       padding: 1.4rem 1.25rem;
-      min-height: 8.5rem;
+      min-height: 180px;
+      transition: border-color 0.15s ease, transform 0.15s ease;
     }
-
-    .card h3 {
-      font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: 1.5rem;
-      font-weight: 600;
-      margin-bottom: 0.4rem;
+    .pillar:hover {
+      border-color: var(--green);
+      transform: translateY(-2px);
     }
-
-    .card p {
-      color: var(--muted);
-      font-size: 0.95rem;
+    .pillar-num {
+      color: var(--green);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.85rem;
     }
+    .pillar h3 {
+      font-family: "Instrument Serif", Georgia, serif;
+      font-size: 1.7rem;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.55rem;
+    }
+    .pillar p { color: var(--muted); font-size: 0.98rem; }
 
-    .cta-box {
-      background: var(--card);
-      border: 1px solid var(--line);
+    .offer {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 1.25rem;
+    }
+    .offer-main {
+      background: var(--ink);
+      color: var(--white);
+      border-radius: 24px;
       padding: 2rem;
-      margin-top: 1.25rem;
     }
+    .offer-main h2 { color: var(--white); max-width: none; }
+    .offer-main p { color: rgba(255,255,255,0.78); max-width: 32rem; }
+    .offer-main .product {
+      margin-top: 1.5rem;
+      font-family: "Instrument Serif", Georgia, serif;
+      font-size: clamp(1.8rem, 3vw, 2.4rem);
+      line-height: 1.1;
+      color: #8fd9b0;
+    }
+    .offer-side {
+      display: grid;
+      gap: 1rem;
+    }
+    .offer-side article {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+    }
+    .offer-side h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.35rem;
+    }
+    .offer-side p { color: var(--muted); font-size: 0.95rem; }
 
-    .cta-box p { color: var(--muted); max-width: 34rem; }
-    .cta-box .actions { margin-top: 1.25rem; }
+    .faq {
+      display: grid;
+      gap: 0.85rem;
+      max-width: 760px;
+    }
+    details {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--white);
+      padding: 1rem 1.15rem;
+    }
+    summary {
+      cursor: pointer;
+      font-weight: 600;
+      list-style: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    details[open] summary { margin-bottom: 0.55rem; }
+    details p { color: var(--muted); }
+
+    .cta {
+      background:
+        radial-gradient(circle at 85% 20%, rgba(13,122,69,0.14), transparent 35%),
+        var(--bg-soft);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 2.25rem;
+    }
+    .cta h2 { max-width: 14ch; }
+    .cta p {
+      color: var(--muted);
+      max-width: 34rem;
+      margin-bottom: 1.4rem;
+    }
 
     footer {
-      padding: 2.5rem 0 3rem;
-      color: var(--muted);
-      font-size: 0.9rem;
+      border-top: 1px solid var(--line);
+      padding: 2rem 0 2.5rem;
+    }
+    .footer-inner {
       display: flex;
       justify-content: space-between;
       gap: 1rem;
       flex-wrap: wrap;
+      color: var(--muted);
+      font-size: 0.9rem;
     }
+    .footer-inner strong { color: var(--ink); font-weight: 700; }
+    .footer-links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .footer-links a { text-decoration: none; }
+    .footer-links a:hover { color: var(--green); }
 
-    footer .love { color: var(--fg); }
-
-    @media (max-width: 760px) {
-      .grid { grid-template-columns: 1fr; }
-      nav { display: none; }
-      .hero { padding-top: 3.25rem; }
+    @media (max-width: 900px) {
+      .hero-grid,
+      .story,
+      .offer,
+      .pillars { grid-template-columns: 1fr; }
+      nav .hide-sm { display: none; }
+      h1 { max-width: none; }
+      .hero { padding-top: 2.75rem; }
     }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <div class="mark">
-        <img src="assets/monogram.svg" alt="" width="28" height="28" />
-        The AI Agent Agent
-      </div>
-      <nav>
-        <a href="#how">How I work</a>
-        <a href="#contact">Get after it</a>
+  <a class="wrap" href="#main" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
+
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="/" aria-label="The AI Agent Agent home">
+        <span class="brand-name">The AI Agent Agent</span>
+        <span class="brand-city">Los Angeles</span>
+      </a>
+      <nav aria-label="Primary">
+        <a class="hide-sm" href="#about">About</a>
+        <a class="hide-sm" href="#how">How it works</a>
+        <a class="hide-sm" href="#faq">FAQ</a>
+        <a class="nav-cta" href="#contact">Book a session</a>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <section class="hero">
-        <p class="eyebrow">Los Angeles · theaiagentagent.com</p>
-        <h1>The AI Agent Agent</h1>
-        <div class="pitch">
-          <p class="hit">Everyone wants an agent in LA.</p>
-          <p>The best agent. The one who books the best gigs in town.</p>
-          <p>Now the word on the street is AI agents. Everything is moving fast.</p>
-          <p class="hit">What if you had someone who could get you up to speed and get you agentic?</p>
-          <p>That's where I come in.</p>
-        </div>
-        <div class="actions">
-          <a class="btn" href="#contact">Let's get after it</a>
-          <a class="btn secondary" href="#how">How I work</a>
-        </div>
-      </section>
-
-      <section>
-        <h2>It's just me</h2>
-        <div class="body-copy">
-          <p>I don't work for a big studio or a big agency.</p>
-          <p class="hit">I'm here to make AI your secret weapon.</p>
-          <p>I'm your full-service, results-driven agent: constantly looking for the best things you need, constantly serving the best results possible.</p>
-          <p>I want to make you the best version of yourself.</p>
-        </div>
-      </section>
-
-      <section id="how">
-        <h2>How I work</h2>
-        <div class="body-copy" style="margin-bottom: 1.5rem;">
-          <p class="hit">Results-driven agent.</p>
-          <p class="hit">One session. One change.</p>
-          <p>We pick the thing that matters. We run a session. We ship one real upgrade.</p>
-        </div>
-        <div class="grid">
-          <article class="card">
-            <h3>Results-driven</h3>
-            <p>Not strategy decks that never ship. Visible progress in the work that matters.</p>
-          </article>
-          <article class="card">
-            <h3>One session</h3>
-            <p>Focused. Fast. You bring the mess. We get after the highest-leverage move.</p>
-          </article>
-          <article class="card">
-            <h3>One change</h3>
-            <p>One real upgrade. An agent, a workflow, a system that makes the next hours easier.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="contact" style="border-bottom: none; padding-bottom: 1rem;">
-        <h2>Get excited. Get moving.</h2>
-        <div class="cta-box">
-          <p>I'm here to get you excited and get you moving. Tell me what you want AI to unlock for your work. Let's get after it.</p>
+  <main id="main">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">AI agents · Los Angeles</p>
+          <h1>The AI Agent Agent</h1>
+          <p class="lede">
+            Everyone wants an agent in LA. Now the word on the street is AI agents.
+            <strong>I make AI your secret weapon.</strong>
+            Results-driven. One session. One change.
+          </p>
           <div class="actions">
-            <a class="btn" href="https://www.linkedin.com/in/noaheweiss" target="_blank" rel="noopener">Message on LinkedIn</a>
-            <a class="btn secondary" href="mailto:?subject=The%20AI%20Agent%20Agent">Email</a>
+            <a class="btn btn-primary" href="#contact">Start a session</a>
+            <a class="btn btn-secondary" href="#how">See how it works</a>
+          </div>
+          <div class="trust" aria-label="Highlights">
+            <span>Full-service AI agent</span>
+            <span>Built for real workflows</span>
+            <span>Los Angeles based</span>
           </div>
         </div>
-      </section>
-    </main>
 
-    <footer>
-      <div class="love">I spread love. The garnish is there.</div>
-      <div>© 2026 The AI Agent Agent · theaiagentagent.com</div>
-    </footer>
-  </div>
+        <aside class="hero-card" aria-label="Brand signature">
+          <div class="sig-frame">
+            <img
+              src="assets/hand/hero-signature.jpg"
+              width="720"
+              height="260"
+              alt="Handwritten logo for The AI Agent Agent by Noah Weiss"
+            />
+          </div>
+          <div class="hero-card-meta">
+            <strong>Signed by the agent</strong>
+            <span>Real handwriting. Real brand. Not a stock mark.</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="band">
+      <div class="wrap">
+        <p class="section-label">About</p>
+        <div class="story">
+          <div>
+            <h2>Full-service. Just me.</h2>
+            <p class="section-intro" style="margin-bottom:0;">
+              Not a big studio. Not a big agency. One agent who gets you agentic and ships the change.
+            </p>
+          </div>
+          <div>
+            <p class="hit">I build and run AI agents that cut grunt work and raise the quality of real work.</p>
+            <p>
+              Operators and founders do not need another demo. They need someone who will pick the right work for an agent,
+              refuse the wrong work, and stay until the result is real.
+            </p>
+            <p>
+              That is the job. I am here to get you excited, get you moving, and make AI your secret weapon.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how">
+      <div class="wrap">
+        <p class="section-label">How it works</p>
+        <h2>One clear offer</h2>
+        <p class="section-intro">
+          No menu theater. No vague retainers as the headline. We pick one high-leverage change and ship it.
+        </p>
+        <div class="pillars">
+          <article class="pillar">
+            <p class="pillar-num">01</p>
+            <h3>Results-driven</h3>
+            <p>Not strategy decks that never ship. Visible progress in the workflow that matters.</p>
+          </article>
+          <article class="pillar">
+            <p class="pillar-num">02</p>
+            <h3>One session</h3>
+            <p>Focused and fast. You bring the mess. We take the highest-leverage move.</p>
+          </article>
+          <article class="pillar">
+            <p class="pillar-num">03</p>
+            <h3>One change</h3>
+            <p>One real upgrade: an agent, a workflow, or a system that makes the next hours easier.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="offer" aria-labelledby="offer-title">
+      <div class="wrap offer">
+        <div class="offer-main">
+          <p class="section-label" style="color:#8fd9b0;">The product</p>
+          <h2 id="offer-title">AI agents built for operators</h2>
+          <p>
+            I help founders, operators, and service teams turn messy processes into working AI agents and workflows.
+            Practical systems. Clear handoffs. Real outcomes.
+          </p>
+          <p class="product">Results-driven agent.<br />One session. One change.</p>
+        </div>
+        <div class="offer-side">
+          <article>
+            <h3>Who it is for</h3>
+            <p>AI-curious operators who want agents inside real work, not people building foundation models.</p>
+          </article>
+          <article>
+            <h3>What you leave with</h3>
+            <p>A shipped upgrade, a clear run path, and a next move if another session makes sense.</p>
+          </article>
+          <article>
+            <h3>Where I work</h3>
+            <p>Los Angeles based. Remote sessions available. Built for speed and judgment.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="wrap">
+        <p class="section-label">FAQ</p>
+        <h2>Straight answers</h2>
+        <div class="faq">
+          <details>
+            <summary>What is The AI Agent Agent?</summary>
+            <p>
+              A full-service AI agent practice run by Noah Weiss. I design and build results-driven AI agents and workflows
+              for operators and founders.
+            </p>
+          </details>
+          <details>
+            <summary>What does one session include?</summary>
+            <p>
+              One focused working session aimed at one high-leverage change. We define the target, build or configure the agent
+              or workflow, and leave you with something usable.
+            </p>
+          </details>
+          <details>
+            <summary>Do you only work in Los Angeles?</summary>
+            <p>
+              I am based in Los Angeles. Sessions can be remote. The brand is rooted in LA agent energy with global reach.
+            </p>
+          </details>
+          <details>
+            <summary>Is this a software product or a service?</summary>
+            <p>
+              Service first. I build the agents and systems you need. Product surfaces may come later. The offer is clear:
+              results-driven work, one session, one change.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="cta">
+          <p class="section-label">Contact</p>
+          <h2>Let's get after it</h2>
+          <p>
+            Tell me the process that is stealing hours. If an agent should own it, we book a session and ship one real change.
+          </p>
+          <div class="actions">
+            <a class="btn btn-primary" href="https://www.linkedin.com/in/noaheweiss" target="_blank" rel="noopener">Message on LinkedIn</a>
+            <a class="btn btn-secondary" href="mailto:hello@theaiagentagent.com?subject=Session%20with%20The%20AI%20Agent%20Agent">Email Noah</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <div>
+        <strong>The AI Agent Agent</strong><br />
+        Los Angeles · theaiagentagent.com
+      </div>
+      <div class="footer-links">
+        <a href="#how">How it works</a>
+        <a href="#faq">FAQ</a>
+        <a href="https://www.linkedin.com/in/noaheweiss" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/noah-weiss/the-ai-agent-agent" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
