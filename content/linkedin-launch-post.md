@@ -18,18 +18,12 @@ I don't work for a big studio or a big agency.
 It's just me.
 
 I'm here to make AI your secret weapon.
-Full-service agent.
-Constantly looking for the best things you need.
-Constantly serving the best results possible.
+Results-driven agent.
+One session. One change.
 
-I want to make you the best version of yourself.
+We pick the thing that matters.
+We ship one real upgrade.
 
-How I work:
-• Concierge access
-• One fee
-• Unlimited access
-
-My friends will tell you I am always quick to respond.
 I'm here to get you excited and get you moving.
 
 Let's get after it.

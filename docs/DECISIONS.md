@@ -17,11 +17,9 @@ Not a product menu. Concierge relationship.
 LA talent agent. Everyone wants the best agent. Word on the street is AI agents. Noah gets you agentic.
 
 ### Offer structure
-- Concierge access
-- One fee
-- Unlimited access
+**Results-driven agent. One session. One change.**
 
-No Bronze/Silver/Gold ladder. Monthly fee number TBD by Noah.
+No Bronze/Silver/Gold ladder. Session fee number TBD by Noah.
 
 ### Site
 One page on theaiagentagent.com. Sounds like Noah speaking. Editorial dark page.

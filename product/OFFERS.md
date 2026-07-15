@@ -1,41 +1,44 @@
 # Offers
 
-## The model
+## The product
 
-Not a menu of 12 packages.
-One relationship.
+**Results-driven agent.**  
+**One session. One change.**
 
-**Concierge access · One fee · Unlimited access**
+Not a buffet. Not a 12-week transformation theater.
 
-You get me. I get you agentic. I stay in it.
+You bring the work. We pick one change that moves results. We run a session. We ship that change.
 
-## What unlimited means
+## What a session is
 
-- Fast responses (friends already know this about me)
-- Build and refine agents/workflows as needs show up
-- Ongoing judgment calls: what should be agentic vs human
-- No "that wasn't in the SOW" energy on reasonable work inside the relationship
+- Clear target: one workflow, one agent, one painful process
+- Focused build or setup that produces a visible result
+- You leave with something working, not a strategy PDF
 
-What unlimited does **not** mean: free custom software for your entire company with no scope conversation. Full-service still means adult judgment.
+## What "one change" means
 
-## One fee (draft)
+One real upgrade:
+- an agent that handles a job you used to do by hand
+- a workflow that removes a daily grind
+- a system that makes the next ten hours easier than the last ten
 
-Lock a simple monthly number after first conversations.
-Working posture:
+If you need more, we book another session. Or we talk about ongoing access. No fake unlimited promises that hide fuzzy scope.
 
-- **Monthly concierge retainer** as the core product
-- Optional **kickoff / onboarding** if the first month needs a hard lift
-- No fake tier ladder (Bronze/Silver/Gold)
+## How I show up
 
-Do not publish a number until Noah picks one.
+Full-service agent energy. Fast. Hands-on. LA agent posture: looking for the best next move for you, then executing it.
+
+## Pricing (draft)
+
+**One session. One change.** Fixed fee.  
+Number locked by Noah after first real conversations. Do not invent a public price yet.
+
+Optional later:
+- multi-session package
+- retainer for people who want ongoing agent work after the first win
 
 ## How someone starts
 
-1. Tell me what you're trying to become better at, or what is drowning you
-2. I tell you if I'm the right agent
-3. One fee. Concierge access. We get after it.
-
-## Proof
-
-No fake case studies.
-Show the work. Show the speed. Show the results.
+1. Tell me the result you want
+2. We pick the one change
+3. One session. Ship it.

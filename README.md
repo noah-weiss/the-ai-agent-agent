@@ -26,11 +26,11 @@ ai-agent-agent/
 - [x] Project scaffold
 - [x] Founding thesis (LA agent metaphor, Noah raw voice)
 - [x] One-page site (`site/index.html`)
-- [x] Offer model: concierge / one fee / unlimited
+- [x] Offer model: results-driven / one session / one change
 - [x] Launch post draft (`content/linkedin-launch-post.md`)
 - [x] Domain owned: theaiagentagent.com
 - [x] GitHub + Pages deploy
-- [ ] One fee number locked
+- [ ] Session fee number locked
 - [ ] DNS pointed at GitHub Pages
 - [ ] Public site live on theaiagentagent.com
 - [ ] LinkedIn launch posted

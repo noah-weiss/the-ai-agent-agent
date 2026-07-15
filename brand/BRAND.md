@@ -8,15 +8,20 @@ theaiagentagent.com
 
 ## Core metaphor
 LA talent agent, applied to AI.
-Everyone wants the best agent. The word on the street is AI agents. Noah is that guy for getting you agentic.
+Everyone wants the best agent. The word on the street is AI agents. Noah gets you agentic.
+
+## Product line
+**Results-driven agent.**  
+**One session. One change.**
 
 ## Voice
 Noah's spoken energy, cleaned for the page:
 - Direct
 - Warm
 - Competitive without posing
-- Service-first ("full-service agent")
+- Service-first
 - Motion: get excited, get moving, get after it
+- Results over theater
 
 Short lines. Real talk. No corporate AI soup.
 
@@ -31,8 +36,8 @@ Short lines. Real talk. No corporate AI soup.
 - Everyone wants an agent in LA.
 - Now the word on the street is AI agents.
 - I make AI your secret weapon.
-- Full-service agent.
-- Concierge access. One fee. Unlimited access.
+- Results-driven agent.
+- One session. One change.
 - Let's get after it.
 
 ## Do not say
@@ -41,6 +46,7 @@ Short lines. Real talk. No corporate AI soup.
 - AI-powered (unless forced)
 - big agency cosplay
 - baseless claims
+- unlimited as a vague headline (scope lives in the session model)
 
 ## Positioning sentence
-I'm The AI Agent Agent: full-service AI help, one fee, unlimited access. I make AI your secret weapon.
+I'm The AI Agent Agent: results-driven. One session. One change. I make AI your secret weapon.

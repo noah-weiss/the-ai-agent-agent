@@ -12,27 +12,24 @@ What if you had someone who could get you up to speed and get you agentic?
 
 That's where I come in.
 
-## Name line
-Introducing The AI Agent Agent.
+## Name
+The AI Agent Agent
 
 ## Body
 I don't work for a big studio or a big agency.
 It's just me.
 
 I'm here to make AI your secret weapon.
-I'm your full-service agent: constantly looking for the best things you need, constantly serving the best results possible.
-I want to make you the best version of yourself.
+I'm your full-service, results-driven agent.
 
 ## How I work
-- Concierge access
-- One fee
-- Unlimited access
+Results-driven agent.
+One session. One change.
+
+We pick the thing that matters.
+We run a session.
+We ship one real upgrade.
 
 ## Closer
-My friends will tell you I am always quick to respond.
 I'm here to get you excited and get you moving.
-
 Let's get after it.
-
-## CTA
-Message me. Tell me what you want AI to do for your work.

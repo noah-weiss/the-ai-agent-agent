@@ -6,7 +6,7 @@ Operator: Noah Weiss
 
 ## One line
 
-I'm your full-service agent for AI. I make AI your secret weapon.
+Results-driven agent. One session. One change. I make AI your secret weapon.
 
 ## The pitch
 
@@ -24,34 +24,23 @@ I don't work for a big studio or a big agency.
 It's just me.
 
 I'm here to make AI your secret weapon.
-I'm your full-service agent: constantly looking for the best things you need, constantly serving the best results possible.
+I'm your full-service, results-driven agent: constantly looking for the best things you need, constantly serving the best results possible.
 I want to make you the best version of yourself.
 
 ## How I work
 
-- **Concierge access**
-- **One fee**
-- **Unlimited access**
+**Results-driven agent.**  
+**One session. One change.**
 
-My friends will tell you I am always quick to respond.
-I'm here to get you excited and get you moving.
+We pick the thing that matters. We run a session. We ship one real upgrade.
 
-Let's get after it.
+No vague retainers as the headline. No menu theater. Motion and results.
 
 ## Who it is for
 
-Operators, founders, and professionals who feel the AI wave and want a real agent in their corner. Not another tool stack. Not a 40-person "AI practice." One person who picks up, builds, and stays in it with you.
+Operators, founders, and professionals who feel the AI wave and want a real agent in their corner. Not another tool stack. Not a 40-person "AI practice." One person who picks up, builds, and gets you a result.
 
-Not for: people who want a free ChatGPT tutorial. Not for pure research lab work.
-
-## What "full-service agent" means in practice
-
-- Figure out where AI actually helps your work
-- Build the agents and workflows that matter
-- Keep them useful after the first win
-- Stay available. Concierge. No ticket queue theater.
-
-Hospitality is still the standard. Attention is the floor. The excess is what earns trust.
+Not for: free ChatGPT tutorials. Not for pure research lab work.
 
 ## Brand rules
 
@@ -66,13 +55,13 @@ Hospitality is still the standard. Attention is the floor. The excess is what ea
 
 ## Boardroom test
 
-> "Everyone wants a great agent. In this market, that means AI. I'm The AI Agent Agent: full-service, one fee, unlimited access. I make AI your secret weapon."
+> "Everyone wants a great agent. In this market, that means AI. I'm The AI Agent Agent: results-driven. One session. One change. I make AI your secret weapon."
 
 ## First ship targets
 
 1. Name + domain (done: theaiagentagent.com)
-2. Site that sounds like Noah, not SaaS
-3. One fee structure locked
+2. Site that sounds like Noah
+3. Session fee locked
 4. LinkedIn launch post
 5. Intake path
 6. First clients from real relationships
