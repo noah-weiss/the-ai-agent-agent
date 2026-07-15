@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brand Board · The AI Agent Agent</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0c0c0c;
+      --fg: #f4f1ea;
+      --muted: #a39e94;
+      --line: #2a2a2a;
+      --accent: #c4a574;
+      --card: #141414;
+      --paper: #f4f1ea;
+      --ink: #0c0c0c;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "IBM Plex Sans", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.5;
+    }
+    .wrap { width: min(1100px, calc(100% - 2rem)); margin: 0 auto; padding: 2.5rem 0 4rem; }
+    h1 {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: clamp(2.4rem, 5vw, 3.4rem);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.35rem;
+    }
+    .sub { color: var(--muted); margin-bottom: 2.5rem; }
+    h2 {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin: 2.5rem 0 1rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--line);
+    }
+    .grid { display: grid; gap: 1rem; }
+    .grid-2 { grid-template-columns: 1fr 1fr; }
+    .grid-3 { grid-template-columns: repeat(3, 1fr); }
+    .grid-4 { grid-template-columns: repeat(4, 1fr); }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      padding: 1.25rem;
+    }
+    .card h3 {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+    .card p, .card li { color: var(--muted); font-size: 0.95rem; }
+    .card ul { padding-left: 1.1rem; }
+    .card li + li { margin-top: 0.3rem; }
+    .swatch {
+      aspect-ratio: 1.4 / 1;
+      border: 1px solid var(--line);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 0.75rem;
+      font-size: 0.8rem;
+    }
+    .swatch strong { color: inherit; display: block; margin-bottom: 0.15rem; }
+    .logo-cell {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 180px;
+      border: 1px solid var(--line);
+      background: var(--card);
+      padding: 1.5rem;
+    }
+    .logo-cell.light { background: var(--paper); }
+    .logo-cell img { max-width: 100%; height: auto; }
+    .mono { width: 112px; height: 112px; }
+    .type-sample {
+      border: 1px solid var(--line);
+      background: var(--card);
+      padding: 1.5rem;
+    }
+    .type-sample .display {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 2.8rem;
+      line-height: 0.98;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.75rem;
+    }
+    .type-sample .body { color: var(--muted); max-width: 36rem; }
+    .eyebrow {
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 0.72rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+    .lines p {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 1.45rem;
+      margin-bottom: 0.55rem;
+    }
+    .do-dont {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .do { border-left: 2px solid var(--accent); }
+    .dont { border-left: 2px solid #6a3a3a; }
+    @media (max-width: 800px) {
+      .grid-2, .grid-3, .grid-4, .do-dont { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <p class="eyebrow">Brand board v1</p>
+    <h1>The AI Agent Agent</h1>
+    <p class="sub">LA talent agent for AI · Results-driven · One session · One change · theaiagentagent.com</p>
+
+    <h2>Logo</h2>
+    <div class="grid grid-3">
+      <div>
+        <p class="eyebrow">Monogram dark</p>
+        <div class="logo-cell"><img class="mono" src="logo/monogram-dark.svg" alt="Monogram dark" /></div>
+      </div>
+      <div>
+        <p class="eyebrow">Monogram light</p>
+        <div class="logo-cell light"><img class="mono" src="logo/monogram-light.svg" alt="Monogram light" /></div>
+      </div>
+      <div>
+        <p class="eyebrow">Lockup</p>
+        <div class="logo-cell"><img src="logo/lockup-dark.svg" alt="Lockup" style="width:100%; max-width:340px;" /></div>
+      </div>
+    </div>
+    <p style="color:var(--muted); margin-top:0.85rem; font-size:0.9rem;">AA = Agent Agent. Two strokes, one gold: recursive, not cute. Plaque frame = agency energy without Hollywood cosplay.</p>
+
+    <h2>Color</h2>
+    <div class="grid grid-4">
+      <div class="swatch" style="background:#0C0C0C;color:#F4F1EA;"><strong>BG</strong>#0C0C0C</div>
+      <div class="swatch" style="background:#141414;color:#F4F1EA;"><strong>Elevated</strong>#141414</div>
+      <div class="swatch" style="background:#F4F1EA;color:#0C0C0C;"><strong>FG / Paper</strong>#F4F1EA</div>
+      <div class="swatch" style="background:#A39E94;color:#0C0C0C;"><strong>Muted</strong>#A39E94</div>
+      <div class="swatch" style="background:#2A2A2A;color:#F4F1EA;"><strong>Line</strong>#2A2A2A</div>
+      <div class="swatch" style="background:#C4A574;color:#0C0C0C;"><strong>Accent gold</strong>#C4A574</div>
+      <div class="swatch" style="background:#8A734F;color:#F4F1EA;"><strong>Soft gold</strong>#8A734F</div>
+      <div class="swatch" style="background:#0C0C0C;color:#C4A574; border-color:#C4A574;"><strong>Gold on ink</strong>garnish only</div>
+    </div>
+
+    <h2>Type</h2>
+    <div class="type-sample">
+      <p class="eyebrow">Display · Cormorant Garamond</p>
+      <p class="display">Everyone wants an agent in LA.</p>
+      <p class="body">Body · IBM Plex Sans. Results-driven agent. One session. One change. I make AI your secret weapon. Short lines. Real talk. No corporate AI soup.</p>
+    </div>
+
+    <h2>Voice lines</h2>
+    <div class="card lines">
+      <p>Everyone wants an agent in LA.</p>
+      <p>Now the word on the street is AI agents.</p>
+      <p>I make AI your secret weapon.</p>
+      <p>Results-driven agent. One session. One change.</p>
+      <p>Let's get after it.</p>
+    </div>
+
+    <h2>System</h2>
+    <div class="grid grid-3">
+      <div class="card">
+        <h3>Metaphor</h3>
+        <p>LA talent agent applied to AI. Best gigs. Full-service. Just me, not a big agency.</p>
+      </div>
+      <div class="card">
+        <h3>Product</h3>
+        <p>Results-driven. One session. One change. Ship one real upgrade, then decide on the next.</p>
+      </div>
+      <div class="card">
+        <h3>Feeling</h3>
+        <p>Moody editorial. Hospitality under the hood. Fast. Competitive without posing. The garnish is there.</p>
+      </div>
+    </div>
+
+    <h2>Do / Don't</h2>
+    <div class="do-dont">
+      <div class="card do">
+        <h3>Do</h3>
+        <ul>
+          <li>Dark fields, warm paper text</li>
+          <li>Gold as garnish</li>
+          <li>Large serif headlines</li>
+          <li>Short spoken lines</li>
+          <li>Show the change, not the deck</li>
+        </ul>
+      </div>
+      <div class="card dont">
+        <h3>Don't</h3>
+        <ul>
+          <li>Neon AI purple / cyan</li>
+          <li>Robot mascots</li>
+          <li>Fake case studies</li>
+          <li>Em dashes, "authentic," seamless</li>
+          <li>Cheerful startup pastels</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>Files</h2>
+    <div class="card">
+      <ul>
+        <li><code>brand/DESIGN.md</code> — tokens</li>
+        <li><code>brand/MESSAGING.md</code> — voice kit</li>
+        <li><code>brand/logo/</code> — monogram, wordmark, lockup, favicon</li>
+        <li><code>brand/assets/og-image.svg</code> — social share</li>
+        <li><code>brand/assets/linkedin-banner.svg</code> — banner</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

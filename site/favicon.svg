@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="favicon">
+  <rect width="32" height="32" fill="#0C0C0C"/>
+  <g fill="none" stroke="#F4F1EA" stroke-width="1.6" stroke-linecap="square" transform="translate(1,1) scale(0.23)">
+    <path d="M28 96 L48 32 L68 96"/>
+    <path d="M36 72 H60"/>
+    <path d="M60 96 L80 32 L100 96" stroke="#C4A574"/>
+    <path d="M68 72 H92" stroke="#C4A574"/>
+  </g>
+</svg>

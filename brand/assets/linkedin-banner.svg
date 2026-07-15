@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1584 396" role="img" aria-label="LinkedIn banner">
+  <title>LinkedIn banner</title>
+  <rect width="1584" height="396" fill="#0C0C0C"/>
+  <line x1="0" y1="396" x2="1584" y2="396" stroke="#2A2A2A" stroke-width="2"/>
+  <!-- thin gold rule -->
+  <line x1="96" y1="300" x2="280" y2="300" stroke="#C4A574" stroke-width="2"/>
+  <!-- monogram left -->
+  <g transform="translate(96,90) scale(1.5)">
+    <g fill="none" stroke="#F4F1EA" stroke-width="4" stroke-linecap="square">
+      <path d="M28 96 L48 32 L68 96"/>
+      <path d="M36 72 H60"/>
+      <path d="M60 96 L80 32 L100 96" stroke="#C4A574"/>
+      <path d="M68 72 H92" stroke="#C4A574"/>
+    </g>
+  </g>
+  <text x="340" y="170" font-family="Georgia, 'Times New Roman', serif" font-size="56" font-weight="600" fill="#F4F1EA">The AI Agent Agent</text>
+  <text x="340" y="230" font-family="system-ui, -apple-system, sans-serif" font-size="26" fill="#A39E94">Results-driven agent. One session. One change.</text>
+  <text x="340" y="290" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#C4A574">I make AI your secret weapon.</text>
+  <text x="1200" y="290" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#A39E94" letter-spacing="1.5">THEAIAGENTAGENT.COM</text>
+</svg>

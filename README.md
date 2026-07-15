@@ -21,6 +21,11 @@ ai-agent-agent/
 
 **theaiagentagent.com** (GoDaddy, registered 2026-07-15). See `docs/DOMAIN.md`.
 
+## Brand
+
+Open the board: `brand/board.html`  
+Tokens: `brand/DESIGN.md` · Messaging: `brand/MESSAGING.md` · Logos: `brand/logo/`
+
 ## Status
 
 - [x] Project scaffold
@@ -30,6 +35,7 @@ ai-agent-agent/
 - [x] Launch post draft (`content/linkedin-launch-post.md`)
 - [x] Domain owned: theaiagentagent.com
 - [x] GitHub + Pages deploy
+- [x] Brand system v1 (logo, tokens, messaging, board, OG, banner)
 - [ ] Session fee number locked
 - [ ] DNS pointed at GitHub Pages
 - [ ] Public site live on theaiagentagent.com
@@ -38,4 +44,4 @@ ai-agent-agent/
 
 ## Work from here
 
-Open `FOUNDING.md` first. Everything else is downstream.
+Open `FOUNDING.md` first. Brand board: `brand/board.html`.

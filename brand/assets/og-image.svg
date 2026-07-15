@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="The AI Agent Agent Open Graph image">
+  <title>OG image</title>
+  <rect width="1200" height="630" fill="#0C0C0C"/>
+  <rect x="48" y="48" width="1104" height="534" fill="none" stroke="#2A2A2A" stroke-width="1"/>
+  <rect x="64" y="64" width="1072" height="502" fill="none" stroke="#C4A574" stroke-width="1" opacity="0.55"/>
+  <!-- monogram -->
+  <g transform="translate(120,170) scale(1.6)">
+    <g fill="none" stroke="#F4F1EA" stroke-width="4" stroke-linecap="square">
+      <path d="M28 96 L48 32 L68 96"/>
+      <path d="M36 72 H60"/>
+      <path d="M60 96 L80 32 L100 96" stroke="#C4A574"/>
+      <path d="M68 72 H92" stroke="#C4A574"/>
+    </g>
+  </g>
+  <text x="380" y="250" font-family="Georgia, 'Times New Roman', serif" font-size="64" font-weight="600" fill="#F4F1EA">The AI Agent Agent</text>
+  <text x="380" y="320" font-family="system-ui, -apple-system, sans-serif" font-size="28" fill="#A39E94">Results-driven agent. One session. One change.</text>
+  <text x="380" y="390" font-family="system-ui, -apple-system, sans-serif" font-size="24" fill="#C4A574">I make AI your secret weapon.</text>
+  <text x="380" y="500" font-family="system-ui, -apple-system, sans-serif" font-size="20" fill="#A39E94" letter-spacing="2">THEAIAGENTAGENT.COM</text>
+</svg>

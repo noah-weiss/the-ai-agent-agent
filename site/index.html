@@ -13,6 +13,9 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="The AI Agent Agent" />
   <meta name="twitter:description" content="Results-driven agent. One session. One change." />
+  <meta property="og:image" content="https://theaiagentagent.com/assets/og-image.svg" />
+  <meta name="twitter:image" content="https://theaiagentagent.com/assets/og-image.svg" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -57,6 +60,15 @@
       font-size: 1.15rem;
       letter-spacing: 0.02em;
       font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.65rem;
+    }
+
+    .mark img {
+      width: 28px;
+      height: 28px;
+      display: block;
     }
 
     nav {
@@ -214,7 +226,10 @@
 <body>
   <div class="wrap">
     <header>
-      <div class="mark">The AI Agent Agent</div>
+      <div class="mark">
+        <img src="assets/monogram.svg" alt="" width="28" height="28" />
+        The AI Agent Agent
+      </div>
       <nav>
         <a href="#how">How I work</a>
         <a href="#contact">Get after it</a>
