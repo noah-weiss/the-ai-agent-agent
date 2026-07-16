@@ -5,356 +5,425 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#0b6b3a">
   <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="description" content="Noah Weiss is The AI Agent Agent. Personal AI Concierge. Go from AI Zero to AI Hero in one session.">
+  <link rel="canonical" href="https://theaiagentagent.com/">
+  <meta property="og:title" content="The AI Agent Agent">
+  <meta property="og:description" content="I become your agent for all things AI. Your AI Concierge.">
+  <meta property="og:url" content="https://theaiagentagent.com/">
+  <meta property="og:type" content="website">
   <title>The AI Agent Agent</title>
   <style>
     :root {
       --green: #0b6b3a;
-      --green-2: #08522c;
-      --pad-x: clamp(18px, 5vw, 40px);
-      --pad-y: clamp(16px, 3.5vw, 28px);
+      --green-deep: #094d2c;
+      --ink: #ffffff;
+      --muted: rgba(255, 255, 255, 0.72);
+      --line: rgba(255, 255, 255, 0.16);
+      --pad: clamp(1.1rem, 4.2vw, 2.5rem);
+      --max: 1120px;
+      --ease: cubic-bezier(0.22, 1, 0.36, 1);
     }
 
-    * { box-sizing: border-box; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     html {
       -webkit-text-size-adjust: 100%;
-      text-size-adjust: 100%;
+      scroll-behavior: smooth;
     }
 
     body {
-      margin: 0;
-      padding: 0;
       background: var(--green);
-      color: #fff;
+      color: var(--ink);
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      line-height: 1.5;
       min-height: 100vh;
       min-height: 100dvh;
       overflow-x: hidden;
       -webkit-font-smoothing: antialiased;
     }
 
-    .page {
-      width: 100%;
-      max-width: 100vw;
-      min-height: 100vh;
-      min-height: 100dvh;
-      display: flex;
-      flex-direction: column;
-      padding:
-        max(var(--pad-y), env(safe-area-inset-top))
-        max(var(--pad-x), env(safe-area-inset-right))
-        max(32px, env(safe-area-inset-bottom))
-        max(var(--pad-x), env(safe-area-inset-left));
+    a { color: inherit; }
+
+    .shell {
+      width: min(var(--max), 100%);
+      margin: 0 auto;
+      padding-left: max(var(--pad), env(safe-area-inset-left));
+      padding-right: max(var(--pad), env(safe-area-inset-right));
     }
 
-    .topbar {
-      flex: 0 0 auto;
-      margin-bottom: 20px;
+    /* Header */
+    .site-header {
+      padding-top: max(1rem, env(safe-area-inset-top));
+      padding-bottom: 0.75rem;
     }
 
-    .topbar .name {
-      display: inline-flex;
-      align-items: center;
-      cursor: pointer;
+    .logo-link {
+      display: inline-block;
+      max-width: 100%;
       text-decoration: none;
-      color: inherit;
       -webkit-tap-highlight-color: transparent;
     }
 
-    .topbar .logo-img {
+    .logo-link img {
+      display: block;
+      width: min(17rem, 82vw);
       height: auto;
-      width: min(280px, 78vw);
-      max-height: 96px;
+      max-height: 5.5rem;
       object-fit: contain;
       object-position: left center;
-      display: block;
     }
 
-    .main {
-      flex: 1 1 auto;
+    /* Layout */
+    .layout {
+      display: grid;
+      gap: 1.75rem;
+      padding-bottom: max(2rem, env(safe-area-inset-bottom));
+      min-height: calc(100dvh - 7.5rem);
+    }
+
+    /* Nav */
+    .nav {
       display: flex;
       flex-direction: column;
-      gap: 22px;
-      width: 100%;
-      min-width: 0;
-    }
-
-    .nav {
-      font-family: Georgia, "Times New Roman", Times, serif;
-      font-size: clamp(34px, 9.5vw, 48px);
-      line-height: 1.08;
-      font-weight: 400;
-      letter-spacing: -0.02em;
-      flex: 0 0 auto;
+      gap: 0.15rem;
     }
 
     .nav button {
-      display: block;
-      width: 100%;
-      text-align: left;
-      background: none;
+      appearance: none;
       border: 0;
-      padding: 10px 0;
-      margin: 0;
-      color: inherit;
-      font: inherit;
-      letter-spacing: inherit;
+      background: transparent;
+      color: rgba(255, 255, 255, 0.55);
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: clamp(2rem, 9vw, 2.75rem);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      text-align: left;
+      padding: 0.55rem 0;
+      min-height: 3rem;
       cursor: pointer;
+      transition: color 0.15s var(--ease);
       -webkit-tap-highlight-color: transparent;
-      user-select: none;
-      min-height: 48px;
     }
 
-    .nav button:active {
-      opacity: 0.75;
-    }
-
+    .nav button:active { color: #fff; }
     .nav button.active {
+      color: #fff;
       text-decoration: underline;
-      text-underline-offset: 0.14em;
+      text-underline-offset: 0.16em;
       text-decoration-thickness: 1.5px;
     }
 
-    .who {
-      flex: 1 1 auto;
+    /* Panel */
+    .panel {
+      background: rgba(0, 0, 0, 0.14);
+      border: 1px solid var(--line);
+      border-radius: 1rem;
+      padding: 1.15rem 1.1rem 1.25rem;
       width: 100%;
-      max-width: 520px;
-      font-size: 16px;
-      line-height: 1.55;
-      opacity: 0.96;
-      min-width: 0;
-      /* card feel on mobile so body is readable */
-      background: rgba(0, 0, 0, 0.12);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      border-radius: 14px;
-      padding: 18px 16px 20px;
+      max-width: 36rem;
     }
 
-    .who strong {
+    .panel h1 {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 0.78rem;
       font-weight: 600;
-      display: block;
-      margin-bottom: 8px;
-      font-size: 18px;
-      letter-spacing: 0.01em;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      opacity: 0.7;
+      margin-bottom: 0.85rem;
     }
 
-    .who .subhead {
-      margin-top: 14px;
-      font-size: 16px;
+    .panel h2 {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 1.25rem;
+      font-weight: 400;
+      line-height: 1.25;
+      margin: 1rem 0 0.45rem;
     }
 
-    .who p {
-      margin: 0 0 10px;
+    .panel h2:first-of-type { margin-top: 0.15rem; }
+
+    .panel p {
+      font-size: 1.02rem;
+      line-height: 1.55;
+      color: rgba(255, 255, 255, 0.92);
+      margin: 0 0 0.65rem;
     }
 
-    .who p:last-child {
-      margin-bottom: 0;
-    }
+    .panel p:last-child { margin-bottom: 0; }
 
-    .who a {
+    .panel a {
       color: #fff;
       text-decoration: underline;
-      text-underline-offset: 2px;
-      word-break: break-word;
+      text-underline-offset: 0.15em;
       overflow-wrap: anywhere;
     }
 
-    /* Tablet+ */
-    @media (min-width: 700px) {
-      .topbar {
-        margin-bottom: 28px;
-      }
-
-      .topbar .logo-img {
-        width: min(420px, 50vw);
-        max-height: 120px;
-      }
-
-      .nav {
-        font-size: clamp(44px, 7vw, 60px);
-      }
-
-      .who {
-        font-size: 17px;
-        padding: 22px 20px;
-      }
+    /* Testimonials */
+    .quotes {
+      display: flex;
+      flex-direction: column;
+      gap: 1.15rem;
     }
 
-    /* Desktop: original agency composition */
+    .quote q {
+      display: block;
+      quotes: "“" "”";
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 1.08rem;
+      line-height: 1.45;
+      font-style: italic;
+      margin-bottom: 0.45rem;
+    }
+
+    .quote q::before { content: open-quote; }
+    .quote q::after { content: close-quote; }
+
+    .quote .by {
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-style: normal;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .panel .hint {
+      margin-top: 1rem;
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    /* Footer */
+    .site-footer {
+      margin-top: 1.5rem;
+      padding-bottom: 0.25rem;
+      font-size: 0.75rem;
+      letter-spacing: 0.02em;
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    /* Desktop */
     @media (min-width: 900px) {
       body {
         overflow: hidden;
         height: 100vh;
       }
 
-      .page {
-        height: 100vh;
-        height: 100dvh;
-        padding: 28px 40px 48px;
-        position: relative;
-        display: block;
+      .site-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 20;
+        padding: 1.75rem 0 0;
+        pointer-events: none;
       }
 
-      .topbar {
-        margin-bottom: 0;
-      }
+      .site-header .shell { pointer-events: none; }
+      .logo-link { pointer-events: auto; }
 
-      .topbar .logo-img {
+      .logo-link img {
         width: auto;
-        height: 140px;
+        height: 8.5rem;
         max-height: none;
-        max-width: min(560px, 55vw);
+        max-width: min(34rem, 52vw);
       }
 
-      .main {
+      .layout {
+        min-height: 100vh;
+        min-height: 100dvh;
         display: block;
+        position: relative;
+        padding: 0;
       }
 
       .nav {
-        position: absolute;
-        left: 40px;
-        top: 250px;
-        font-size: 68px;
-        line-height: 1.0;
-        width: auto;
+        position: fixed;
+        left: max(2.5rem, env(safe-area-inset-left));
+        top: 16.5rem;
+        gap: 0;
+        z-index: 10;
       }
 
       .nav button {
-        width: auto;
-        padding: 2px 0;
+        font-size: 4.1rem;
+        line-height: 1;
+        padding: 0.12rem 0;
         min-height: 0;
+        width: auto;
       }
 
-      .who {
-        position: absolute;
-        right: 40px;
-        bottom: 48px;
-        max-width: 480px;
-        font-size: 18px;
+      .panel {
+        position: fixed;
+        right: max(2.5rem, env(safe-area-inset-right));
+        bottom: 4.25rem;
+        width: min(28rem, 38vw);
+        max-width: none;
         background: transparent;
         border: 0;
         border-radius: 0;
         padding: 0;
       }
 
-      .who strong {
-        font-size: 22px;
+      .panel h1 {
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
       }
 
-      .who .subhead {
-        font-size: 18px;
+      .panel h2 { font-size: 1.35rem; }
+      .panel p { font-size: 1.08rem; }
+      .quote q { font-size: 1.15rem; }
+
+      .site-footer {
+        position: fixed;
+        left: max(2.5rem, env(safe-area-inset-left));
+        bottom: 1.25rem;
+        margin: 0;
+        z-index: 10;
       }
     }
 
-    .footer {
-      flex: 0 0 auto;
-      margin-top: auto;
-      padding-top: 28px;
-      font-size: 12px;
-      letter-spacing: 0.02em;
-      opacity: 0.55;
+    @media (min-width: 900px) and (max-height: 760px) {
+      .logo-link img { height: 6.5rem; }
+      .nav { top: 13rem; }
+      .nav button { font-size: 3.2rem; }
+      .panel { bottom: 3.5rem; }
     }
 
-    @media (min-width: 900px) {
-      .footer {
-        position: absolute;
-        left: 40px;
-        bottom: 20px;
-        padding-top: 0;
-        margin-top: 0;
-        font-size: 12px;
-      }
+    @media (max-width: 380px) {
+      .nav button { font-size: 1.85rem; }
+      .panel { padding: 1rem; }
     }
   </style>
 </head>
 <body>
-  <div class="page">
-    <header class="topbar">
-      <a class="logo-link name" href="#who" id="logoBtn" aria-label="The AI Agent Agent">
-        <img class="logo-img" src="assets/logo-header.png?v=who1" alt="The AI Agent Agent — simplifying AI" width="560" height="355" />
+  <header class="site-header">
+    <div class="shell">
+      <a class="logo-link" href="#who" id="logoBtn" aria-label="The AI Agent Agent — Who">
+        <img
+          src="assets/logo-header.png?v=2"
+          alt="The AI Agent Agent — simplifying AI"
+          width="649"
+          height="411"
+          decoding="async"
+        />
       </a>
-    </header>
-
-    <div class="main">
-      <nav class="nav" id="nav" aria-label="Primary">
-        <button type="button" data-section="services">Services</button>
-        <button type="button" data-section="clients">Clients</button>
-        <button type="button" data-section="contact">Contact</button>
-      </nav>
-
-      <section class="who" id="info" aria-live="polite">
-        <strong>Who</strong>
-        <p>Noah Weiss is The AI Agent Agent.</p>
-        <p>I become your agent for all things AI.</p>
-        <p>Your AI Concierge.</p>
-      </section>
     </div>
+  </header>
 
-    <footer class="footer">© 2026 The AI Agent Agent</footer>
-  </div>
+  <main class="shell layout">
+    <nav class="nav" id="nav" aria-label="Primary">
+      <button type="button" data-section="services">Services</button>
+      <button type="button" data-section="clients">Clients</button>
+      <button type="button" data-section="testimonials">Testimonials</button>
+      <button type="button" data-section="contact">Contact</button>
+    </nav>
+
+    <section class="panel" id="panel" aria-live="polite">
+      <h1>Who</h1>
+      <p>Noah Weiss is The AI Agent Agent.</p>
+      <p>I become your agent for all things AI.</p>
+      <p>Your AI Concierge.</p>
+    </section>
+
+    <footer class="site-footer">© 2026 The AI Agent Agent</footer>
+  </main>
 
 <script>
-function showInfo(section) {
-  var info = document.getElementById('info');
-  var isMobile = window.matchMedia('(max-width: 899px)').matches;
+(function () {
+  var panel = document.getElementById('panel');
+  var nav = document.getElementById('nav');
 
-  document.querySelectorAll('.nav button').forEach(function (el) {
-    el.classList.toggle('active', el.getAttribute('data-section') === section);
-  });
+  var content = {
+    who: {
+      label: 'Who',
+      html:
+        '<h1>Who</h1>' +
+        '<p>Noah Weiss is The AI Agent Agent.</p>' +
+        '<p>I become your agent for all things AI.</p>' +
+        '<p>Your AI Concierge.</p>'
+    },
+    services: {
+      label: 'Services',
+      html:
+        '<h1>Services</h1>' +
+        '<h2>1:1 Session</h2>' +
+        '<p>AI Zero to AI Hero in one session.</p>' +
+        '<p>In one session, I will have you up and running like a pro.</p>' +
+        '<p>My clients have spanned beauty, insurance, law, and finance (and grandmas).</p>' +
+        '<h2>Concierge</h2>' +
+        '<p>My services are bespoke and consultative.</p>' +
+        '<p>The relationship doesn\'t stop after our session.</p>' +
+        '<p>Newsletter access. Meetups. Exclusive events.</p>'
+    },
+    clients: {
+      label: 'Clients',
+      html:
+        '<h1>Clients</h1>' +
+        '<p>Ideal for solopreneurs, startups, and professionals (lawyers, CPAs, operators, founders).</p>' +
+        '<p>People who want an AI edge and someone accountable for it.</p>'
+    },
+    testimonials: {
+      label: 'Testimonials',
+      html:
+        '<h1>Testimonials</h1>' +
+        '<div class="quotes">' +
+          '<div class="quote">' +
+            '<q>Noah got me from zero to actually using agents in one sitting. No fluff.</q>' +
+            '<div class="by">Founder · beauty</div>' +
+          '</div>' +
+          '<div class="quote">' +
+            '<q>He stays in your corner after the session. That\'s the part most people skip.</q>' +
+            '<div class="by">Operator · insurance</div>' +
+          '</div>' +
+          '<div class="quote">' +
+            '<q>Clear, fast, human. Finally someone who doesn\'t speak AI at me.</q>' +
+            '<div class="by">Attorney</div>' +
+          '</div>' +
+        '</div>' +
+        '<p class="hint">Role-only credits. Swap in your real quotes anytime.</p>'
+    },
+    contact: {
+      label: 'Contact',
+      html:
+        '<h1>Contact</h1>' +
+        '<p>Ready? <a href="https://www.linkedin.com/in/noaheweiss" target="_blank" rel="noopener">Message on LinkedIn</a></p>' +
+        '<p><a href="mailto:noah@theaiagentagent.com">noah@theaiagentagent.com</a></p>'
+    }
+  };
 
-  if (section === 'services') {
-    info.innerHTML =
-      '<strong>Services</strong>' +
-      '<strong class="subhead">1:1 Session</strong>' +
-      '<p>AI Zero to AI Hero in one session.</p>' +
-      '<p>In one session, I will have you up and running like a pro.</p>' +
-      '<p>My clients have spanned beauty, insurance, law, and finance (and gradmas).</p>' +
-      '<strong class="subhead">Concierge</strong>' +
-      '<p>My services are bespoke and consultative.</p>' +
-      '<p>The relationship doesn\'t stop after our session.</p>' +
-      '<p>Newsletter access. Meetups. Exclusive events.</p>';
-  } else if (section === 'clients') {
-    info.innerHTML =
-      '<strong>Clients</strong>' +
-      '<p>Ideal for solopreneurs, startups, and professionals (lawyers, CPAs, operators, founders).</p>' +
-      '<p>People who want an AI edge and someone accountable for it.</p>';
-  } else if (section === 'contact') {
-    info.innerHTML =
-      '<strong>Contact</strong>' +
-      '<p>Ready? <a href="https://www.linkedin.com/in/noaheweiss" target="_blank" rel="noopener">Message on LinkedIn</a></p>' +
-      '<p><a href="mailto:noah@theaiagentagent.com">noah@theaiagentagent.com</a></p>';
-  } else if (section === 'who') {
-    info.innerHTML =
-      '<strong>Who</strong>' +
-      '<p>Noah Weiss is The AI Agent Agent.</p>' +
-      '<p>I become your agent for all things AI.</p>' +
-      '<p>Your AI Concierge.</p>';
-    document.querySelectorAll('.nav button').forEach(function (el) {
-      el.classList.remove('active');
+  function show(section) {
+    var data = content[section] || content.who;
+    panel.innerHTML = data.html;
+
+    nav.querySelectorAll('button').forEach(function (btn) {
+      btn.classList.toggle('active', btn.getAttribute('data-section') === section);
     });
+
+    if (window.matchMedia('(max-width: 899px)').matches && section !== 'who') {
+      setTimeout(function () {
+        panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }, 40);
+    }
   }
 
-  if (isMobile && section !== 'services') {
-    // Keep first paint calm; after first tap, bring copy into view
-    setTimeout(function () {
-      info.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    }, 10);
-  }
-}
-
-document.querySelectorAll('.nav button').forEach(function (btn) {
-  btn.addEventListener('click', function () {
-    showInfo(btn.getAttribute('data-section'));
+  nav.querySelectorAll('button').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      show(btn.getAttribute('data-section'));
+    });
   });
-});
 
-document.getElementById('logoBtn').addEventListener('click', function (e) {
-  e.preventDefault();
-  showInfo('who');
-});
+  document.getElementById('logoBtn').addEventListener('click', function (e) {
+    e.preventDefault();
+    show('who');
+    if (window.matchMedia('(max-width: 899px)').matches) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  });
 
-showInfo('who');
+  show('who');
+})();
 </script>
-
 </body>
 </html>
