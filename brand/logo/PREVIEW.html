@@ -1,19 +1,143 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><title>Logo</title>
-<style>
-body{margin:0;font-family:Helvetica Neue,Helvetica,Arial,sans-serif;background:#fff}
-header{padding:18px 32px;border-bottom:1px solid #e5e5e5;letter-spacing:.14em;text-transform:uppercase;font-size:11px;font-weight:700}
-.wrap{max-width:960px;margin:0 auto;padding:40px 24px}
-.card{border:1px solid #e5e5e5;padding:40px;margin:0 0 20px}
-.dark{background:#000}
-p{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#666;margin:0 0 20px}
-.dark p{color:#999}
-img{max-width:100%;max-height:160px;display:block}
-</style></head><body>
-<header>The AI Agent Agent · Logo</header>
-<div class="wrap">
-  <div class="card"><p>Signature wordmark</p><img src="vector/wordmark-black.svg"></div>
-  <div class="card dark"><p>Reverse</p><img src="vector/wordmark-white.svg"></div>
-  <div class="card"><p>Agency lockup</p><img src="vector/lockup-agency.svg" style="max-height:240px"></div>
-</div>
-</body></html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Logo options · The AI Agent Agent</title>
+  <style>
+    :root {
+      --ink: #111;
+      --soft: #666;
+      --line: #e8e8e8;
+      --green: #0b6b3a;
+      --font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      --display: Georgia, "Times New Roman", Times, serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--font); color: var(--ink); background: #fff; }
+    header {
+      padding: 20px 28px;
+      border-bottom: 1px solid var(--line);
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 40px 24px 80px; }
+    h1 {
+      font-family: var(--display);
+      font-size: 36px;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+    .sub { color: var(--soft); margin-bottom: 36px; max-width: 40rem; line-height: 1.55; }
+    .pick {
+      border: 2px solid var(--green);
+      background: #f4faf6;
+      padding: 16px 18px;
+      margin-bottom: 28px;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .pick strong { color: var(--green); }
+    .card {
+      border: 1px solid var(--line);
+      padding: 36px 32px;
+      margin-bottom: 20px;
+    }
+    .card.dark { background: #111; color: #fff; }
+    .card.green { background: var(--green); color: #fff; }
+    .tag {
+      font-size: 10px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--soft);
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+    .card.dark .tag, .card.green .tag { color: rgba(255,255,255,0.65); }
+    img, object, svg { max-width: 100%; height: auto; display: block; }
+    .mono { width: 96px; height: 96px; }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .portrait {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 28px;
+      align-items: center;
+    }
+    .portrait img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+    @media (max-width: 720px) {
+      .grid, .portrait { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>The AI Agent Agent · Logo system v2</header>
+  <div class="wrap">
+    <h1>New logo system</h1>
+    <p class="sub">
+      Built for a real talent desk, not a script-font AI kit.
+      Primary recommendation: horizontal lockup (AA monogram + Georgia wordmark).
+      Portrait is separate identity proof for Who / LinkedIn.
+    </p>
+
+    <div class="pick">
+      <strong>Recommended primary:</strong> Option A — horizontal lockup.
+      Clean at small sizes, agency-legible, green authority block, no fake handwriting.
+    </div>
+
+    <div class="card">
+      <p class="tag">A · Primary lockup (recommended)</p>
+      <img src="v2/lockup-horizontal.svg" alt="Horizontal lockup" style="max-height:110px;" />
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <p class="tag">B · Green wordmark</p>
+        <img src="v2/wordmark-green.svg" alt="Green wordmark" />
+      </div>
+      <div class="card">
+        <p class="tag">C · Stacked</p>
+        <img src="v2/wordmark-stacked.svg" alt="Stacked wordmark" style="max-height:160px;" />
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <p class="tag">D · Monogram AA</p>
+        <img class="mono" src="v2/monogram-aa.svg" alt="AA monogram" />
+      </div>
+      <div class="card dark">
+        <p class="tag">E · Stamp</p>
+        <img src="v2/stamp.svg" alt="Stamp" style="max-width:420px;" />
+      </div>
+    </div>
+
+    <div class="card">
+      <p class="tag">Portrait · agent photo (B&W)</p>
+      <div class="portrait">
+        <img src="../portrait/noah-bw-square.jpg" alt="Noah Weiss" />
+        <div>
+          <p style="font-family:Georgia,serif;font-size:28px;margin-bottom:10px;">Noah Weiss</p>
+          <p style="color:#666;line-height:1.55;margin-bottom:12px;">
+            Direct eyes. Black tee. Calm face. Works as the human proof that
+            The AI Agent Agent is a who, not a what.
+          </p>
+          <p style="color:#666;font-size:14px;line-height:1.5;">
+            Keep color for personal social if you want. Use B&amp;W on the site / LinkedIn for agent gravity.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
