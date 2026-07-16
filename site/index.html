@@ -109,12 +109,7 @@
 function showInfo(section) {
   const info = document.getElementById('info');
   
-  if (section === 'agent') {
-    info.innerHTML = `
-      <strong>Agent</strong>
-      Noah Weiss. Your agent for all things AI. AI Concierge. Human touch. Full-service representation.
-    `;
-  } else if (section === 'practice') {
+  if (section === 'practice') {
     info.innerHTML = `
       <strong>Practice</strong>
       1:1 Session — Zero to Hero.<br>
@@ -133,11 +128,19 @@ function showInfo(section) {
   }
 }
 
-// Optional: clicking the name resets to default
+// Set initial info to Practice (since Agent is removed)
+document.getElementById('info').innerHTML = `
+  <strong>Practice</strong>
+  1:1 Session — Zero to Hero.<br>
+  Concierge — Ongoing AI support. One message away.
+`;
+
+// Clicking the name resets to Practice
 document.querySelector('.name').addEventListener('click', () => {
   document.getElementById('info').innerHTML = `
-    <strong>Who is The AI Agent Agent?</strong>
-    Noah Weiss. Your agent for all things AI. AI Concierge. Human touch. Full-service representation.
+    <strong>Practice</strong>
+    1:1 Session — Zero to Hero.<br>
+    Concierge — Ongoing AI support. One message away.
   `;
 });
 </script>
