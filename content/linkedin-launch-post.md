@@ -1,5 +1,7 @@
 # LinkedIn launch post (draft)
 
+I'm excited to be launching my first business: The AI Agent Agent.
+
 Everyone wants an agent in LA.
 
 The best agent.
