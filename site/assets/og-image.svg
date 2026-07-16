@@ -1,7 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="The AI Agent Agent">
   <rect width="1200" height="630" fill="#FFFFFF"/>
   <rect x="0" y="0" width="8" height="630" fill="#0B6B3A"/>
-  <text x="72" y="210" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="54" font-weight="600" letter-spacing="4" fill="#000000">THE AI AGENT AGENT</text>
-  <text x="72" y="290" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="30" fill="#666666">Results-driven agent. One session. One change.</text>
-  <text x="72" y="500" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" letter-spacing="4" fill="#0B6B3A">LOS ANGELES</text>
+  <text x="72" y="190" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="50" font-weight="600" letter-spacing="3" fill="#000000">THE AI AGENT AGENT</text>
+  <text x="72" y="270" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="30" fill="#666666">AI zero to AI hero in one session.</text>
+  <text x="72" y="330" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="26" fill="#0B6B3A">Your one-stop AI Agent shop. Human touch.</text>
+  <text x="72" y="500" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" letter-spacing="4" fill="#666666">LOS ANGELES · THEAIAGENTAGENT.COM</text>
 </svg>

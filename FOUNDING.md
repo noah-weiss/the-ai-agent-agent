@@ -6,7 +6,7 @@ Operator: Noah Weiss
 
 ## One line
 
-I become your agent for all things AI.
+I become your agent for all things AI. Your one-stop AI Agent shop. Your AI concierge.
 
 ## The pitch
 
@@ -16,57 +16,58 @@ The best agent. The one who books the best gigs in town.
 Now the word on the street is AI agents.
 Everything is moving fast.
 
-What if you had someone in your corner for all of it?
+I am the agent that helps you quickly master AI and AI agents.
+In one session, I will have you up and running like a pro.
 
-That's where I come in.
+Go from AI zero to AI hero in one session.
+Automating your workflow and tasks is easier and faster than you can imagine.
 
 I don't work for a big studio or a big agency.
 It's just me.
 
-I'm not here to "build one bot with you" and disappear.
 I become your agent for all things AI.
-
 I make AI your secret weapon.
-Full-service representation: what to use, what to ignore, what to build, what to buy, what to ship, and how to stay ahead without drowning.
+Quickly get in the know with Noah.
+
+Full-service. Human touch. Results-driven. Los Angeles.
 
 ## What "your AI agent" means
 
-- Ongoing judgment on tools, workflows, and opportunities
-- Hands-on build when something should exist
-- Taste and refusal: protect you from AI theater
+- Help you decide which AI platforms are worth using and what is noise
+- Build or set up agents and workflows when something should exist
+- Stay in your corner as tools, vendors, and needs change (AI concierge)
+- Protect you from AI theater and bad decisions
+- Personalization and curation of platforms, newsletters, and podcasts
+- Bespoke and consultative, not generic menu consulting
+- Hands-on execution when needed
 - Fast response when AI questions hit
-- A real representative, not a project vendor
 
 ## Offer posture
 
-Representation first.
-Engagements can include sessions, builds, and retainers, but the relationship is the product:
+**Representation + concierge first.**
+**Entry:** one sharp session that gets you operational fast.
 
-**I am your agent for all things AI.**
-
-Entry can still be sharp and concrete.
-The brand is not "pair-programming an agent once."
+Core promise:
+- I become your agent for all things AI
+- One-stop AI Agent shop
+- AI zero to AI hero in one session
+- Ongoing corner / concierge after that
 
 ## Who it is for
 
-Operators, founders, and professionals who want a permanent AI edge and someone accountable for it.
+Solopreneurs, startups, and professionals (lawyers, CPAs, operators, founders) who want a permanent AI edge and someone accountable for it.
+
+Ideal-fit examples of the buyer type:
+- Justin
+- Barry Shaich
+- Neil Resnick
+- Raffi Tachdjian
 
 Not for: free ChatGPT lessons. Not for pure research lab work.
 
-## Brand rules
-
-- No em dashes
-- No "authentic." Use vulnerable or real.
-- No posing. No fake case studies.
-- No bashful tone.
-- MindStudio = certification only when needed.
-- Kixie stays out of identity copy.
-- Kabbalah stays underneath, never announced.
-- Spread love. Make the other side feel seen and better off.
-
 ## Boardroom test
 
-> "I become your agent for all things AI. Full-service. Results-driven. Los Angeles."
+> "I become your agent for all things AI. Full-service. Human touch. Results-driven. Los Angeles."
 
 ## Visual
 
