@@ -1,3 +1,6 @@
+## Who
+Noah Weiss is The AI Agent Agent. Not a product. A person in your corner.
+
 # Brand
 
 ## Name

@@ -4,6 +4,11 @@ Launched: 2026-07-15
 Domain: theaiagentagent.com  
 Operator: Noah Weiss
 
+## Who
+
+Noah Weiss is The AI Agent Agent.
+Not a product. A person. Your agent for all things AI.
+
 ## One line
 
 I am the agent that helps you quickly master AI and AI Agents. In one session, I will have you up and running like a pro.

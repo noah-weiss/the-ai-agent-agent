@@ -2,6 +2,10 @@
 
 I'm excited to be launching my first business: The AI Agent Agent.
 
+Who is The AI Agent Agent?
+I am.
+Noah Weiss. Your agent for all things AI.
+
 Everyone wants an agent in LA.
 
 The best agent.
