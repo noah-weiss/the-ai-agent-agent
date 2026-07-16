@@ -245,6 +245,26 @@
         font-size: 18px;
       }
     }
+
+    .footer {
+      flex: 0 0 auto;
+      margin-top: auto;
+      padding-top: 28px;
+      font-size: 12px;
+      letter-spacing: 0.02em;
+      opacity: 0.55;
+    }
+
+    @media (min-width: 900px) {
+      .footer {
+        position: absolute;
+        left: 40px;
+        bottom: 20px;
+        padding-top: 0;
+        margin-top: 0;
+        font-size: 12px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -264,6 +284,8 @@
 
       <section class="who" id="info" aria-live="polite"></section>
     </div>
+
+    <footer class="footer">© 2026 The AI Agent Agent</footer>
   </div>
 
 <script>
