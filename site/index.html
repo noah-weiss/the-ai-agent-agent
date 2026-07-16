@@ -29,9 +29,16 @@
       z-index: 10;
     }
     .topbar .name {
-      font-weight: 600;
-      font-size: 20px;
+      display: flex;
+      align-items: center;
       cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+    }
+    .topbar .logo-img {
+      height: 52px;
+      width: auto;
+      display: block;
     }
     .topbar .sub {
       font-size: 13px;
@@ -81,10 +88,9 @@
 
   <!-- Top bar -->
   <div class="topbar">
-    <div>
-      <div class="name">The AI Agent Agent</div>
-      <div class="sub">simplifying AI</div>
-    </div>
+    <a class="logo-link name" href="#" onclick="showInfo('who'); return false;" aria-label="The AI Agent Agent">
+      <img class="logo-img" src="assets/logo-header.png" alt="The AI Agent Agent — simplifying AI" />
+    </a>
   </div>
 
   <!-- Big stacked nav -->
