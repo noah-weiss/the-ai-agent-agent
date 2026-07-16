@@ -3,29 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The AI Agent Agent | Los Angeles</title>
-  <meta name="description" content="The AI Agent Agent. Representation for all things AI. AI Concierge. AI Zero to AI Hero in one session. Los Angeles." />
+  <title>The AI Agent Agent</title>
+  <meta name="description" content="The AI Agent Agent. Representation for all things AI. AI Concierge. Los Angeles." />
   <link rel="canonical" href="https://theaiagentagent.com/" />
   <meta name="robots" content="index, follow" />
   <meta name="author" content="Noah Weiss" />
 
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://theaiagentagent.com/" />
-  <meta property="og:title" content="The AI Agent Agent | Los Angeles" />
-  <meta property="og:description" content="I become your agent for all things AI. AI Concierge. Human touch." />
+  <meta property="og:title" content="The AI Agent Agent" />
+  <meta property="og:description" content="I become your agent for all things AI." />
   <meta property="og:image" content="https://theaiagentagent.com/assets/og-image.svg" />
-  <meta property="og:locale" content="en_US" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="The AI Agent Agent | Los Angeles" />
+  <meta name="twitter:title" content="The AI Agent Agent" />
   <meta name="twitter:description" content="I become your agent for all things AI." />
-  <meta name="twitter:image" content="https://theaiagentagent.com/assets/og-image.svg" />
 
   <meta name="theme-color" content="#ffffff" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Satoshi ≈ Neue Montreal energy (Gersh-adjacent) -->
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400;500;700&display=swap" rel="stylesheet" />
 
   <script type="application/ld+json">
   {
@@ -35,160 +33,258 @@
     "url": "https://theaiagentagent.com/",
     "description": "Representation for all things AI. AI Concierge in Los Angeles.",
     "areaServed": "Los Angeles",
-    "founder": {"@type":"Person","name":"Noah Weiss","url":"https://www.linkedin.com/in/noaheweiss"},
-    "sameAs": ["https://www.linkedin.com/in/noaheweiss"]
+    "founder": {"@type":"Person","name":"Noah Weiss","url":"https://www.linkedin.com/in/noaheweiss"}
   }
   </script>
 
   <style>
     :root {
       --white: #ffffff;
-      --ink: #111111;
-      --soft: #6b6b6b;
+      --black: #000000;
+      --ink: #0a0a0a;
+      --soft: #6a6a6a;
+      --fog: #f7f7f7;
       --line: #ececec;
       --green: #0b6b3a;
-      --green-dark: #084f2b;
-      --max: 1120px;
+      --green-2: #095c32;
+      --green-soft: #7dcea0;
+      --max: 1440px;
+      --gutter: clamp(20px, 4vw, 56px);
+      --easing: cubic-bezier(0.19, 1, 0.22, 1);
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     body {
-      font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
-      color: var(--ink);
+      font-family: "Satoshi", "Helvetica Neue", Helvetica, Arial, sans-serif;
       background: var(--white);
-      font-size: 15px;
-      line-height: 1.55;
+      color: var(--ink);
+      font-size: 16px;
+      line-height: 1.5;
+      font-weight: 400;
       -webkit-font-smoothing: antialiased;
       text-rendering: optimizeLegibility;
     }
     a { color: inherit; text-decoration: none; }
     img { display: block; max-width: 100%; height: auto; }
-    .wrap { width: min(var(--max), calc(100% - 48px)); margin: 0 auto; }
+    button { font: inherit; border: 0; background: none; cursor: pointer; color: inherit; }
 
-    /* Top bar */
-    .topbar {
-      border-bottom: 1px solid var(--line);
+    .shell {
+      width: min(var(--max), 100%);
+      margin: 0 auto;
+      padding-left: var(--gutter);
+      padding-right: var(--gutter);
     }
-    .topbar-inner {
-      min-height: 60px;
+
+    /* Header — Gersh floating letterhead */
+    .header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      mix-blend-mode: normal;
+    }
+    .header-inner {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      height: 72px;
     }
-    .house {
-      font-size: 11px;
+    .logo-type {
+      font-size: 13px;
       font-weight: 700;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
+      letter-spacing: 0.04em;
     }
-    .house em {
-      font-style: normal;
-      color: var(--soft);
+    .logo-type span {
+      display: block;
+      margin-top: 2px;
+      font-size: 10px;
       font-weight: 500;
-      margin-left: 10px;
-      letter-spacing: 0.14em;
-    }
-    .top-nav {
-      display: flex;
-      gap: 28px;
-      align-items: center;
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.16em;
       text-transform: uppercase;
       color: var(--soft);
     }
-    .top-nav a:hover { color: var(--ink); }
-    .top-nav .cta {
-      color: #fff;
-      background: var(--ink);
-      padding: 11px 16px;
-      letter-spacing: 0.12em;
+    .menu-btn {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 10px 0;
+      position: relative;
     }
-    .top-nav .cta:hover { background: var(--green); }
+    .menu-btn::after {
+      content: "";
+      position: absolute;
+      left: 0; right: 0; bottom: 6px;
+      height: 1px;
+      background: currentColor;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.45s var(--easing);
+    }
+    .menu-btn:hover::after { transform: scaleX(1); }
 
-    /* Hero */
-    .hero {
-      padding: 88px 0 80px;
+    /* Fullscreen menu panel */
+    .panel {
+      position: fixed;
+      inset: 0;
+      z-index: 200;
+      background: var(--green);
+      color: #fff;
+      display: none;
+      flex-direction: column;
+    }
+    .panel.open { display: flex; }
+    .panel-top {
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 var(--gutter);
+    }
+    .panel-top .logo-type span { color: rgba(255,255,255,0.7); }
+    .panel-body {
+      flex: 1;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 40px;
+      padding: 24px var(--gutter) 48px;
+      align-items: end;
+    }
+    .panel-nav {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .panel-nav a {
+      font-size: clamp(36px, 7vw, 72px);
+      font-weight: 500;
+      letter-spacing: -0.03em;
+      line-height: 1.05;
+      width: fit-content;
+    }
+    .panel-nav a:hover { color: var(--green-soft); }
+    .panel-side {
+      font-size: 14px;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.82);
+      max-width: 28rem;
+      padding-bottom: 12px;
+    }
+    .panel-side strong {
+      display: block;
+      color: #fff;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    /* Intro */
+    .intro {
+      min-height: 100vh;
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 120px 0 64px;
       border-bottom: 1px solid var(--line);
     }
-    .hero-kicker {
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--green);
-      margin-bottom: 40px;
-    }
-    .signature {
-      max-width: 820px;
+    .sig {
+      max-width: min(920px, 100%);
       margin: 0 0 48px;
     }
-    .signature img {
+    .sig img {
       width: 100%;
       height: auto;
-      max-height: 240px;
+      max-height: min(34vh, 300px);
       object-fit: contain;
-      object-position: left center;
+      object-position: left bottom;
     }
-    .hero h1 {
-      font-size: clamp(34px, 5.2vw, 56px);
+    .intro h1 {
+      font-size: clamp(36px, 6vw, 68px);
       font-weight: 500;
-      letter-spacing: -0.035em;
-      line-height: 1.05;
-      max-width: 12ch;
-      margin: 0 0 22px;
+      letter-spacing: -0.04em;
+      line-height: 0.98;
+      max-width: 11ch;
+      margin: 0 0 24px;
     }
-    .hero-sub {
-      max-width: 32rem;
-      font-size: 17px;
-      line-height: 1.55;
+    .intro p {
+      max-width: 30rem;
       color: var(--soft);
+      font-size: 17px;
       margin: 0 0 36px;
     }
-    .hero-sub strong {
+    .intro p strong {
       color: var(--ink);
       font-weight: 600;
     }
-    .actions {
+    .row-cta {
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
+      align-items: center;
     }
     .btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
       height: 48px;
-      padding: 0 20px;
-      font-size: 11px;
+      padding: 0 22px;
+      font-size: 12px;
       font-weight: 700;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      border: 1px solid var(--ink);
-      transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+      border: 1px solid var(--black);
+      transition: 0.25s var(--easing);
     }
-    .btn-fill {
+    .btn-primary {
       background: var(--green);
       border-color: var(--green);
       color: #fff;
     }
-    .btn-fill:hover {
-      background: var(--green-dark);
-      border-color: var(--green-dark);
+    .btn-primary:hover { background: var(--green-2); border-color: var(--green-2); }
+    .btn-ghost:hover { background: var(--black); color: #fff; }
+
+    /* Giant practice index like Gersh categories */
+    .index {
+      padding: 28px 0 12px;
+      border-bottom: 1px solid var(--line);
     }
-    .btn-line {
-      background: transparent;
+    .index-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--soft);
+      margin-bottom: 18px;
     }
-    .btn-line:hover {
-      background: var(--ink);
-      color: #fff;
+    .index-list {
+      list-style: none;
+    }
+    .index-list a {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 22px 0;
+      border-top: 1px solid var(--line);
+      font-size: clamp(28px, 5vw, 52px);
+      font-weight: 500;
+      letter-spacing: -0.03em;
+      line-height: 1.05;
+      transition: color 0.25s var(--easing);
+    }
+    .index-list a:hover { color: var(--green); }
+    .index-list .meta {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--soft);
+      flex: 0 0 auto;
     }
 
-    /* Sections */
-    section {
-      padding: 88px 0;
+    /* Content sections */
+    section.block {
+      padding: 96px 0;
       border-bottom: 1px solid var(--line);
     }
     .label {
@@ -200,75 +296,49 @@
       margin-bottom: 18px;
     }
     h2 {
-      font-size: clamp(28px, 3.6vw, 40px);
+      font-size: clamp(30px, 4.4vw, 48px);
       font-weight: 500;
-      letter-spacing: -0.03em;
-      line-height: 1.1;
+      letter-spacing: -0.035em;
+      line-height: 1.05;
       max-width: 14ch;
-      margin: 0 0 20px;
+      margin: 0 0 22px;
     }
-    .copy {
-      max-width: 36rem;
+    .prose {
+      max-width: 34rem;
       color: var(--soft);
-      font-size: 16px;
+      font-size: 17px;
     }
-    .copy p + p { margin-top: 14px; }
-    .copy .dark {
+    .prose p + p { margin-top: 14px; }
+    .prose .ink {
       color: var(--ink);
       font-weight: 600;
     }
-
-    .grid-2 {
+    .split {
       display: grid;
-      grid-template-columns: 0.85fr 1.15fr;
-      gap: 64px;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: clamp(28px, 6vw, 80px);
       align-items: start;
     }
 
-    /* Practice */
-    .practice-list {
-      margin-top: 48px;
-      border-top: 1px solid var(--line);
-    }
-    .practice-item {
-      display: grid;
-      grid-template-columns: 180px 1fr;
-      gap: 32px;
-      padding: 28px 0;
-      border-bottom: 1px solid var(--line);
-    }
-    .practice-item h3 {
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-    }
-    .practice-item p {
-      color: var(--soft);
-      max-width: 38rem;
-      font-size: 15.5px;
-    }
-
-    /* Statement band */
-    .statement {
-      background: var(--ink);
+    /* Green statement like Gersh blue theme */
+    .green-field {
+      background: var(--green);
       color: #fff;
       border-bottom: 0;
+      padding: 120px 0;
     }
-    .statement .label { color: rgba(255,255,255,0.55); }
-    .statement-line {
-      font-size: clamp(28px, 4vw, 44px);
-      font-weight: 500;
-      letter-spacing: -0.03em;
-      line-height: 1.15;
-      max-width: 18ch;
+    .green-field .label { color: rgba(255,255,255,0.65); }
+    .green-field h2 {
+      max-width: 16ch;
+      color: #fff;
+      font-size: clamp(34px, 5.5vw, 60px);
     }
-    .statement-line span {
-      color: #7dcea0;
+    .green-field h2 em {
+      font-style: normal;
+      color: var(--green-soft);
     }
 
-    /* For whom */
-    .who-grid {
+    .tri {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 1px;
@@ -276,28 +346,24 @@
       border: 1px solid var(--line);
       margin-top: 40px;
     }
-    .who-grid article {
+    .tri article {
       background: #fff;
       padding: 28px 24px;
     }
-    .who-grid h3 {
+    .tri h3 {
       font-size: 11px;
       font-weight: 700;
       letter-spacing: 0.14em;
       text-transform: uppercase;
       margin-bottom: 12px;
     }
-    .who-grid p {
+    .tri p {
       color: var(--soft);
       font-size: 14.5px;
       line-height: 1.55;
     }
 
-    /* FAQ */
-    .faq {
-      max-width: 720px;
-      margin-top: 12px;
-    }
+    .faq { max-width: 720px; }
     details {
       border-top: 1px solid var(--line);
       padding: 18px 0;
@@ -307,21 +373,20 @@
       cursor: pointer;
       list-style: none;
       font-weight: 600;
-      font-size: 15px;
+      font-size: 16px;
     }
     summary::-webkit-details-marker { display: none; }
     details[open] summary { margin-bottom: 8px; }
     details p { color: var(--soft); }
 
-    /* Contact */
     .contact-grid {
       display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 48px;
+      grid-template-columns: 1.25fr 0.75fr;
+      gap: 40px;
       align-items: end;
     }
     .office {
-      font-size: 13px;
+      font-size: 14px;
       color: var(--soft);
       line-height: 1.8;
     }
@@ -337,57 +402,75 @@
     footer {
       padding: 28px 0 40px;
     }
-    .footer-inner {
+    .footer-row {
       display: flex;
       justify-content: space-between;
       gap: 16px;
       flex-wrap: wrap;
-      font-size: 10px;
-      letter-spacing: 0.14em;
+      font-size: 11px;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--soft);
     }
-    .footer-inner a { margin-left: 18px; }
-    .footer-inner a:hover { color: var(--ink); }
+    .footer-row a { margin-left: 18px; }
+    .footer-row a:hover { color: var(--ink); }
 
     @media (max-width: 900px) {
-      .grid-2,
+      .panel-body,
+      .split,
       .contact-grid,
-      .who-grid,
-      .practice-item {
+      .tri {
         grid-template-columns: 1fr;
       }
-      .practice-item { gap: 8px; }
-      .top-nav a:not(.cta) { display: none; }
-      .hero { padding: 56px 0 48px; }
-      section { padding: 56px 0; }
-      .signature img { max-height: 160px; }
-      .hero h1 { max-width: 100%; }
-      .wrap { width: min(var(--max), calc(100% - 32px)); }
+      .header-inner { height: 64px; }
+      .intro { padding: 100px 0 48px; min-height: auto; }
+      .sig img { max-height: 160px; }
+      section.block { padding: 64px 0; }
+      .green-field { padding: 80px 0; }
+      .index-list a { padding: 18px 0; }
+      .index-list .meta { display: none; }
     }
   </style>
 </head>
 <body>
-  <header class="topbar">
-    <div class="wrap topbar-inner">
-      <a class="house" href="/">
+  <header class="header">
+    <div class="shell header-inner">
+      <a class="logo-type" href="/">
         The AI Agent Agent
-        <em>Los Angeles</em>
+        <span>Los Angeles</span>
       </a>
-      <nav class="top-nav" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#practice">Practice</a>
-        <a href="#clients">Clients</a>
-        <a class="cta" href="#contact">Contact</a>
-      </nav>
+      <button class="menu-btn" type="button" id="menuOpen" aria-haspopup="dialog">Menu</button>
     </div>
   </header>
 
+  <div class="panel" id="menuPanel" role="dialog" aria-modal="true" aria-label="Menu">
+    <div class="panel-top">
+      <a class="logo-type" href="/">
+        The AI Agent Agent
+        <span>Los Angeles</span>
+      </a>
+      <button class="menu-btn" type="button" id="menuClose">Close</button>
+    </div>
+    <div class="panel-body">
+      <nav class="panel-nav">
+        <a href="#about" data-close>About</a>
+        <a href="#practice" data-close>Practice</a>
+        <a href="#clients" data-close>Clients</a>
+        <a href="#contact" data-close>Contact</a>
+      </nav>
+      <div class="panel-side">
+        <strong>Representation for all things AI.</strong>
+        AI Zero to AI Hero in one session.
+        AI Concierge. Human touch.
+        One-stop AI Agent Shop.
+      </div>
+    </div>
+  </div>
+
   <main>
-    <section class="hero">
-      <div class="wrap">
-        <p class="hero-kicker">Representation</p>
-        <div class="signature">
+    <section class="intro">
+      <div class="shell">
+        <div class="sig">
           <img
             src="assets/logo-wordmark.svg"
             width="1648"
@@ -396,26 +479,57 @@
           />
         </div>
         <h1>I become your agent for all things AI.</h1>
-        <p class="hero-sub">
+        <p>
           Everyone wants an agent in LA.
           <strong>Now the word on the street is AI agents.</strong>
-          Full-service. Human touch. Results-driven.
         </p>
-        <div class="actions">
-          <a class="btn btn-fill" href="#contact">Request representation</a>
-          <a class="btn btn-line" href="#practice">View practice</a>
+        <div class="row-cta">
+          <a class="btn btn-primary" href="#contact">Request representation</a>
+          <a class="btn btn-ghost" href="#practice">View practice</a>
         </div>
       </div>
     </section>
 
-    <section id="about">
-      <div class="wrap grid-2">
+    <section class="index" id="practice">
+      <div class="shell">
+        <p class="index-label">Practice</p>
+        <ul class="index-list">
+          <li>
+            <a href="#session">
+              <span>Session</span>
+              <span class="meta">Zero to Hero</span>
+            </a>
+          </li>
+          <li>
+            <a href="#concierge">
+              <span>Concierge</span>
+              <span class="meta">Ongoing</span>
+            </a>
+          </li>
+          <li>
+            <a href="#build">
+              <span>Build</span>
+              <span class="meta">As needed</span>
+            </a>
+          </li>
+          <li>
+            <a href="#curation">
+              <span>Curation</span>
+              <span class="meta">Signal</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="block" id="about">
+      <div class="shell split">
         <div>
           <p class="label">About</p>
           <h2>Your AI Concierge.</h2>
         </div>
-        <div class="copy">
-          <p class="dark">
+        <div class="prose">
+          <p class="ink">
             I am the agent that helps you quickly master AI and AI Agents.
             In one session, I will have you up and running like a pro.
           </p>
@@ -424,8 +538,8 @@
             Automating your workflow and tasks is easier and faster than you can imagine.
           </p>
           <p>
-            I help you decide what AI platforms are worth using and what is noise.
-            I stay in your corner as tools, vendors, and needs change.
+            Decide what AI platforms are worth using.
+            Stay in your corner as tools, vendors, and needs change.
             Personalization and curation of platforms, newsletters and podcasts.
           </p>
           <p>
@@ -437,51 +551,76 @@
       </div>
     </section>
 
-    <section id="practice">
-      <div class="wrap">
-        <p class="label">Practice</p>
-        <h2>How the desk works.</h2>
-        <p class="copy">Your one-stop AI Agent Shop. Not a course. Not a chatbot storefront.</p>
-        <div class="practice-list">
-          <article class="practice-item">
-            <h3>Session</h3>
-            <p>AI Zero to AI Hero in one session. Up and running like a pro. Quickly get in the know with Noah.</p>
-          </article>
-          <article class="practice-item">
-            <h3>Concierge</h3>
-            <p>Ongoing AI Concierge representation across platforms, workflows, vendors, and decisions. Human touch included.</p>
-          </article>
-          <article class="practice-item">
-            <h3>Build</h3>
-            <p>When something should exist, I build or set up the agent or workflow. Bespoke and consultative.</p>
-          </article>
-          <article class="practice-item">
-            <h3>Curation</h3>
-            <p>Personalization and curation of platforms, newsletters and podcasts so you are not drowning in noise.</p>
-          </article>
+    <section class="block" id="session">
+      <div class="shell split">
+        <div>
+          <p class="label">Session</p>
+          <h2>AI Zero to AI Hero.</h2>
+        </div>
+        <div class="prose">
+          <p class="ink">In one session, I will have you up and running like a pro.</p>
+          <p>Quickly get in the know with Noah. Front door to the relationship. Not a workshop identity.</p>
         </div>
       </div>
     </section>
 
-    <section class="statement">
-      <div class="wrap">
-        <p class="label">Position</p>
-        <p class="statement-line">
-          I become your agent<br />
-          for all things AI.<br />
-          <span>Human touch.</span>
-        </p>
+    <section class="block" id="concierge">
+      <div class="shell split">
+        <div>
+          <p class="label">Concierge</p>
+          <h2>In your corner.</h2>
+        </div>
+        <div class="prose">
+          <p class="ink">Ongoing AI Concierge representation.</p>
+          <p>Platforms, workflows, vendors, decisions. Human touch included. Full-service. Results-driven.</p>
+        </div>
       </div>
     </section>
 
-    <section id="clients">
-      <div class="wrap">
+    <section class="block" id="build">
+      <div class="shell split">
+        <div>
+          <p class="label">Build</p>
+          <h2>When it should exist.</h2>
+        </div>
+        <div class="prose">
+          <p class="ink">I build or set up agents and workflows when something should exist.</p>
+          <p>Bespoke and consultative. Not a generic consulting menu.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="curation">
+      <div class="shell split">
+        <div>
+          <p class="label">Curation</p>
+          <h2>Signal over noise.</h2>
+        </div>
+        <div class="prose">
+          <p class="ink">Personalization and curation of platforms, newsletters and podcasts.</p>
+          <p>So you are not drowning in noise.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="green-field">
+      <div class="shell">
+        <p class="label">Position</p>
+        <h2>
+          I become your agent for all things AI.
+          <em>Human touch.</em>
+        </h2>
+      </div>
+    </section>
+
+    <section class="block" id="clients">
+      <div class="shell">
         <p class="label">Clients</p>
         <h2>Who this is for.</h2>
-        <p class="copy dark" style="color: var(--ink); font-weight: 600;">
+        <p class="prose ink" style="color:var(--ink);font-weight:600;">
           Ideal for solopreneurs, startups, professionals (ie. lawyers, CPAs).
         </p>
-        <div class="who-grid">
+        <div class="tri">
           <article>
             <h3>Who</h3>
             <p>Solopreneurs, startups, professionals. Buyer energy like Justin, Barry Shaich, Neil Resnick, Raffi Tachdjian.</p>
@@ -498,8 +637,8 @@
       </div>
     </section>
 
-    <section id="faq">
-      <div class="wrap">
+    <section class="block" id="faq">
+      <div class="shell">
         <p class="label">FAQ</p>
         <h2>Direct answers.</h2>
         <div class="faq">
@@ -523,18 +662,18 @@
       </div>
     </section>
 
-    <section id="contact">
-      <div class="wrap contact-grid">
+    <section class="block" id="contact">
+      <div class="shell contact-grid">
         <div>
           <p class="label">Contact</p>
           <h2>Request representation.</h2>
-          <p class="copy" style="margin-bottom: 28px;">
+          <p class="prose" style="margin-bottom:28px;">
             Ready to go from AI Zero to AI Hero and keep an AI Concierge in your corner?
             Quickly get in the know with Noah.
           </p>
-          <div class="actions">
-            <a class="btn btn-fill" href="https://www.linkedin.com/in/noaheweiss" target="_blank" rel="noopener">Message on LinkedIn</a>
-            <a class="btn btn-line" href="mailto:hello@theaiagentagent.com?subject=Representation%20inquiry">Email the desk</a>
+          <div class="row-cta">
+            <a class="btn btn-primary" href="https://www.linkedin.com/in/noaheweiss" target="_blank" rel="noopener">Message on LinkedIn</a>
+            <a class="btn btn-ghost" href="mailto:hello@theaiagentagent.com?subject=Representation%20inquiry">Email the desk</a>
           </div>
         </div>
         <div class="office">
@@ -548,7 +687,7 @@
   </main>
 
   <footer>
-    <div class="wrap footer-inner">
+    <div class="shell footer-row">
       <div>The AI Agent Agent · Los Angeles</div>
       <div>
         <a href="#practice">Practice</a>
@@ -557,5 +696,29 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    (function () {
+      var panel = document.getElementById("menuPanel");
+      var openBtn = document.getElementById("menuOpen");
+      var closeBtn = document.getElementById("menuClose");
+      function open() {
+        panel.classList.add("open");
+        document.body.style.overflow = "hidden";
+      }
+      function close() {
+        panel.classList.remove("open");
+        document.body.style.overflow = "";
+      }
+      openBtn.addEventListener("click", open);
+      closeBtn.addEventListener("click", close);
+      panel.querySelectorAll("[data-close]").forEach(function (el) {
+        el.addEventListener("click", close);
+      });
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") close();
+      });
+    })();
+  </script>
 </body>
 </html>
