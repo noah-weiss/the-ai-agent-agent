@@ -52,16 +52,13 @@ Ready? [Message on LinkedIn](https://www.linkedin.com/in/noaheweiss)
 
 ## Who
 
-Noah Weiss is The AI Agent Agent.  
-Not a product. Not a platform. A person in your corner.
+Noah Weiss is The AI Agent Agent.
 
 I become your agent for all things AI.  
-Your AI Concierge. Full-service. Human touch. Results-driven. Los Angeles.
-
-I am the agent that helps you quickly master AI and AI Agents.  
-I make AI your secret weapon.
+Your AI Concierge.
 
 **Edits:**
+
 
 ---
 
