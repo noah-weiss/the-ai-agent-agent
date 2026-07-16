@@ -39,7 +39,6 @@ Everything is bespoke and consultative.
 ## Who it is for
 
 This is ideal for solopreneurs, startups, professionals (ie. lawyers, CPAs).
-People like Justin, Barry Shaich, Neil Resnick, Raffi Tachdjian.
 
 ## Boardroom sentence
 

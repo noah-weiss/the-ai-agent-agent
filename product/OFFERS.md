@@ -29,7 +29,6 @@ When needed, build or set up the agent/workflow.
 
 ## Audience
 Solopreneurs, startups, professionals (lawyers, CPAs).
-Buyer energy: Justin, Barry Shaich, Neil Resnick, Raffi Tachdjian.
 
 ## Pricing
 TBD by Noah.

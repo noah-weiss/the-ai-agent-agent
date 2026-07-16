@@ -1,8 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1607.000000 545.000000" role="img" aria-label="The AI Agent Agent">
-  <title>The AI Agent Agent</title>
-  <g transform="translate(0.000000,545.000000) scale(0.100000,-0.100000)"
-fill="#0B6B3A" stroke="none">
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="1607.000000pt" height="545.000000pt" viewBox="0 0 1607.000000 545.000000"
+ preserveAspectRatio="xMidYMid meet">
+<metadata>
+Created by potrace 1.16, written by Peter Selinger 2001-2019
+</metadata>
+<g transform="translate(0.000000,545.000000) scale(0.100000,-0.100000)"
+fill="#000000" stroke="none">
 <path d="M810 4635 c-18 -21 -5 -51 15 -35 17 14 20 36 6 44 -5 3 -14 -1 -21
 -9z M11419 4609 c-6 -12 -12 -31 -14 -43 -7 -44 -25 -132 -34 -166 -5 -19 -37
 -141 -70 -270 -33 -129 -67 -255 -76 -280 -21 -57 -55 -174 -90 -310 -15 -58
