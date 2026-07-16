@@ -6,7 +6,7 @@
 
 ---
 
-## Practice
+## Services
 
 ### 1:1 Session
 **AI Zero to AI Hero in one session.**
@@ -95,7 +95,7 @@ I make AI your secret weapon.
 ## Site structure (current green landing)
 
 - Header: The AI Agent Agent
-- Nav (big left): Practice · Clients · Contact
+- Nav (big left): Services · Clients · Contact
 - Info panel (bottom right): updates on click with the subtext above
 - No “Agent” page
 - Minimal. Gersh-style. Full green.

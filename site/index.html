@@ -94,7 +94,7 @@
 
   <!-- Big stacked nav -->
   <div class="nav">
-    <div onclick="showInfo('practice')">Practice</div>
+    <div onclick="showInfo('services')">Services</div>
     <div onclick="showInfo('clients')">Clients</div>
     <div onclick="showInfo('contact')">Contact</div>
   </div>
@@ -106,9 +106,9 @@
 function showInfo(section) {
   const info = document.getElementById('info');
 
-  if (section === 'practice') {
+  if (section === 'services') {
     info.innerHTML = `
-      <strong>Practice</strong>
+      <strong>Services</strong>
       <strong style="margin-top:12px;display:block;">1:1 Session</strong>
       AI Zero to AI Hero in one session.<br>
       In one session, I will have you up and running like a pro.<br>
@@ -140,8 +140,8 @@ function showInfo(section) {
   }
 }
 
-// Default: Practice with full subtext
-showInfo('practice');
+// Default: Services with full subtext
+showInfo('services');
 
 // Name click → Who
 document.querySelector('.name').addEventListener('click', () => showInfo('who'));
