@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The AI Agent Agent | Representation for All Things AI | Los Angeles</title>
-  <meta name="description" content="The AI Agent Agent is talent-style representation for all things AI. AI Zero to AI Hero in one session. AI Concierge. Human touch. Los Angeles." />
+  <title>The AI Agent Agent | Los Angeles</title>
+  <meta name="description" content="I become your agent for all things AI. AI Zero to AI Hero in one session. AI Concierge with human touch. One-stop AI Agent Shop. Los Angeles." />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="author" content="Noah Weiss" />
   <link rel="canonical" href="https://theaiagentagent.com/" />
@@ -13,13 +13,13 @@
   <meta property="og:url" content="https://theaiagentagent.com/" />
   <meta property="og:site_name" content="The AI Agent Agent" />
   <meta property="og:title" content="The AI Agent Agent | Los Angeles" />
-  <meta property="og:description" content="I become your agent for all things AI. AI Zero to AI Hero in one session. AI Concierge with human touch." />
-  <meta property="og:locale" content="en_US" />
+  <meta property="og:description" content="I become your agent for all things AI. AI Zero to AI Hero in one session. AI Concierge. Human touch." />
   <meta property="og:image" content="https://theaiagentagent.com/assets/og-image.svg" />
+  <meta property="og:locale" content="en_US" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="The AI Agent Agent | Los Angeles" />
-  <meta name="twitter:description" content="Talent-style representation for all things AI. AI Concierge. Human touch." />
+  <meta name="twitter:description" content="Your AI Concierge. AI Zero to AI Hero in one session." />
   <meta name="twitter:image" content="https://theaiagentagent.com/assets/og-image.svg" />
 
   <meta name="theme-color" content="#ffffff" />
@@ -34,9 +34,9 @@
     "@type": "ProfessionalService",
     "name": "The AI Agent Agent",
     "url": "https://theaiagentagent.com/",
-    "description": "Talent-style representation for all things AI. AI Concierge in Los Angeles. AI Zero to AI Hero in one session.",
+    "description": "I become your agent for all things AI. AI Concierge in Los Angeles. AI Zero to AI Hero in one session.",
     "areaServed": "Los Angeles",
-    "founder": { "@type": "Person", "name": "Noah Weiss", "url": "https://www.linkedin.com/in/noaheweiss" },
+    "founder": {"@type":"Person","name":"Noah Weiss","url":"https://www.linkedin.com/in/noaheweiss"},
     "sameAs": ["https://www.linkedin.com/in/noaheweiss"],
     "slogan": "I become your agent for all things AI."
   }
@@ -44,125 +44,117 @@
 
   <style>
     :root {
-      --white: #ffffff;
-      --off: #f6f6f6;
-      --ink: #000000;
-      --muted: #6a6a6a;
-      --line: #e5e5e5;
+      --bg: #ffffff;
+      --off: #f5f6f5;
+      --ink: #0a0a0a;
+      --muted: #5f5f5f;
+      --line: #e6e6e6;
       --green: #0b6b3a;
       --green-2: #08522c;
-      --max: 1080px;
+      --max: 1040px;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     body {
       font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background: var(--bg);
       color: var(--ink);
-      background: var(--white);
-      line-height: 1.5;
-      font-size: 15px;
+      line-height: 1.55;
+      font-size: 15.5px;
       -webkit-font-smoothing: antialiased;
     }
     a { color: inherit; text-decoration: none; }
     img { display: block; max-width: 100%; height: auto; }
-    .wrap { width: min(var(--max), calc(100% - 48px)); margin: 0 auto; }
+    .wrap { width: min(var(--max), calc(100% - 40px)); margin: 0 auto; }
 
-    /* Agency header */
+    /* Header */
     header {
-      position: sticky; top: 0; z-index: 40;
-      background: rgba(255,255,255,0.97);
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(255,255,255,0.96);
       border-bottom: 1px solid var(--line);
-      backdrop-filter: blur(10px);
+      backdrop-filter: blur(12px);
     }
-    .header-inner {
-      min-height: 68px;
+    .header-row {
+      min-height: 64px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 20px;
+      gap: 16px;
     }
-    .wordmark-type {
+    .brand {
       font-size: 11px;
       font-weight: 700;
-      letter-spacing: 0.16em;
+      letter-spacing: 0.15em;
       text-transform: uppercase;
     }
-    .wordmark-type span {
+    .brand small {
       display: block;
       margin-top: 3px;
       color: var(--muted);
       font-weight: 500;
-      letter-spacing: 0.14em;
+      letter-spacing: 0.12em;
       font-size: 10px;
     }
     nav {
       display: flex;
       align-items: center;
-      gap: 26px;
-      font-size: 12px;
-      font-weight: 500;
-      letter-spacing: 0.04em;
-      color: var(--muted);
+      gap: 22px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
       text-transform: uppercase;
+      color: var(--muted);
     }
     nav a:hover { color: var(--ink); }
     .nav-cta {
-      color: #fff !important;
       background: var(--ink);
+      color: #fff !important;
       padding: 10px 14px;
-      letter-spacing: 0.08em;
-      font-weight: 600;
     }
     .nav-cta:hover { background: var(--green); }
 
-    /* Hero like agency splash */
+    /* Hero */
     .hero {
-      padding: 72px 0 64px;
+      padding: 56px 0 52px;
       border-bottom: 1px solid var(--line);
-      min-height: 78vh;
-      display: flex;
-      align-items: center;
     }
-    .hero-inner { width: 100%; }
     .eyebrow {
+      display: inline-block;
       font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.18em;
+      font-weight: 700;
+      letter-spacing: 0.16em;
       text-transform: uppercase;
       color: var(--green);
-      margin-bottom: 34px;
+      margin-bottom: 28px;
     }
-    .sig {
-      max-width: min(100%, 980px);
-      margin: 0 0 44px;
+    .logo-wrap {
+      max-width: 900px;
+      margin: 0 0 34px;
+      padding: 8px 0 4px;
     }
-    .sig img {
+    .logo-wrap img {
       width: 100%;
-      height: auto;
-      min-height: 180px;
-      max-height: 320px;
+      max-width: 900px;
+      max-height: 280px;
       object-fit: contain;
       object-position: left center;
     }
     @media (min-width: 900px) {
-      .sig img {
-        min-height: 220px;
-        max-height: 360px;
-      }
+      .logo-wrap img { max-height: 320px; }
     }
     h1 {
-      font-size: clamp(32px, 5vw, 52px);
-      font-weight: 500;
-      letter-spacing: -0.035em;
-      line-height: 1.05;
-      max-width: 14ch;
-      margin: 0 0 18px;
+      font-size: clamp(30px, 4.8vw, 48px);
+      font-weight: 550;
+      letter-spacing: -0.03em;
+      line-height: 1.08;
+      max-width: 16ch;
+      margin: 0 0 16px;
     }
     .lede {
-      max-width: 36rem;
+      max-width: 38rem;
       color: var(--muted);
       font-size: 16px;
-      margin-bottom: 28px;
+      margin-bottom: 26px;
     }
     .lede strong { color: var(--ink); font-weight: 600; }
     .actions { display: flex; flex-wrap: wrap; gap: 10px; }
@@ -172,175 +164,174 @@
       justify-content: center;
       height: 46px;
       padding: 0 18px;
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 0.08em;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
       border: 1px solid var(--ink);
+      transition: 0.15s ease;
     }
-    .btn-primary { background: var(--green); border-color: var(--green); color: #fff; }
+    .btn-primary {
+      background: var(--green);
+      border-color: var(--green);
+      color: #fff;
+    }
     .btn-primary:hover { background: var(--green-2); border-color: var(--green-2); }
     .btn-secondary { background: #fff; }
     .btn-secondary:hover { background: var(--off); }
 
-    section { padding: 72px 0; border-bottom: 1px solid var(--line); }
+    section { padding: 64px 0; border-bottom: 1px solid var(--line); }
     .label {
       font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.16em;
+      font-weight: 700;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
       color: var(--muted);
-      margin-bottom: 16px;
+      margin-bottom: 14px;
     }
     h2 {
-      font-size: clamp(26px, 3.8vw, 38px);
-      font-weight: 500;
-      letter-spacing: -0.03em;
-      line-height: 1.08;
+      font-size: clamp(24px, 3.5vw, 34px);
+      font-weight: 550;
+      letter-spacing: -0.025em;
+      line-height: 1.12;
       max-width: 16ch;
-      margin: 0 0 16px;
+      margin: 0 0 14px;
     }
     .prose { max-width: 38rem; color: var(--muted); }
     .prose p + p { margin-top: 12px; }
-    .prose .hit { color: var(--ink); font-weight: 600; }
+    .hit { color: var(--ink); font-weight: 600; }
 
     .split {
       display: grid;
-      grid-template-columns: 0.85fr 1.15fr;
-      gap: 48px;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 40px;
       align-items: start;
     }
-
     .band { background: var(--off); }
 
-    /* Practice rows like agency departments */
-    .practice {
+    .rows { border-top: 1px solid var(--line); margin-top: 24px; }
+    .row {
       display: grid;
-      border-top: 1px solid var(--line);
-      margin-top: 28px;
-    }
-    .practice-row {
-      display: grid;
-      grid-template-columns: 120px 1fr;
-      gap: 24px;
-      padding: 26px 0;
+      grid-template-columns: 140px 1fr;
+      gap: 20px;
+      padding: 22px 0;
       border-bottom: 1px solid var(--line);
     }
-    .practice-row h3 {
-      font-size: 12px;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      font-weight: 700;
-      padding-top: 2px;
-    }
-    .practice-row p { color: var(--muted); max-width: 40rem; }
-
-    .panel {
-      border: 1px solid var(--line);
-      background: #fff;
-      padding: 32px;
-    }
-    .panel-line {
-      font-size: clamp(24px, 3.4vw, 34px);
-      font-weight: 500;
-      letter-spacing: -0.03em;
-      line-height: 1.12;
-      margin: 14px 0 0;
-      max-width: 18ch;
-    }
-    .panel-line em { font-style: normal; color: var(--green); }
-
-    .tri {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      border: 1px solid var(--line);
-      margin-top: 24px;
-    }
-    .tri article {
-      padding: 22px;
-      border-right: 1px solid var(--line);
-    }
-    .tri article:last-child { border-right: 0; }
-    .tri h3 {
+    .row h3 {
       font-size: 11px;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      margin-bottom: 10px;
+      font-weight: 700;
+      color: var(--ink);
+      padding-top: 2px;
+    }
+    .row p { color: var(--muted); max-width: 40rem; }
+
+    .card {
+      border: 1px solid var(--line);
+      background: #fff;
+      padding: 28px;
+    }
+    .card-line {
+      font-size: clamp(22px, 3vw, 30px);
+      font-weight: 550;
+      letter-spacing: -0.025em;
+      line-height: 1.15;
+      margin-top: 12px;
+      max-width: 18ch;
+    }
+    .card-line em { font-style: normal; color: var(--green); }
+
+    .facts {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border: 1px solid var(--line);
+      margin-top: 22px;
+    }
+    .facts article {
+      padding: 18px;
+      border-right: 1px solid var(--line);
+    }
+    .facts article:last-child { border-right: 0; }
+    .facts h3 {
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
       font-weight: 700;
     }
-    .tri p { color: var(--muted); font-size: 14px; }
+    .facts p { color: var(--muted); font-size: 13.5px; }
 
-    .faq { max-width: 720px; }
-    details { border-top: 1px solid var(--line); padding: 16px 0; }
+    .faq { max-width: 700px; }
+    details { border-top: 1px solid var(--line); padding: 15px 0; }
     details:last-child { border-bottom: 1px solid var(--line); }
     summary {
       cursor: pointer;
       font-weight: 600;
       list-style: none;
-      font-size: 15px;
+      font-size: 14.5px;
     }
     summary::-webkit-details-marker { display: none; }
-    details[open] summary { margin-bottom: 8px; }
+    details[open] summary { margin-bottom: 7px; }
     details p { color: var(--muted); }
 
-    .contact-grid {
+    .contact {
       display: grid;
-      grid-template-columns: 1.25fr 0.75fr;
-      gap: 40px;
+      grid-template-columns: 1.3fr 0.7fr;
+      gap: 36px;
       align-items: end;
     }
-    .contact-meta {
+    .meta {
       color: var(--muted);
       font-size: 13px;
       line-height: 1.7;
-      letter-spacing: 0.02em;
     }
-    .contact-meta strong {
+    .meta strong {
       display: block;
       color: var(--ink);
-      font-size: 11px;
+      font-size: 10px;
       letter-spacing: 0.14em;
       text-transform: uppercase;
       margin-bottom: 8px;
     }
 
-    footer {
-      padding: 28px 0 40px;
-    }
-    .footer-inner {
+    footer { padding: 24px 0 36px; }
+    .footer-row {
       display: flex;
       justify-content: space-between;
-      gap: 16px;
+      gap: 14px;
       flex-wrap: wrap;
       font-size: 10px;
       letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--muted);
     }
-    .footer-links { display: flex; gap: 18px; }
+    .footer-row a { margin-left: 16px; }
+    .footer-row a:hover { color: var(--ink); }
 
     @media (max-width: 860px) {
-      .split, .contact-grid, .tri { grid-template-columns: 1fr; }
-      .tri article { border-right: 0; border-bottom: 1px solid var(--line); }
-      .tri article:last-child { border-bottom: 0; }
-      .practice-row { grid-template-columns: 1fr; gap: 8px; }
+      .split, .contact, .facts { grid-template-columns: 1fr; }
+      .facts article { border-right: 0; border-bottom: 1px solid var(--line); }
+      .facts article:last-child { border-bottom: 0; }
+      .row { grid-template-columns: 1fr; gap: 6px; }
       nav a:not(.nav-cta) { display: none; }
-      .hero { min-height: auto; padding: 48px 0; }
-      section { padding: 52px 0; }
+      section { padding: 48px 0; }
+      .hero { padding: 40px 0 36px; }
+      .logo-wrap img { max-height: 180px; }
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="wrap header-inner">
-      <a class="wordmark-type" href="/">
+    <div class="wrap header-row">
+      <a class="brand" href="/">
         The AI Agent Agent
-        <span>Los Angeles</span>
+        <small>Los Angeles</small>
       </a>
       <nav aria-label="Primary">
-        <a href="#representation">Representation</a>
+        <a href="#about">About</a>
         <a href="#practice">Practice</a>
-        <a href="#roster">For</a>
+        <a href="#for">For</a>
         <a class="nav-cta" href="#contact">Contact</a>
       </nav>
     </div>
@@ -348,22 +339,22 @@
 
   <main>
     <section class="hero">
-      <div class="wrap hero-inner">
+      <div class="wrap">
         <p class="eyebrow">Representation · AI Concierge</p>
-        <div class="sig">
+        <div class="logo-wrap">
           <img
             src="assets/logo-wordmark.svg"
-            width="1648"
-            height="626"
-            alt="The AI Agent Agent signature logo"
+            width="2280"
+            height="970"
+            alt="The AI Agent Agent logo"
           />
         </div>
         <h1>I become your agent for all things AI.</h1>
         <p class="lede">
-          Everyone wants an agent in LA. Now the word on the street is AI agents.
-          <strong>I am the agent that helps you quickly master AI and AI Agents.</strong>
-          In one session, I will have you up and running like a pro.
+          I am the agent that helps you quickly master AI and AI Agents.
+          <strong>In one session, I will have you up and running like a pro.</strong>
           Go from AI Zero to AI Hero in one session.
+          Your one-stop AI Agent Shop. Human touch.
         </p>
         <div class="actions">
           <a class="btn btn-primary" href="#contact">Request representation</a>
@@ -372,28 +363,23 @@
       </div>
     </section>
 
-    <section id="representation">
+    <section id="about">
       <div class="wrap split">
         <div>
-          <p class="label">The house</p>
-          <h2>Talent-agency energy. AI specialty.</h2>
+          <p class="label">About</p>
+          <h2>AI Concierge. Just me.</h2>
         </div>
         <div class="prose">
-          <p class="hit">Your one-stop AI Agent Shop. Your AI Concierge. Human touch.</p>
+          <p class="hit">Automating your workflow and tasks is easier and faster than you can imagine.</p>
           <p>
-            Automating your workflow and tasks is easier and faster than you can imagine.
             I help you decide what AI platforms are worth using and what is noise.
             I build or set up agents and workflows when something should exist.
+            I stay in your corner as tools, vendors, and needs change.
           </p>
           <p>
-            I stay in your corner as tools, vendors, and needs change.
             Personalization and curation of platforms, newsletters and podcasts.
             Everything is bespoke and consultative.
-          </p>
-          <p>
-            I make AI your secret weapon.
-            Quickly get in the know with Noah.
-            Full-service. Human touch. Results-driven. Los Angeles.
+            I make AI your secret weapon. Quickly get in the know with Noah.
           </p>
         </div>
       </div>
@@ -401,23 +387,23 @@
 
     <section id="practice" class="band">
       <div class="wrap">
-        <p class="label">Practice areas</p>
+        <p class="label">Practice</p>
         <h2>How the desk works</h2>
-        <p class="prose">Not a course. Not a chatbot storefront. Representation with execution.</p>
-        <div class="practice">
-          <article class="practice-row">
+        <p class="prose">Full-service. Human touch. Results-driven. Los Angeles.</p>
+        <div class="rows">
+          <article class="row">
             <h3>Session</h3>
             <p>AI Zero to AI Hero in one session. Up and running like a pro. Quickly get in the know with Noah.</p>
           </article>
-          <article class="practice-row">
+          <article class="row">
             <h3>Concierge</h3>
             <p>Ongoing AI Concierge representation. Platforms, workflows, vendors, decisions. Human touch included.</p>
           </article>
-          <article class="practice-row">
+          <article class="row">
             <h3>Build</h3>
             <p>When the right move is a custom agent or workflow, I scope it and ship it. Bespoke and consultative.</p>
           </article>
-          <article class="practice-row">
+          <article class="row">
             <h3>Curation</h3>
             <p>Personalization and curation of platforms, newsletters and podcasts so you are not drowning in noise.</p>
           </article>
@@ -425,13 +411,13 @@
       </div>
     </section>
 
-    <section id="roster">
+    <section id="for">
       <div class="wrap">
         <p class="label">For</p>
-        <div class="panel">
-          <p class="prose hit">Ideal for solopreneurs, startups, professionals (ie. lawyers, CPAs).</p>
-          <p class="panel-line">Your agent.<br /><em>All things AI.</em></p>
-          <div class="tri">
+        <div class="card">
+          <p class="hit">Ideal for solopreneurs, startups, professionals (ie. lawyers, CPAs).</p>
+          <p class="card-line">Your agent.<br /><em>All things AI.</em></p>
+          <div class="facts">
             <article>
               <h3>Who</h3>
               <p>Solopreneurs, startups, professionals. Buyer energy like Justin, Barry Shaich, Neil Resnick, Raffi Tachdjian.</p>
@@ -442,7 +428,7 @@
             </article>
             <article>
               <h3>Base</h3>
-              <p>Los Angeles. Remote representation available.</p>
+              <p>Los Angeles. Remote available.</p>
             </article>
           </div>
         </div>
@@ -456,7 +442,7 @@
         <div class="faq">
           <details>
             <summary>What is The AI Agent Agent?</summary>
-            <p>Talent-style representation for all things AI. Your AI Concierge and one-stop AI Agent Shop, run by Noah Weiss.</p>
+            <p>Your one-stop AI Agent Shop and AI Concierge. I become your agent for all things AI.</p>
           </details>
           <details>
             <summary>What happens in one session?</summary>
@@ -475,7 +461,7 @@
     </section>
 
     <section id="contact">
-      <div class="wrap contact-grid">
+      <div class="wrap contact">
         <div>
           <p class="label">Contact</p>
           <h2>Request representation.</h2>
@@ -483,12 +469,12 @@
             Ready to go from AI Zero to AI Hero and keep an AI Concierge in your corner?
             Quickly get in the know with Noah.
           </p>
-          <div class="actions" style="margin-top: 24px;">
+          <div class="actions" style="margin-top: 22px;">
             <a class="btn btn-primary" href="https://www.linkedin.com/in/noaheweiss" target="_blank" rel="noopener">Message on LinkedIn</a>
             <a class="btn btn-secondary" href="mailto:hello@theaiagentagent.com?subject=Representation%20inquiry">Email the desk</a>
           </div>
         </div>
-        <div class="contact-meta">
+        <div class="meta">
           <strong>Office</strong>
           The AI Agent Agent<br />
           Los Angeles, California<br />
@@ -499,9 +485,9 @@
   </main>
 
   <footer>
-    <div class="wrap footer-inner">
+    <div class="wrap footer-row">
       <div>The AI Agent Agent · Los Angeles</div>
-      <div class="footer-links">
+      <div>
         <a href="#practice">Practice</a>
         <a href="#contact">Contact</a>
         <a href="https://www.linkedin.com/in/noaheweiss" target="_blank" rel="noopener">LinkedIn</a>

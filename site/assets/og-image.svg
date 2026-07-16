@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="The AI Agent Agent">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
   <rect width="1200" height="630" fill="#FFFFFF"/>
-  <rect x="0" y="0" width="8" height="630" fill="#0B6B3A"/>
-  <text x="72" y="200" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="48" font-weight="600" letter-spacing="4" fill="#000000">THE AI AGENT AGENT</text>
-  <text x="72" y="270" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="28" fill="#666666">I become your agent for all things AI.</text>
-  <text x="72" y="330" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="24" fill="#0B6B3A">AI Concierge · Human touch · Los Angeles</text>
-  <text x="72" y="500" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="16" letter-spacing="4" fill="#666666">REPRESENTATION FOR THE AI ERA</text>
+  <rect x="0" y="0" width="10" height="630" fill="#0B6B3A"/>
+  <text x="72" y="210" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="46" font-weight="700" letter-spacing="3" fill="#000000">THE AI AGENT AGENT</text>
+  <text x="72" y="280" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="28" fill="#666666">I become your agent for all things AI.</text>
+  <text x="72" y="340" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="24" fill="#0B6B3A">AI Zero to AI Hero in one session.</text>
+  <text x="72" y="500" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="16" letter-spacing="3" fill="#666666">LOS ANGELES · AI CONCIERGE</text>
 </svg>
