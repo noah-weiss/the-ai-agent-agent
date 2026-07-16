@@ -46,6 +46,8 @@ No public client names on the website.
 
 Ready? [Message on LinkedIn](https://www.linkedin.com/in/noaheweiss)
 
+noah@theaiagentagent.com
+
 **Edits:**
 
 ---
