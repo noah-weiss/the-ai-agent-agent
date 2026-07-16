@@ -3,133 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Choose the mark — The AI Agent Agent</title>
+  <title>Clean options — The AI Agent Agent</title>
   <style>
-    :root { --bg:#fff; --ink:#111; --soft:#666; --line:#ddd; --green:#0b6b3a; }
-    * { box-sizing:border-box; margin:0; padding:0; }
-    body { font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; background:var(--bg); color:var(--ink); }
-    header { padding:20px 24px; border-bottom:1px solid var(--line); font-size:11px; letter-spacing:0.14em; text-transform:uppercase; font-weight:600; }
-    .wrap { max-width:1100px; margin:0 auto; padding:32px 20px 80px; }
-    h1 { font-family:Georgia,serif; font-size:32px; font-weight:400; margin-bottom:8px; }
-    .lede { color:var(--soft); max-width:48ch; margin-bottom:32px; line-height:1.5; }
-    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:20px; }
-    .opt { border:1px solid var(--line); padding:20px; background:#fff; }
-    .opt.dark { background:#111; color:#fff; }
-    .label { font-size:10px; letter-spacing:0.12em; text-transform:uppercase; color:var(--soft); margin-bottom:12px; font-weight:600; }
-    .opt.dark .label { color:rgba(255,255,255,0.6); }
-    img { max-width:100%; height:auto; display:block; background:#fff; }
-    .opt.dark img { background:#111; }
-    .meta { margin-top:12px; font-size:12px; color:var(--soft); line-height:1.4; }
-    .file { font-family:monospace; font-size:11px; color:#888; margin-top:8px; word-break:break-all; }
-    .pick { border:2px solid var(--green); padding:16px; margin:24px 0; background:#f8faf8; }
-    .pick strong { color:var(--green); }
-    .section { margin-top:48px; }
-    .row { display:flex; gap:12px; flex-wrap:wrap; }
+    body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; background:#fff; color:#111; padding:40px 24px; max-width:1000px; margin:0 auto; }
+    h1 { font-family: Georgia, serif; font-size:32px; font-weight:400; }
+    .card { border:1px solid #e8e8e8; padding:32px; margin:20px 0; background:#fff; }
+    img { max-width:100%; height:auto; display:block; }
+    .label { font-size:10px; text-transform:uppercase; letter-spacing:0.14em; color:#666; margin-bottom:12px; }
+    .note { font-size:13px; color:#666; margin-top:16px; }
   </style>
 </head>
 <body>
-  <header>THE AI AGENT AGENT — LOGO CHOOSER</header>
-  <div class="wrap">
-    <h1>Pick one. Tell me the number.</h1>
-    <p class="lede">All real ink from the page you wrote. No script fonts. No green AA blocks. No corporate templates.</p>
+  <h1>Clean lockups (no cursive)</h1>
+  <p>Pick one. I’ll lock it on the site.</p>
 
-    <div class="pick">
-      <strong>Quick recs from what exists:</strong><br>
-      2 = clean black cursive (current hero)<br>
-      1 = raw blue hero signature<br>
-      4 = bold traced<br>
-      6 = stacked natural shape
-    </div>
-
-    <div class="grid">
-
-      <!-- 1 -->
-      <div class="opt">
-        <div class="label">01 • Raw hero signature (blue ink)</div>
-        <img src="../handwriting/crops/01-hero-signature-top.jpg" alt="Raw blue hand" />
-        <div class="meta">Full “The AI Agent Agent” in your actual handwriting. Most personal. Best for hero when you want the artifact.</div>
-        <div class="file">brand/handwriting/crops/01-hero-signature-top.jpg</div>
-      </div>
-
-      <!-- 2 -->
-      <div class="opt">
-        <div class="label">02 • Clean black (final mark)</div>
-        <img src="../../site/assets/logo-hand.png" alt="Clean black hand" />
-        <div class="meta">Cleaned black lines. High contrast. Current hero. Good for most uses.</div>
-        <div class="file">site/assets/logo-hand.png (from vector/final-mark.png)</div>
-      </div>
-
-      <!-- 3 -->
-      <div class="opt">
-        <div class="label">03 • Soft ink</div>
-        <img src="../../site/assets/logo-soft.png" alt="Soft ink" />
-        <div class="meta">Softer, slightly textured version of the hand. Less sharp, more human.</div>
-        <div class="file">site/assets/logo-soft.png (from vector/sig-soft.png)</div>
-      </div>
-
-      <!-- 4 -->
-      <div class="opt">
-        <div class="label">04 • Bold traced</div>
-        <img src="../../site/assets/logo-bold.png" alt="Bold hand" />
-        <div class="meta">Bolder, more graphic version. Strong for small sizes or stamps.</div>
-        <div class="file">site/assets/logo-bold.png (from vector/bold-mark.png)</div>
-      </div>
-
-      <!-- 5 -->
-      <div class="opt">
-        <div class="label">05 • Pro bold</div>
-        <img src="../../site/assets/logo-pro.png" alt="Pro bold" />
-        <div class="meta">Another bold processing. Different weight.</div>
-        <div class="file">site/assets/logo-pro.png</div>
-      </div>
-
-      <!-- 6 -->
-      <div class="opt">
-        <div class="label">06 • Stack lockup (raw)</div>
-        <img src="../../site/assets/hand-stack.jpg" alt="Stack hand" />
-        <div class="meta">“The AI Agent” on top, “Agent” dropped under. Natural logo shape.</div>
-        <div class="file">brand/handwriting/crops/02-stack-left.jpg</div>
-      </div>
-
-      <!-- 7 -->
-      <div class="opt">
-        <div class="label">07 • Caps block (raw)</div>
-        <img src="../handwriting/crops/03-caps-right.jpg" alt="Caps" style="max-height:140px;object-fit:contain;" />
-        <div class="meta">Architectural caps version. Better as utility/stamp than main wordmark.</div>
-        <div class="file">brand/handwriting/crops/03-caps-right.jpg</div>
-      </div>
-
-      <!-- 8 -->
-      <div class="opt">
-        <div class="label">08 • BW hero</div>
-        <img src="../../site/assets/logo-hero-bw.png" alt="BW hero" />
-        <div class="meta">Black and white treatment of the signature.</div>
-        <div class="file">site/assets/logo-hero-bw.png</div>
-      </div>
-
-      <!-- 9 -->
-      <div class="opt dark">
-        <div class="label">09 • On black (invert test)</div>
-        <img src="../logo/vector/final-mark.png" alt="On black" style="filter:invert(1) hue-rotate(180deg); background:#111; max-height:140px;" />
-        <div class="meta">How the clean hand looks inverted for dark fields.</div>
-        <div class="file">brand/logo/vector/final-mark.png</div>
-      </div>
-
-      <!-- 10 -->
-      <div class="opt">
-        <div class="label">10 • Full page sample</div>
-        <img src="../handwriting/samples/01-the-ai-agent-agent.jpeg" alt="Full sample" />
-        <div class="meta">Everything you wrote on the page. Reference only.</div>
-        <div class="file">brand/handwriting/samples/01-the-ai-agent-agent.jpeg</div>
-      </div>
-
-    </div>
-
-    <div class="section">
-      <h2 style="font-size:18px;margin-bottom:12px;">Other files still in vector/</h2>
-      <p style="color:#666;font-size:13px;">agency-mark.png, logo-clean.png, master-logo.png, raw-hero.png, sig-raw.png, sig-vector.png, wordmark-*.svg variants, stack-traced.svg, etc.</p>
-      <p style="margin-top:12px;font-size:13px;">Tell me the number (or describe what you want — e.g. “bolder + green accent” or “just the raw blue on white”) and I’ll lock it in and update the site + all assets.</p>
-    </div>
+  <div class="card">
+    <div class="label">A · Primary wordmark</div>
+    <img src="../../site/assets/logo-clean.svg" alt="Noah Weiss The AI Agent Agent" />
+    <div class="note">Current on site. Big name, role, green LA. Clean Georgia + green accent.</div>
   </div>
+
+  <div class="card">
+    <div class="label">B · Stacked</div>
+    <img src="../../site/assets/logo-clean-stacked.svg" alt="Stacked" />
+    <div class="note">Tighter for headers or cards. Name at bottom.</div>
+  </div>
+
+  <div class="card">
+    <div class="label">C · Monogram + name</div>
+    <img src="../../site/assets/logo-clean-mono.svg" alt="AA monogram" />
+    <div class="note">Green square monogram + name. More formal agency feel.</div>
+  </div>
+
+  <p style="margin-top:40px;color:#666;">Say A, B, C or describe what to change (bigger name, different green, add portrait, black field, etc.).</p>
 </body>
 </html>

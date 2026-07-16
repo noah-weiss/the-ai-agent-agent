@@ -173,7 +173,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 100px 0 80px;
+      padding: 120px 0 96px;
       border-bottom: 1px solid var(--line);
     }
     .sig {
@@ -205,6 +205,39 @@
       line-height: 1.1;
       max-width: 18ch;
       margin-top: 20px;
+    }
+
+    
+    .sig.clean {
+      max-width: 780px;
+      margin-bottom: 56px;
+    }
+    .sig.clean img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .lockup .name {
+      font-family: var(--font-display);
+      font-size: clamp(42px, 6vw, 64px);
+      font-weight: 400;
+      letter-spacing: -0.03em;
+      line-height: 1.0;
+    }
+    .lockup .role {
+      font-family: var(--font-display);
+      font-size: clamp(22px, 3.2vw, 28px);
+      margin-top: 8px;
+      letter-spacing: -0.01em;
+    }
+    .lockup .loc {
+      font-family: var(--font-ui);
+      font-size: 11px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--green);
+      font-weight: 600;
+      margin-top: 14px;
     }
 
     .index {
@@ -426,13 +459,8 @@
   <main>
     <section class="intro">
       <div class="shell">
-        <div class="sig">
-          <img
-            src="assets/logo-hand-hero.png"
-            alt="The AI Agent Agent"
-            style="max-height:280px;width:auto;max-width:100%;display:block;"
-          />
-          <div class="mark-support">Los Angeles</div>
+        <div class="sig clean">
+          <img src="assets/logo-clean.svg" alt="Noah Weiss — The AI Agent Agent" style="max-width:100%;height:auto;display:block;" />
         </div>
         <h1>I am the agent for AI Agents.</h1>
       </div>
