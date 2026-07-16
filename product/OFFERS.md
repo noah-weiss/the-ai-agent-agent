@@ -1,59 +1,35 @@
 # Offers
 
-## The product
+## Core lines (Dad)
 
-**I become your agent for all things AI.**  
-Your AI concierge. Full-service representation with human touch.
-
-Everything is bespoke and consultative.
-
-## How people work with me
-
-### 1. Representation / AI concierge (core)
-Ongoing relationship.
-I stay in your corner across platforms, workflows, builds, vendors, and decisions.
-
-Includes:
-- priority access
-- judgment on which platforms are worth using
-- hands-on execution when needed
-- continuous improvement as the landscape moves
-- personalization and curation of platforms, newsletters, and podcasts
-- protection from AI theater
-
-### 2. Working session (entry)
-Focused session to get you operational fast and establish the relationship.
-Useful front door. Not the whole brand.
-
-### 3. Scoped build (as needed)
-When representation requires a specific agent, workflow, or system, we scope it and ship it.
-
-## Who it is for
-
-- Solopreneurs
-- Startups
-- Professionals (lawyers, CPAs, operators, founders)
-
-## Language to use
-
-- I become your agent for all things AI
-- AI concierge
+- I am the agent that helps you quickly master AI and AI Agents. In one session, I will have you up and running like a pro.
+- One-stop AI Agent Shop.
+- Go from AI Zero to AI Hero in one session.
+- Automating your workflow and tasks is easier and faster than you can imagine.
+- Quickly get in the know with Noah.
+- AI Concierge
 - Human touch
 - Bespoke and consultative
-- In your corner
-- Judgment + execution
-- Secret weapon
+- I become your agent for all things AI
 
-## Language to kill
+## Packages
 
-- One-stop AI Agent shop
-- AI zero to AI hero
-- Workshop / course framing as identity
+### 1. Working session (entry)
+AI Zero to AI Hero in one session.
+Get up and running like a pro.
+Quickly get in the know with Noah.
 
-## Pricing posture
+### 2. AI Concierge / representation (core)
+Ongoing. Stay in their corner across platforms, workflows, builds, vendors, decisions.
+Includes personalization and curation of platforms, newsletters and podcasts.
+Everything is bespoke and consultative.
 
-- Representation / concierge: monthly or quarterly (TBD)
-- Session: activation entry (TBD)
-- Build: scoped as needed
+### 3. Scoped build (as needed)
+When needed, build or set up the agent/workflow.
 
-Do not publish numbers until Noah locks them.
+## Audience
+Solopreneurs, startups, professionals (lawyers, CPAs).
+Buyer energy: Justin, Barry Shaich, Neil Resnick, Raffi Tachdjian.
+
+## Pricing
+TBD by Noah.

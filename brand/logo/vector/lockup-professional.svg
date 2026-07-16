@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1648.000000 626.000000" role="img" aria-label="The AI Agent Agent">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" role="img" aria-label="The AI Agent Agent">
   <title>The AI Agent Agent</title>
-  
-  <g fill="#FFFFFF" transform="translate(0.000000,626.000000) scale(0.100000,-0.100000)"
-fill="#FFFFFF" stroke="none">
+  <g transform="translate(60,20) scale(0.6553398058252428)">
+    <g fill="#000000" transform="translate(0.000000,626.000000) scale(0.100000,-0.100000)"
+fill="#000000" stroke="none">
 <path d="M11616 5018 c-9 -12 -16 -34 -16 -48 -1 -47 -145 -621 -179 -715 -15
 -41 -77 -263 -109 -390 -11 -43 -74 -55 -169 -32 -79 20 -116 21 -144 7 -69
 -37 54 -77 219 -71 82 3 79 7 56 -84 -20 -81 -34 -171 -68 -445 -3 -20 -10
@@ -194,4 +194,7 @@ l-39 -25 -36 38 c-60 64 -130 83 -170 46 -25 -23 -30 -41 -34 -125 -3 -47 -9
 49 -5 0 -20 -15 -32 -32z M2999 3858 c-8 -145 9 -268 37 -268 19 0 18 60 -1
 133 -8 32 -15 78 -15 102 0 25 -4 45 -10 45 -5 0 -10 -6 -11 -12z"/>
 </g>
+  </g>
+  <line x1="60" y1="340" x2="240" y2="340" stroke="#0B6B3A" stroke-width="3"/>
+  <text x="60" y="380" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="20" font-weight="600" letter-spacing="4" fill="#111111">AI CONCIERGE · LOS ANGELES</text>
 </svg>

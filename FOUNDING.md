@@ -6,7 +6,7 @@ Operator: Noah Weiss
 
 ## One line
 
-I become your agent for all things AI.
+I am the agent that helps you quickly master AI and AI Agents. In one session, I will have you up and running like a pro.
 
 ## The pitch
 
@@ -17,50 +17,41 @@ Now the word on the street is AI agents.
 Everything is moving fast.
 
 I become your agent for all things AI.
-I am your AI concierge: judgment, execution, and human touch.
-
-I help you quickly get sharp with AI and agents, then I stay in your corner.
-In a focused session I can get you operational fast.
-After that, I remain your agent for platforms, workflows, builds, vendors, and decisions.
-
-I don't work for a big studio or a big agency.
-It's just me.
+Your one-stop AI Agent Shop.
+Go from AI Zero to AI Hero in one session.
+Automating your workflow and tasks is easier and faster than you can imagine.
 
 I make AI your secret weapon.
+Quickly get in the know with Noah.
+
 Full-service. Human touch. Results-driven. Los Angeles.
+You are an AI Concierge.
+Everything is bespoke and consultative.
 
-## What your AI agent does
+## What I actually do
 
-- Decide which AI platforms are worth using and what is noise
+- Help clients decide what AI platforms are worth using and what is noise
 - Build or set up agents and workflows when something should exist
-- Stay in your corner as tools, vendors, and needs change
-- Protect you from AI theater and bad decisions
-- Personalize and curate platforms, newsletters, and podcasts
-- Work bespoke and consultative, not from a generic menu
-- Execute hands-on when needed
-
-## Offer posture
-
-**Core product:** representation / AI concierge  
-**Entry:** focused working session to get operational fast  
-**As needed:** scoped builds
-
-The brand is representation.
-Not a shop. Not a course. Not a one-off build-and-disappear gig.
+- Stay in their corner as tools, vendors, and needs change
+- Protect them from AI theater and bad decisions
+- Personalization and curation of platforms, newsletters and podcasts
 
 ## Who it is for
 
-Solopreneurs, startups, and professionals (lawyers, CPAs, operators, founders)
-who want an AI edge and someone accountable for it.
+This is ideal for solopreneurs, startups, professionals (ie. lawyers, CPAs).
+People like Justin, Barry Shaich, Neil Resnick, Raffi Tachdjian.
 
-Buyer energy like: Justin, Barry Shaich, Neil Resnick, Raffi Tachdjian.
+## Boardroom sentence
 
-## Boardroom test
+I become your agent for all things AI. Full-service. Human touch. Results-driven. Los Angeles.
 
-> "I become your agent for all things AI. Full-service. Human touch. Results-driven. Los Angeles."
+## Offer
+
+1. Working session: AI Zero to AI Hero in one session
+2. AI Concierge / representation ongoing
+3. Scoped build as needed
 
 ## Visual
 
-CAA restraint. White / black / green.  
-Primary mark: vectorized handwriting wordmark.  
-See `brand/logo/vector/` and `brand/style-guide.html`.
+Professional vector logo from Noah handwriting.
+`brand/logo/vector/wordmark-black.svg`
