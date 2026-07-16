@@ -40,6 +40,7 @@
       font-size: 12px;
       letter-spacing: 0.1em;
       opacity: 0.85;
+      cursor: pointer;
     }
     .nav {
       position: fixed;
@@ -53,6 +54,11 @@
     }
     .nav div {
       margin-bottom: 4px;
+      cursor: pointer;
+      transition: opacity 0.1s;
+    }
+    .nav div:hover {
+      opacity: 0.7;
     }
     .who {
       position: fixed;
@@ -68,6 +74,10 @@
       display: block;
       margin-bottom: 8px;
     }
+    .who a {
+      color: #fff;
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -78,23 +88,59 @@
       <div class="name">The AI Agent Agent</div>
       <div class="sub">LOS ANGELES</div>
     </div>
-    <div class="close">CLOSE</div>
+    <div class="close" onclick="location.reload()">CLOSE</div>
   </div>
 
-  <!-- Big stacked nav -->
+  <!-- Big stacked nav - clickable -->
   <div class="nav">
-    <div>Agent</div>
-    <div>Practice</div>
-    <div>Clients</div>
-    <div>Contact</div>
+    <div onclick="showInfo('agent')">Agent</div>
+    <div onclick="showInfo('practice')">Practice</div>
+    <div onclick="showInfo('clients')">Clients</div>
+    <div onclick="showInfo('contact')">Contact</div>
   </div>
 
-  <!-- Bottom right who text -->
-  <div class="who">
+  <!-- Bottom right info area - starts with who text -->
+  <div class="who" id="info">
     <strong>Who is The AI Agent Agent?</strong>
     Noah Weiss. Your agent for all things AI. AI Concierge. Human touch. Full-service representation.
   </div>
 
+<script>
+function showInfo(section) {
+  const info = document.getElementById('info');
+  
+  if (section === 'agent') {
+    info.innerHTML = `
+      <strong>Agent</strong>
+      Noah Weiss. Your agent for all things AI. AI Concierge. Human touch. Full-service representation.
+    `;
+  } else if (section === 'practice') {
+    info.innerHTML = `
+      <strong>Practice</strong>
+      1:1 Session — Zero to Hero.<br>
+      Concierge — Ongoing AI support. One message away.
+    `;
+  } else if (section === 'clients') {
+    info.innerHTML = `
+      <strong>Clients</strong>
+      Solopreneurs, startups, and professionals (lawyers, CPAs, operators, founders).
+    `;
+  } else if (section === 'contact') {
+    info.innerHTML = `
+      <strong>Contact</strong>
+      Ready? <a href="https://www.linkedin.com/in/noaheweiss" target="_blank">Message on LinkedIn</a>
+    `;
+  }
+}
+
+// Optional: clicking the name resets to default
+document.querySelector('.name').addEventListener('click', () => {
+  document.getElementById('info').innerHTML = `
+    <strong>Who is The AI Agent Agent?</strong>
+    Noah Weiss. Your agent for all things AI. AI Concierge. Human touch. Full-service representation.
+  `;
+});
+</script>
+
 </body>
 </html>
-<!-- Wed Jul 15 21:51:59 PDT 2026 -->
