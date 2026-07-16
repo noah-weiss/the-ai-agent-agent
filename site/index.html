@@ -30,6 +30,7 @@
     }
     .topbar .name {
       font-weight: 600;
+      cursor: pointer;
     }
     .topbar .sub {
       font-size: 10px;
@@ -86,63 +87,64 @@
   <div class="topbar">
     <div>
       <div class="name">The AI Agent Agent</div>
-      <div class="sub">LOS ANGELES</div>
+      <div class="sub">simplifying AI</div>
     </div>
     <div class="close" onclick="location.reload()">CLOSE</div>
   </div>
 
-  <!-- Big stacked nav - clickable -->
+  <!-- Big stacked nav -->
   <div class="nav">
-    <div onclick="showInfo('agent')">Agent</div>
     <div onclick="showInfo('practice')">Practice</div>
     <div onclick="showInfo('clients')">Clients</div>
     <div onclick="showInfo('contact')">Contact</div>
   </div>
 
-  <!-- Bottom right info area - starts with who text -->
-  <div class="who" id="info">
-    <strong>Who is The AI Agent Agent?</strong>
-    Noah Weiss. Your agent for all things AI. AI Concierge. Human touch. Full-service representation.
-  </div>
+  <!-- Bottom right info -->
+  <div class="who" id="info"></div>
 
 <script>
 function showInfo(section) {
   const info = document.getElementById('info');
-  
+
   if (section === 'practice') {
     info.innerHTML = `
       <strong>Practice</strong>
-      1:1 Session — Zero to Hero.<br>
-      Concierge — Ongoing AI support. One message away.
+      <strong style="margin-top:12px;display:block;">1:1 Session</strong>
+      AI Zero to AI Hero in one session.<br>
+      In one session, I will have you up and running like a pro.<br>
+      Quickly get in the know with Noah.<br><br>
+      <strong style="margin-top:8px;display:block;">Concierge</strong>
+      My services are bespoke and consultative.<br>
+      The relationship doesn't stop after our session.<br>
+      Newsletter access. Meetups. Exclusive events.
     `;
   } else if (section === 'clients') {
     info.innerHTML = `
       <strong>Clients</strong>
-      Solopreneurs, startups, and professionals (lawyers, CPAs, operators, founders).
+      Ideal for solopreneurs, startups, and professionals (lawyers, CPAs, operators, founders).<br><br>
+      People who want an AI edge and someone accountable for it.
     `;
   } else if (section === 'contact') {
     info.innerHTML = `
       <strong>Contact</strong>
       Ready? <a href="https://www.linkedin.com/in/noaheweiss" target="_blank">Message on LinkedIn</a>
     `;
+  } else if (section === 'who') {
+    info.innerHTML = `
+      <strong>Who</strong>
+      Noah Weiss is The AI Agent Agent.<br>
+      Not a product. Not a platform. A person in your corner.<br><br>
+      I become your agent for all things AI.<br>
+      Your AI Concierge. Full-service. Human touch. Results-driven. Los Angeles.
+    `;
   }
 }
 
-// Set initial info to Practice (since Agent is removed)
-document.getElementById('info').innerHTML = `
-  <strong>Practice</strong>
-  1:1 Session — Zero to Hero.<br>
-  Concierge — Ongoing AI support. One message away.
-`;
+// Default: Practice with full subtext
+showInfo('practice');
 
-// Clicking the name resets to Practice
-document.querySelector('.name').addEventListener('click', () => {
-  document.getElementById('info').innerHTML = `
-    <strong>Practice</strong>
-    1:1 Session — Zero to Hero.<br>
-    Concierge — Ongoing AI support. One message away.
-  `;
-});
+// Name click → Who
+document.querySelector('.name').addEventListener('click', () => showInfo('who'));
 </script>
 
 </body>

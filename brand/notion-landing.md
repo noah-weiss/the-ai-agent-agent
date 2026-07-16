@@ -1,7 +1,8 @@
 # The AI Agent Agent
 
-**LOS ANGELES**  
-Tagline option: *simplifying AI*
+**simplifying AI**
+
+> Source of truth for the green landing page. Edit here first, then the site.
 
 ---
 
@@ -21,16 +22,10 @@ My clients have spanned beauty, insurance, law, and finance (and gradmas).
 ### Concierge
 **Ongoing AI Concierge / representation.**
 
-Stay in their corner across platforms, workflows, builds, vendors, and decisions.  
-The relationship doesn’t stop after our session.  
-Newsletter access. Meetups.  
-Human touch. Bespoke and consultative.  
-Everything is personalization and curation of platforms, newsletters, and podcasts.
-
-**Edits:**
-
-### Scoped Build (as needed)
-When representation needs a specific agent or workflow, scope it and ship it.
+My services are bespoke and consultative.  
+The relationship doesn't stop after our session.  
+Newsletter access. Meetups. Exclusive events.  
+Personalization and curation of platforms, newsletters, and podcasts.
 
 **Edits:**
 
@@ -49,8 +44,7 @@ No public client names on the website.
 
 ## Contact
 
-Ready?  
-[Message on LinkedIn](https://www.linkedin.com/in/noaheweiss)
+Ready? [Message on LinkedIn](https://www.linkedin.com/in/noaheweiss)
 
 **Edits:**
 
@@ -76,10 +70,10 @@ I make AI your secret weapon.
 - I am the agent that helps you quickly master AI and AI Agents. In one session, I will have you up and running like a pro.
 - Go from AI Zero to AI Hero in one session.
 - I become your agent for all things AI.
-- Full-service. Human touch. Bespoke and consultative. Results-driven.
+- Full-service. Bespoke and consultative. Results-driven.
 - Quickly get in the know with Noah.
 - One session. One change.
-- Stay in their corner as tools, vendors, and needs change.
+- Stay in your corner as tools, vendors, and needs change.
 
 **Edits:**
 
@@ -89,8 +83,8 @@ I make AI your secret weapon.
 
 - Help decide which AI platforms are worth using and what is noise
 - Build or set up agents and workflows when something should exist
-- Stay in their corner as tools, vendors, and needs change (AI Concierge)
-- Protect them from AI theater and bad decisions
+- Stay in your corner as tools, vendors, and needs change (AI Concierge)
+- Protect you from AI theater and bad decisions
 - Personalization and curation of platforms, newsletters, and podcasts
 - Everything is bespoke and consultative
 
@@ -100,7 +94,7 @@ I make AI your secret weapon.
 
 ## Site structure (current green landing)
 
-- Header: **The AI Agent Agent** / LOS ANGELES
+- Header: The AI Agent Agent
 - Nav (big left): Practice · Clients · Contact
 - Info panel (bottom right): updates on click with the subtext above
 - No “Agent” page
@@ -110,16 +104,7 @@ I make AI your secret weapon.
 
 ---
 
-## How to use this in Notion
+## Live Notion
+https://app.notion.com/p/The-AI-Agent-Agent-39fbd24b425a8195804cea981f5d5470
 
-1. Create a new page titled **The AI Agent Agent**
-2. Paste this whole file
-3. Turn each `##` into a Heading 2
-4. Turn each `###` into a Heading 3 or Toggle
-5. Keep the **Edits:** lines as callouts so you can mark changes live
-6. Use a green callout or emoji 🟢 for the brand accent
-7. This is the source of truth. Update here first, then the site.
-
----
-
-*Last rebuilt: restored all old subtext from OFFERS / FOUNDING / ONE-PAGER after the strip-down. Ready for your new edits.*
+*Synced from live Notion edits (2026-07-16). Scoped Build removed. Concierge + core lines updated to second person / exclusive events.*
