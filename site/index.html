@@ -172,28 +172,39 @@
       min-height: 100svh;
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
-      padding: 120px 0 72px;
+      justify-content: center;
+      padding: 100px 0 80px;
       border-bottom: 1px solid var(--line);
     }
     .sig {
-      max-width: min(880px, 100%);
-      margin: 0 0 40px;
+      max-width: 920px;
+      margin: 0 0 28px;
     }
     .sig img {
       width: 100%;
       height: auto;
-      max-height: min(34vh, 260px);
+      max-height: 280px;
       object-fit: contain;
-      object-position: left bottom;
+      object-position: left;
+      display: block;
+    }
+    .mark-support {
+      margin-top: 10px;
+      font-family: var(--font-ui);
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--green);
+      font-weight: 600;
     }
     .intro h1 {
       font-family: var(--font-display);
-      font-size: clamp(36px, 5.8vw, 58px);
+      font-size: clamp(30px, 4.8vw, 48px);
       font-weight: 400;
       letter-spacing: -0.02em;
-      line-height: 1.08;
-      max-width: 16ch;
+      line-height: 1.1;
+      max-width: 18ch;
+      margin-top: 20px;
     }
 
     .index {
@@ -417,10 +428,11 @@
       <div class="shell">
         <div class="sig">
           <img
-            src="assets/logo-hand.png"
+            src="assets/logo-hand-hero.png"
             alt="The AI Agent Agent"
-            style="max-height:220px;width:auto;max-width:100%;display:block;"
+            style="max-height:280px;width:auto;max-width:100%;display:block;"
           />
+          <div class="mark-support">Los Angeles</div>
         </div>
         <h1>I am the agent for AI Agents.</h1>
       </div>
