@@ -419,6 +419,37 @@
       section.block { padding: 56px 0; }
       .index-list .meta { display: none; }
     }
+  
+    .index {
+      padding: 40px 0 120px;
+    }
+    .index-list {
+      list-style: none;
+      margin: 0;
+    }
+    .index-list li {
+      border-top: 1px solid var(--line);
+    }
+    .index-list li:last-child {
+      border-bottom: 1px solid var(--line);
+    }
+    .index-list a {
+      display: block;
+      font-family: var(--font-display);
+      font-size: clamp(36px, 7vw, 72px);
+      font-weight: 400;
+      letter-spacing: -0.03em;
+      padding: 28px 0;
+      color: #111;
+      text-decoration: none;
+    }
+    .index-list a:hover {
+      color: var(--green);
+    }
+    .block {
+      padding: 60px 0;
+    }
+
   </style>
 </head>
 <body>
@@ -457,128 +488,50 @@
   </div>
 
   <main>
-    <section class="intro">
+        <section class="intro">
       <div class="shell">
         <div class="sig clean">
           <img src="assets/logo-clean.svg" alt="Noah Weiss — The AI Agent Agent" style="max-width:100%;height:auto;display:block;" />
         </div>
-        <h1>I am the agent for AI Agents.</h1>
       </div>
     </section>
 
-    <section class="index" id="practice">
+        <section class="index" id="practice">
       <div class="shell">
-        <p class="index-label">Service</p>
         <ul class="index-list">
           <li>
-            <a href="#session">
-              <span>1:1 Session</span>
-              <span class="meta">Zero to Hero</span>
-            </a>
+            <a href="#session">1:1 Session</a>
           </li>
           <li>
-            <a href="#concierge">
-              <span>Concierge</span>
-              <span class="meta">At your service</span>
-            </a>
+            <a href="#concierge">Concierge</a>
           </li>
         </ul>
       </div>
     </section>
 
     <section class="block" id="about">
-      <div class="shell split">
-        <div>
-          <p class="label">Who</p>
-          <h2>Noah Weiss is The “AI Agent” Agent.</h2>
-          <img
-            src="assets/noah-portrait.jpg"
-            width="900"
-            height="1200"
-            alt="Noah Weiss"
-            style="margin-top:28px;width:100%;max-width:360px;height:auto;filter:grayscale(1);object-fit:cover;"
-          />
-        </div>
-        <div class="prose">
-          <p class="ink">I am here to help you navigate AI.</p>
-          <p>I am the agent for AI Agents. Full-service. Human touch. Los Angeles.</p>
-        </div>
+      <div class="shell">
+        <img src="assets/noah-portrait.jpg" alt="Noah Weiss" style="max-width:220px;width:100%;height:auto;filter:grayscale(1);margin:0;">
       </div>
     </section>
 
     <section class="block" id="session">
-      <div class="shell split">
-        <div>
-          <p class="label">Session</p>
-          <h2>AI Zero to AI Hero.</h2>
-        </div>
-        <div class="prose">
-          <p class="ink">In one session, I will have you up and running like a pro.</p>
-          <p>My clients have spanned beauty, insurance, law, and finance (and gradmas).</p>
-        </div>
+      <div class="shell">
+        <h2>1:1 Session</h2>
       </div>
     </section>
 
     <section class="block" id="concierge">
-      <div class="shell split">
-        <div>
-          <p class="label">Concierge</p>
-          <h2>One message away.</h2>
-        </div>
-        <div class="prose">
-          <p class="ink">Ongoing AI Concierge representation.</p>
-          <p>The relationship doesn't stop after our session. Newsletter access. Meetups.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="block" id="clients">
       <div class="shell">
-        <p class="label">For</p>
-        <h2>Who I represent.</h2>
-        <p class="prose ink" style="color:var(--ink);font-weight:600;">
-          Ideal for solopreneurs, startups, professionals (ie. lawyers, CPAs).
-        </p>
-        <div class="tri">
-          <article>
-            <h3>For</h3>
-            <p>Solopreneurs, startups, and professionals who want an AI edge and someone accountable for it.</p>
-          </article>
-          <article>
-            <h3>Agent</h3>
-            <p>Noah Weiss. The AI Agent Agent. AI Concierge. Full-service. Human touch.</p>
-          </article>
-          <article>
-            <h3>Base</h3>
-            <p>Los Angeles. Remote representation available.</p>
-          </article>
-        </div>
+        <h2>Concierge</h2>
       </div>
     </section>
 
     <section class="block" id="contact">
-      <div class="shell contact-grid">
-        <div>
-          <p class="label">Contact</p>
-          <h2>Request representation.</h2>
-          <p class="prose">
-            Ready to go from AI Zero to AI Hero and keep an AI Concierge in your corner?
-            Quickly get in the know with Noah.
-          </p>
-          <div class="row-cta">
-            <a class="btn btn-primary" href="https://www.linkedin.com/in/noaheweiss" target="_blank" rel="noopener">Message on LinkedIn</a>
-          </div>
-        </div>
-        <div class="office">
-          <strong>Office</strong>
-          The AI Agent Agent<br />
-          theaiagentagent.com
-        </div>
+      <div class="shell">
+        <a href="https://www.linkedin.com/in/noaheweiss" target="_blank" rel="noopener" style="font-size:18px;text-decoration:none;color:#111;">Message on LinkedIn</a>
       </div>
-    </section>
-  </main>
-
-  <footer>
+    </section><footer>
     <div class="shell footer-row">
       <div>The AI Agent Agent</div>
       <div>
