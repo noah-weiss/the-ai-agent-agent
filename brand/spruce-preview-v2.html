@@ -4,16 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#0b6b3a">
-  <meta name="description" content="Noah Weiss is The AI Agent Agent. Personal AI Concierge. Go from AI Zero to AI Hero in one session.">
-  <link rel="canonical" href="https://theaiagentagent.com/">
-  <meta property="og:title" content="The AI Agent Agent">
-  <meta property="og:description" content="I become your agent for all things AI. Your AI Concierge.">
-  <meta property="og:url" content="https://theaiagentagent.com/">
-  <meta property="og:type" content="website">
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
-  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-  <title>The AI Agent Agent</title>
+  <title>PREVIEW V2 · Bold · The AI Agent Agent</title>
   <link rel="preconnect" href="https://api.fontshare.com">
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@500,700&display=swap" rel="stylesheet">
   <style>
@@ -61,6 +52,20 @@
     }
 
     a { color: inherit; }
+
+    /* PREVIEW BANNER — removed when applied to the live site */
+    .preview-banner {
+      position: relative;
+      z-index: 50;
+      background: #000;
+      color: #fff;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 9px 16px;
+      text-align: center;
+    }
+    .preview-banner strong { color: #8fefb0; font-weight: 700; }
 
     .shell {
       width: min(var(--max), 100%);
@@ -487,7 +492,7 @@
 
       .site-header {
         position: fixed;
-        top: 0;
+        top: 33px;
         left: 0;
         right: 0;
         z-index: 20;
@@ -565,6 +570,8 @@
   </style>
 </head>
 <body>
+  <div class="preview-banner">Design preview V2 · bold · <strong>not live</strong> · hover the nav on desktop</div>
+
   <div class="ghost" id="ghost" aria-hidden="true">Agent</div>
   <div class="vignette" aria-hidden="true"></div>
   <div class="spotlight" id="spot" aria-hidden="true"></div>
@@ -613,11 +620,11 @@
     <section class="panel" id="panel" aria-live="polite">
       <div class="panel-inner">
         <h1><span class="idx">00</span>Who</h1>
-        <img class="portrait" src="assets/noah-avatar.jpg" alt="Noah Weiss" onerror="this.remove()">
+        <img class="portrait" src="portrait/noah-bw-square.jpg" alt="Noah Weiss" onerror="this.remove()">
         <p>Noah Weiss is The AI Agent Agent.</p>
         <p>I become your agent for all things AI.</p>
         <p>Your AI Concierge.</p>
-        <img class="signature" src="assets/sig-white.png" alt="" onerror="this.remove()">
+        <img class="signature" src="sig-white.png" alt="" onerror="this.remove()">
       </div>
     </section>
 
@@ -646,11 +653,11 @@
       label: 'Who',
       html:
         '<h1><span class="idx">00</span>Who</h1>' +
-        '<img class="portrait" src="assets/noah-avatar.jpg" alt="Noah Weiss" onerror="this.remove()">' +
+        '<img class="portrait" src="portrait/noah-bw-square.jpg" alt="Noah Weiss" onerror="this.remove()">' +
         '<p>Noah Weiss is The AI Agent Agent.</p>' +
         '<p>I become your agent for all things AI.</p>' +
         '<p>Your AI Concierge.</p>' +
-        '<img class="signature" src="assets/sig-white.png" alt="" onerror="this.remove()">'
+        '<img class="signature" src="sig-white.png" alt="" onerror="this.remove()">'
     },
     services: {
       label: 'Services',

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seal lab · The AI Agent Agent</title>
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@500,700,900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #0b6b3a;
+      --green-deep: #07422a;
+      --green-lift: #0e7d45;
+      --mint: #8fefb0;
+      --grotesk: "Satoshi", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #0d0f0e;
+      color: #fff;
+      font-family: var(--grotesk);
+      padding: 28px clamp(16px, 4vw, 48px) 64px;
+      -webkit-font-smoothing: antialiased;
+    }
+    .head { margin-bottom: 26px; }
+    .head h1 { font-size: 15px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; }
+    .head p { font-size: 13px; color: rgba(255,255,255,0.55); margin-top: 6px; max-width: 640px; line-height: 1.5; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 22px;
+    }
+    .card { border-radius: 14px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); }
+    .stage {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 44px 20px;
+      background: radial-gradient(130% 100% at 80% 0%, var(--green-lift) 0%, var(--green) 42%, var(--green-deep) 100%);
+    }
+    .stage::after {
+      content: "";
+      position: absolute; inset: 0; pointer-events: none; opacity: 0.055;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+    .meta { padding: 13px 18px 15px; background: #131614; }
+    .meta .tag {
+      display: block;
+      font-size: 11px; font-weight: 700; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--mint); margin-bottom: 4px;
+    }
+    .meta .note { font-size: 12.5px; color: rgba(255,255,255,0.62); line-height: 1.5; }
+
+    .seal { position: relative; width: 240px; height: 240px; }
+    .seal svg { width: 100%; height: 100%; display: block; overflow: visible; }
+
+    .seal .center-img {
+      position: absolute;
+      left: 50%; top: 50%;
+      width: 108px; height: 108px;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center 30%;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .seal .center-img.small { width: 94px; height: 94px; }
+
+    .orbit {
+      transform-origin: 50% 50%;
+      animation: spin 46s linear infinite;
+    }
+    .pulse { animation: pulse 2.2s ease-in-out infinite; transform-origin: 50% 50%; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.25; } }
+    @media (prefers-reduced-motion: reduce) {
+      .orbit, .pulse { animation: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="head">
+    <h1>Seal lab · direction D, agentic</h1>
+    <p>Three builds of the agent seal. The centers with a face are wired to use your illustrated avatar the moment you drop it in this folder as avatar.png; until then they fall back to your real portrait.</p>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="stage">
+        <div class="seal">
+          <svg viewBox="0 0 240 240">
+            <defs>
+              <path id="ringpath1" d="M 120,120 m -86,0 a 86,86 0 1,1 172,0 a 86,86 0 1,1 -172,0"/>
+            </defs>
+            <circle cx="120" cy="120" r="112" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="1.6"/>
+            <circle cx="120" cy="120" r="66" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+            <text font-family="Satoshi, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="3.6" fill="#fff">
+              <textPath href="#ringpath1">THE AI AGENT AGENT · LOS ANGELES · EST. 2026 ·</textPath>
+            </text>
+            <text x="120" y="134" text-anchor="middle" font-family="Satoshi, Helvetica, Arial, sans-serif" font-size="44" font-weight="900" letter-spacing="1" fill="#fff">AA</text>
+          </svg>
+        </div>
+      </div>
+      <div class="meta">
+        <span class="tag">D1 · The Classic</span>
+        <span class="note">Clean registry seal. Monogram center. The safe, timeless build.</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="stage">
+        <div class="seal">
+          <svg viewBox="0 0 240 240">
+            <defs>
+              <path id="ringpath2" d="M 120,120 m -86,0 a 86,86 0 1,1 172,0 a 86,86 0 1,1 -172,0"/>
+            </defs>
+            <circle cx="120" cy="120" r="112" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="1.6"/>
+            <g stroke="rgba(255,255,255,0.8)" stroke-width="1.6">
+              <line x1="120" y1="2" x2="120" y2="14"/>
+              <line x1="120" y1="226" x2="120" y2="238"/>
+              <line x1="2" y1="120" x2="14" y2="120"/>
+              <line x1="226" y1="120" x2="238" y2="120"/>
+            </g>
+            <text font-family="Satoshi, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="3.6" fill="#fff">
+              <textPath href="#ringpath2">THE AI AGENT AGENT · LOS ANGELES · EST. 2026 ·</textPath>
+            </text>
+            <circle cx="120" cy="120" r="58" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1"/>
+          </svg>
+          <img class="center-img" src="avatar.png" onerror="this.onerror=null; this.src='portrait/noah-bw-square.jpg'" alt="Noah Weiss">
+        </div>
+      </div>
+      <div class="meta">
+        <span class="tag">D2 · The Badge</span>
+        <span class="note">Your face in the seal, crosshair ticks at the compass points. Reads like agency credentials.</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="stage">
+        <div class="seal">
+          <svg viewBox="0 0 240 240">
+            <defs>
+              <path id="ringpath3" d="M 120,120 m -86,0 a 86,86 0 1,1 172,0 a 86,86 0 1,1 -172,0"/>
+            </defs>
+            <circle cx="120" cy="120" r="112" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="1.6"/>
+            <g class="orbit">
+              <circle cx="120" cy="120" r="103" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="1" stroke-dasharray="2 7"/>
+              <circle class="pulse" cx="120" cy="17" r="3.4" fill="#8fefb0"/>
+            </g>
+            <g stroke="rgba(255,255,255,0.8)" stroke-width="1.6">
+              <line x1="120" y1="2" x2="120" y2="12"/>
+              <line x1="120" y1="228" x2="120" y2="238"/>
+              <line x1="2" y1="120" x2="12" y2="120"/>
+              <line x1="228" y1="120" x2="238" y2="120"/>
+            </g>
+            <text font-family="Satoshi, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="3.6" fill="#fff">
+              <textPath href="#ringpath3">THE AI AGENT AGENT · LOS ANGELES · EST. 2026 ·</textPath>
+            </text>
+            <circle cx="120" cy="120" r="52" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1"/>
+            <text x="120" y="184" text-anchor="middle" font-family="Satoshi, Helvetica, Arial, sans-serif" font-size="8.5" font-weight="500" letter-spacing="1.8" fill="rgba(255,255,255,0.7)">34.05°N · 118.24°W</text>
+          </svg>
+          <img class="center-img small" src="avatar.png" onerror="this.onerror=null; this.src='portrait/noah-bw-square.jpg'" alt="Noah Weiss">
+        </div>
+      </div>
+      <div class="meta">
+        <span class="tag">D3 · The Agent</span>
+        <span class="note">Everything in D2 plus a live orbiting signal on a dashed track and LA coordinates. The seal feels switched on, like the agent is on duty.</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

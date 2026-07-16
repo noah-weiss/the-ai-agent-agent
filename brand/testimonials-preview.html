@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Preview · Testimonials · The AI Agent Agent</title>
+  <style>
+    :root {
+      --green: #0b6b3a;
+      --pad-x: clamp(18px, 5vw, 40px);
+      --pad-y: clamp(16px, 3.5vw, 28px);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--green);
+      color: #fff;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      min-height: 100vh;
+      min-height: 100dvh;
+      -webkit-font-smoothing: antialiased;
+    }
+    .banner {
+      background: #000;
+      color: #fff;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 10px 16px;
+      text-align: center;
+    }
+    .banner strong { color: #8fefb0; font-weight: 600; }
+    .page {
+      min-height: calc(100vh - 36px);
+      min-height: calc(100dvh - 36px);
+      display: flex;
+      flex-direction: column;
+      padding:
+        max(var(--pad-y), env(safe-area-inset-top))
+        max(var(--pad-x), env(safe-area-inset-right))
+        max(32px, env(safe-area-inset-bottom))
+        max(var(--pad-x), env(safe-area-inset-left));
+    }
+    .topbar { margin-bottom: 20px; }
+    .logo-img {
+      height: auto;
+      width: min(280px, 78vw);
+      max-height: 96px;
+      object-fit: contain;
+      object-position: left center;
+      display: block;
+    }
+    .main {
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+    .nav {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: clamp(34px, 9.5vw, 48px);
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+    }
+    .nav button {
+      display: block;
+      width: 100%;
+      text-align: left;
+      background: none;
+      border: 0;
+      padding: 10px 0;
+      color: inherit;
+      font: inherit;
+      cursor: pointer;
+      min-height: 48px;
+      opacity: 0.55;
+    }
+    .nav button.active {
+      opacity: 1;
+      text-decoration: underline;
+      text-underline-offset: 0.14em;
+    }
+    .who {
+      max-width: 520px;
+      font-size: 16px;
+      line-height: 1.55;
+      background: rgba(0,0,0,0.12);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 14px;
+      padding: 18px 16px 20px;
+    }
+    .who strong {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+    .t-list { display: flex; flex-direction: column; gap: 18px; margin-top: 4px; }
+    .t-item quote, .t-item .q {
+      display: block;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 17px;
+      line-height: 1.45;
+      font-style: italic;
+      margin: 0 0 8px;
+    }
+    .t-item .attr {
+      font-size: 12px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      opacity: 0.7;
+      font-style: normal;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    .note {
+      margin-top: 16px;
+      font-size: 12px;
+      opacity: 0.55;
+    }
+    .footer {
+      margin-top: auto;
+      padding-top: 28px;
+      font-size: 12px;
+      opacity: 0.55;
+    }
+    @media (min-width: 900px) {
+      body { overflow: hidden; height: 100vh; }
+      .page {
+        height: calc(100vh - 36px);
+        height: calc(100dvh - 36px);
+        padding: 28px 40px 48px;
+        position: relative;
+        display: block;
+      }
+      .topbar { margin-bottom: 0; }
+      .logo-img {
+        width: auto;
+        height: 140px;
+        max-height: none;
+        max-width: min(560px, 55vw);
+      }
+      .main { display: block; }
+      .nav {
+        position: absolute;
+        left: 40px;
+        top: 250px;
+        font-size: 68px;
+        line-height: 1;
+        width: auto;
+      }
+      .nav button {
+        width: auto;
+        padding: 2px 0;
+        min-height: 0;
+      }
+      .who {
+        position: absolute;
+        right: 40px;
+        bottom: 56px;
+        max-width: 480px;
+        font-size: 18px;
+        background: transparent;
+        border: 0;
+        border-radius: 0;
+        padding: 0;
+      }
+      .who strong { font-size: 22px; }
+      .t-item .q { font-size: 19px; }
+      .footer {
+        position: absolute;
+        left: 40px;
+        bottom: 20px;
+        padding-top: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">Preview only · not live · <strong>Testimonials</strong> selected</div>
+
+  <div class="page">
+    <header class="topbar">
+      <img class="logo-img" src="../site/assets/logo-header.png" alt="The AI Agent Agent" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+      <div style="display:none;font-family:Georgia,serif;font-size:28px;">The AI Agent Agent</div>
+    </header>
+
+    <div class="main">
+      <nav class="nav" aria-label="Primary">
+        <button type="button">Services</button>
+        <button type="button">Clients</button>
+        <button type="button" class="active">Testimonials</button>
+        <button type="button">Contact</button>
+      </nav>
+
+      <section class="who" id="info">
+        <strong>Testimonials</strong>
+        <div class="t-list">
+          <div class="t-item">
+            <span class="q">“Noah got me from zero to actually using agents in one sitting. No fluff.”</span>
+            <div class="attr">Founder · beauty</div>
+          </div>
+          <div class="t-item">
+            <span class="q">“He stays in your corner after the session. That’s the part most people skip.”</span>
+            <div class="attr">Operator · insurance</div>
+          </div>
+          <div class="t-item">
+            <span class="q">“Clear, fast, human. Finally someone who doesn’t speak AI at me.”</span>
+            <div class="attr">Attorney</div>
+          </div>
+        </div>
+        <p class="note">Placeholders · roles only · no client names · replace with real quotes</p>
+      </section>
+    </div>
+
+    <footer class="footer">© 2026 The AI Agent Agent</footer>
+  </div>
+</body>
+</html>
