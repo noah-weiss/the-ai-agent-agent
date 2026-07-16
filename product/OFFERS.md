@@ -3,31 +3,15 @@
 ## The product
 
 **I become your agent for all things AI.**  
-Your one-stop AI Agent shop.  
-Your AI concierge.
+Your AI concierge. Full-service representation with human touch.
 
-Not generic consulting theater.
 Everything is bespoke and consultative.
-
-## Core promise
-
-- Quickly master AI and AI agents
-- In one session, get up and running like a pro
-- AI zero to AI hero in one session
-- Automating workflow and tasks is easier and faster than you think
-- Then I stay in your corner for all things AI
 
 ## How people work with me
 
-### 1. Working session (entry / activation)
-The front door.
-One sharp session to get you operational fast.
-Quickly get in the know with Noah.
-Ship immediate value and set the relationship.
-
-### 2. Representation / AI concierge (core)
-Ongoing AI agent relationship.
-I stay in your corner across tools, platforms, workflows, builds, vendors, and decisions.
+### 1. Representation / AI concierge (core)
+Ongoing relationship.
+I stay in your corner across platforms, workflows, builds, vendors, and decisions.
 
 Includes:
 - priority access
@@ -36,6 +20,10 @@ Includes:
 - continuous improvement as the landscape moves
 - personalization and curation of platforms, newsletters, and podcasts
 - protection from AI theater
+
+### 2. Working session (entry)
+Focused session to get you operational fast and establish the relationship.
+Useful front door. Not the whole brand.
 
 ### 3. Scoped build (as needed)
 When representation requires a specific agent, workflow, or system, we scope it and ship it.
@@ -46,31 +34,26 @@ When representation requires a specific agent, workflow, or system, we scope it 
 - Startups
 - Professionals (lawyers, CPAs, operators, founders)
 
-Buyer energy like: Justin, Barry Shaich, Neil Resnick, Raffi Tachdjian.
-
 ## Language to use
 
 - I become your agent for all things AI
-- One-stop AI Agent shop
 - AI concierge
-- AI zero to AI hero in one session
-- Up and running like a pro
 - Human touch
 - Bespoke and consultative
+- In your corner
+- Judgment + execution
 - Secret weapon
-- Quickly get in the know with Noah
+
+## Language to kill
+
+- One-stop AI Agent shop
+- AI zero to AI hero
+- Workshop / course framing as identity
 
 ## Pricing posture
 
-- Session: activation / intensive entry (number TBD)
-- Representation / concierge: monthly or quarterly (number TBD)
-- Build: scoped when needed
+- Representation / concierge: monthly or quarterly (TBD)
+- Session: activation entry (TBD)
+- Build: scoped as needed
 
 Do not publish numbers until Noah locks them.
-
-## Proof
-
-Show judgment.
-Show speed.
-Show shipped outcomes inside a real relationship.
-No fake case studies.

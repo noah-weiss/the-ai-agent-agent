@@ -6,45 +6,24 @@ The AI Agent Agent
 ## Domain
 theaiagentagent.com
 
-## Core metaphor
-LA talent agent, applied to AI.
-Everyone wants the best agent. The word on the street is AI agents.
+## Core
+I become your agent for all things AI.
+AI concierge. Full-service. Human touch.
 
-## Product line
-**I become your agent for all things AI.**  
-One-stop AI Agent shop.  
-AI concierge.  
-AI zero to AI hero in one session.  
-Human touch. Bespoke and consultative.
+## Logo
+Primary: vectorized handwriting wordmark  
+Files: `brand/logo/vector/wordmark-black.svg` (+ green/white)  
+Site: `site/assets/logo-wordmark.svg`
+
+## Visual
+White / black / green. CAA restraint.  
+Type: Inter / Helvetica stack.  
+Handwriting is the only expressive mark.
+
+## Kill list
+- one-stop shop language
+- AI zero to AI hero
+- photo-only handwriting as final logo
 
 ## Audience
-Solopreneurs, startups, professionals (lawyers, CPAs, operators, founders).  
-Buyer energy like Justin, Barry Shaich, Neil Resnick, Raffi Tachdjian.
-
-## Voice
-Direct. Confident. Warm. Human touch. Motion and mastery.
-Short lines. Real talk.
-
-## Chosen hybrid
-**Roc Nation confidence + CAA restraint + UTA lockup clarity + Noah’s hand.**
-
-Primary surface:
-- White field
-- Handwritten master wordmark
-- Black type + green authority accent
-- City stamp: Los Angeles
-
-See also: `AGENCY-INSPO.md`, `style-guide.html`
-
-## Lines that land
-- I become your agent for all things AI.
-- One-stop AI Agent shop.
-- AI zero to AI hero in one session.
-- Up and running like a pro.
-- Quickly get in the know with Noah.
-- I make AI your secret weapon.
-- Human touch.
-- Let's get after it.
-
-## Positioning sentence
-I become your agent for all things AI. Full-service. Human touch. Results-driven. Los Angeles.
+Solopreneurs, startups, professionals (lawyers, CPAs, operators, founders)

@@ -1,27 +1,23 @@
 # Decisions
 
-## 2026-07-15 — Launch day lock
-- Name: The AI Agent Agent
-- Domain: theaiagentagent.com
-- Metaphor: LA talent agent for AI
+## 2026-07-15
+- Name + domain locked
+- LA agent metaphor
 
-## 2026-07-16 — Dad markup applied
-Applied full inline feedback from Dad Review Packet:
-
-- One-stop AI Agent shop
-- AI zero to AI hero in one session
-- Up and running like a pro
+## 2026-07-16 — Dad markup
+Absorbed useful signal:
 - AI concierge
 - Human touch
-- Bespoke and consultative
-- Platform judgment + curation (platforms, newsletters, podcasts)
+- Bespoke / consultative
+- Platform judgment + curation
 - ICP: solopreneurs, startups, professionals (lawyers, CPAs)
-- Named buyer energy: Justin, Barry Shaich, Neil Resnick, Raffi Tachdjian
-- Quickly get in the know with Noah
+- Named buyer energy
 
-Offer structure after markup:
-1. Working session (entry)
-2. Representation / AI concierge (core)
-3. Scoped build (as needed)
+Rejected as brand language (Noah):
+- “One-stop AI Agent shop”
+- “AI zero to AI hero”
 
-Pricing still TBD.
+## 2026-07-16 — Logo
+Handwriting vectorized via threshold + potrace.
+Primary files in `brand/logo/vector/`.
+Site uses `site/assets/logo-wordmark.svg`.
