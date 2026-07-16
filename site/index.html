@@ -3,14 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b6b3a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
   <title>The AI Agent Agent</title>
   <style>
     :root {
       --green: #0b6b3a;
-      --pad: clamp(20px, 4vw, 40px);
+      --green-2: #08522c;
+      --pad-x: clamp(18px, 5vw, 40px);
+      --pad-y: clamp(16px, 3.5vw, 28px);
     }
 
     * { box-sizing: border-box; }
+
+    html {
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+    }
 
     body {
       margin: 0;
@@ -20,24 +29,27 @@
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       min-height: 100vh;
       min-height: 100dvh;
+      overflow-x: hidden;
       -webkit-font-smoothing: antialiased;
     }
 
     .page {
+      width: 100%;
+      max-width: 100vw;
       min-height: 100vh;
       min-height: 100dvh;
       display: flex;
       flex-direction: column;
       padding:
-        max(20px, env(safe-area-inset-top))
-        max(var(--pad), env(safe-area-inset-right))
-        max(28px, env(safe-area-inset-bottom))
-        max(var(--pad), env(safe-area-inset-left));
+        max(var(--pad-y), env(safe-area-inset-top))
+        max(var(--pad-x), env(safe-area-inset-right))
+        max(32px, env(safe-area-inset-bottom))
+        max(var(--pad-x), env(safe-area-inset-left));
     }
 
     .topbar {
       flex: 0 0 auto;
-      margin-bottom: clamp(28px, 5vw, 48px);
+      margin-bottom: 20px;
     }
 
     .topbar .name {
@@ -50,70 +62,126 @@
     }
 
     .topbar .logo-img {
-      height: clamp(72px, 18vw, 140px);
-      width: auto;
-      max-width: min(560px, 88vw);
+      height: auto;
+      width: min(280px, 78vw);
+      max-height: 96px;
+      object-fit: contain;
+      object-position: left center;
       display: block;
     }
 
     .main {
       flex: 1 1 auto;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: clamp(28px, 5vw, 48px);
-      align-items: start;
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+      width: 100%;
+      min-width: 0;
     }
 
     .nav {
       font-family: Georgia, "Times New Roman", Times, serif;
-      font-size: clamp(36px, 10vw, 68px);
-      line-height: 1.05;
+      font-size: clamp(34px, 9.5vw, 48px);
+      line-height: 1.08;
       font-weight: 400;
       letter-spacing: -0.02em;
+      flex: 0 0 auto;
     }
 
-    .nav div {
-      margin-bottom: 0.08em;
+    .nav button {
+      display: block;
+      width: 100%;
+      text-align: left;
+      background: none;
+      border: 0;
+      padding: 10px 0;
+      margin: 0;
+      color: inherit;
+      font: inherit;
+      letter-spacing: inherit;
       cursor: pointer;
-      transition: opacity 0.1s;
       -webkit-tap-highlight-color: transparent;
       user-select: none;
+      min-height: 48px;
     }
 
-    .nav div:hover,
-    .nav div:active {
-      opacity: 0.7;
+    .nav button:active {
+      opacity: 0.75;
     }
 
-    .nav div.active {
-      opacity: 1;
+    .nav button.active {
       text-decoration: underline;
-      text-underline-offset: 0.12em;
+      text-underline-offset: 0.14em;
+      text-decoration-thickness: 1.5px;
     }
 
     .who {
-      max-width: 480px;
-      font-size: clamp(15px, 3.8vw, 18px);
+      flex: 1 1 auto;
+      width: 100%;
+      max-width: 520px;
+      font-size: 16px;
       line-height: 1.55;
-      opacity: 0.95;
-      padding-bottom: 8px;
+      opacity: 0.96;
+      min-width: 0;
+      /* card feel on mobile so body is readable */
+      background: rgba(0, 0, 0, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 14px;
+      padding: 18px 16px 20px;
     }
 
     .who strong {
       font-weight: 600;
       display: block;
-      margin-bottom: 10px;
-      font-size: clamp(17px, 4.2vw, 22px);
+      margin-bottom: 8px;
+      font-size: 18px;
+      letter-spacing: 0.01em;
+    }
+
+    .who .subhead {
+      margin-top: 14px;
+      font-size: 16px;
+    }
+
+    .who p {
+      margin: 0 0 10px;
+    }
+
+    .who p:last-child {
+      margin-bottom: 0;
     }
 
     .who a {
       color: #fff;
       text-decoration: underline;
+      text-underline-offset: 2px;
       word-break: break-word;
+      overflow-wrap: anywhere;
     }
 
-    /* Desktop: big left nav, info lower-right */
-    @media (min-width: 820px) {
+    /* Tablet+ */
+    @media (min-width: 700px) {
+      .topbar {
+        margin-bottom: 28px;
+      }
+
+      .topbar .logo-img {
+        width: min(420px, 50vw);
+        max-height: 120px;
+      }
+
+      .nav {
+        font-size: clamp(44px, 7vw, 60px);
+      }
+
+      .who {
+        font-size: 17px;
+        padding: 22px 20px;
+      }
+    }
+
+    /* Desktop: original agency composition */
+    @media (min-width: 900px) {
       body {
         overflow: hidden;
         height: 100vh;
@@ -124,6 +192,7 @@
         height: 100dvh;
         padding: 28px 40px 48px;
         position: relative;
+        display: block;
       }
 
       .topbar {
@@ -131,7 +200,9 @@
       }
 
       .topbar .logo-img {
+        width: auto;
         height: 140px;
+        max-height: none;
         max-width: min(560px, 55vw);
       }
 
@@ -142,101 +213,120 @@
       .nav {
         position: absolute;
         left: 40px;
-        top: 260px;
+        top: 250px;
         font-size: 68px;
         line-height: 1.0;
+        width: auto;
+      }
+
+      .nav button {
+        width: auto;
+        padding: 2px 0;
+        min-height: 0;
       }
 
       .who {
         position: absolute;
         right: 40px;
         bottom: 48px;
+        max-width: 480px;
         font-size: 18px;
+        background: transparent;
+        border: 0;
+        border-radius: 0;
+        padding: 0;
       }
 
       .who strong {
         font-size: 22px;
       }
-    }
 
-    /* Small phones: slightly tighter */
-    @media (max-width: 380px) {
-      .nav {
-        font-size: 32px;
+      .who .subhead {
+        font-size: 18px;
       }
     }
   </style>
 </head>
 <body>
   <div class="page">
-    <div class="topbar">
-      <a class="logo-link name" href="#" onclick="showInfo('who'); return false;" aria-label="The AI Agent Agent">
-        <img class="logo-img" src="assets/logo-header.png" alt="The AI Agent Agent — simplifying AI" />
+    <header class="topbar">
+      <a class="logo-link name" href="#who" id="logoBtn" aria-label="The AI Agent Agent">
+        <img class="logo-img" src="assets/logo-header.png" alt="The AI Agent Agent — simplifying AI" width="560" height="355" />
       </a>
-    </div>
+    </header>
 
     <div class="main">
-      <div class="nav" id="nav">
-        <div data-section="services" onclick="showInfo('services')">Services</div>
-        <div data-section="clients" onclick="showInfo('clients')">Clients</div>
-        <div data-section="contact" onclick="showInfo('contact')">Contact</div>
-      </div>
+      <nav class="nav" id="nav" aria-label="Primary">
+        <button type="button" data-section="services">Services</button>
+        <button type="button" data-section="clients">Clients</button>
+        <button type="button" data-section="contact">Contact</button>
+      </nav>
 
-      <div class="who" id="info"></div>
+      <section class="who" id="info" aria-live="polite"></section>
     </div>
   </div>
 
 <script>
 function showInfo(section) {
-  const info = document.getElementById('info');
+  var info = document.getElementById('info');
+  var isMobile = window.matchMedia('(max-width: 899px)').matches;
 
-  document.querySelectorAll('.nav div').forEach(function (el) {
+  document.querySelectorAll('.nav button').forEach(function (el) {
     el.classList.toggle('active', el.getAttribute('data-section') === section);
   });
 
   if (section === 'services') {
-    info.innerHTML = `
-      <strong>Services</strong>
-      <strong style="margin-top:12px;display:block;">1:1 Session</strong>
-      AI Zero to AI Hero in one session.<br>
-      In one session, I will have you up and running like a pro.<br>
-      My clients have spanned beauty, insurance, law, and finance (and gradmas).<br><br>
-      <strong style="margin-top:8px;display:block;">Concierge</strong>
-      My services are bespoke and consultative.<br>
-      The relationship doesn't stop after our session.<br>
-      Newsletter access. Meetups. Exclusive events.
-    `;
+    info.innerHTML =
+      '<strong>Services</strong>' +
+      '<strong class="subhead">1:1 Session</strong>' +
+      '<p>AI Zero to AI Hero in one session.</p>' +
+      '<p>In one session, I will have you up and running like a pro.</p>' +
+      '<p>My clients have spanned beauty, insurance, law, and finance (and gradmas).</p>' +
+      '<strong class="subhead">Concierge</strong>' +
+      '<p>My services are bespoke and consultative.</p>' +
+      '<p>The relationship doesn\'t stop after our session.</p>' +
+      '<p>Newsletter access. Meetups. Exclusive events.</p>';
   } else if (section === 'clients') {
-    info.innerHTML = `
-      <strong>Clients</strong>
-      Ideal for solopreneurs, startups, and professionals (lawyers, CPAs, operators, founders).<br><br>
-      People who want an AI edge and someone accountable for it.
-    `;
+    info.innerHTML =
+      '<strong>Clients</strong>' +
+      '<p>Ideal for solopreneurs, startups, and professionals (lawyers, CPAs, operators, founders).</p>' +
+      '<p>People who want an AI edge and someone accountable for it.</p>';
   } else if (section === 'contact') {
-    info.innerHTML = `
-      <strong>Contact</strong>
-      Ready? <a href="https://www.linkedin.com/in/noaheweiss" target="_blank" rel="noopener">Message on LinkedIn</a><br><br>
-      <a href="mailto:noah@theaiagentagent.com">noah@theaiagentagent.com</a>
-    `;
+    info.innerHTML =
+      '<strong>Contact</strong>' +
+      '<p>Ready? <a href="https://www.linkedin.com/in/noaheweiss" target="_blank" rel="noopener">Message on LinkedIn</a></p>' +
+      '<p><a href="mailto:noah@theaiagentagent.com">noah@theaiagentagent.com</a></p>';
   } else if (section === 'who') {
-    info.innerHTML = `
-      <strong>Who</strong>
-      Noah Weiss is The AI Agent Agent.<br><br>
-      I become your agent for all things AI.<br>
-      Your AI Concierge.
-    `;
-    document.querySelectorAll('.nav div').forEach(function (el) {
+    info.innerHTML =
+      '<strong>Who</strong>' +
+      '<p>Noah Weiss is The AI Agent Agent.</p>' +
+      '<p>I become your agent for all things AI.</p>' +
+      '<p>Your AI Concierge.</p>';
+    document.querySelectorAll('.nav button').forEach(function (el) {
       el.classList.remove('active');
     });
   }
+
+  if (isMobile && section !== 'services') {
+    // Keep first paint calm; after first tap, bring copy into view
+    setTimeout(function () {
+      info.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }, 10);
+  }
 }
 
-showInfo('services');
+document.querySelectorAll('.nav button').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    showInfo(btn.getAttribute('data-section'));
+  });
+});
 
-document.querySelector('.name').addEventListener('click', function (e) {
+document.getElementById('logoBtn').addEventListener('click', function (e) {
   e.preventDefault();
   showInfo('who');
 });
+
+showInfo('services');
 </script>
 
 </body>
