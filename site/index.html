@@ -13,7 +13,127 @@
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-  <title>The AI Agent Agent</title>
+  <title>The AI Agent Agent · AI Consultant in Los Angeles · Noah Weiss</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://theaiagentagent.com/#business",
+        "name": "The AI Agent Agent",
+        "description": "Full-service AI representation for founders, operators, and professionals. Kickoff, Build, Concierge.",
+        "url": "https://theaiagentagent.com/",
+        "email": "noah@theaiagentagent.com",
+        "founder": { "@id": "https://theaiagentagent.com/#noah" },
+        "foundingDate": "2026",
+        "areaServed": [
+          { "@type": "City", "name": "Los Angeles" },
+          { "@type": "Country", "name": "United States" }
+        ],
+        "serviceType": [
+          "AI consulting",
+          "AI training",
+          "AI workflow automation",
+          "AI agent development"
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/in/noaheweiss",
+          "https://x.com/theaiagentagent"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Kickoff. Build. Concierge.",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "position": 1,
+              "itemOffered": {
+                "@type": "Service",
+                "name": "AI Kickoff",
+                "description": "Comprehensive mapping and strategy session. An audit of where you are, a map of the workflows that matter, and a clear plan for where to go next, with a comprehensive recap. Entry point, not ongoing representation."
+              }
+            },
+            {
+              "@type": "Offer",
+              "position": 2,
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Build",
+                "description": "Scoped workflows and agents when the map says something needs to exist. Automations and systems that remove real grunt work."
+              }
+            },
+            {
+              "@type": "Offer",
+              "position": 3,
+              "itemOffered": {
+                "@type": "Service",
+                "name": "AI Concierge",
+                "description": "Ongoing AI representation across tools, workflows, vendors, and decisions. Bespoke and hands-on."
+              }
+            }
+          ]
+        },
+        "review": [
+          {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "Dmitry Shapiro", "jobTitle": "CEO, MindStudio" },
+            "reviewBody": "Highly recommend Noah Weiss!!"
+          },
+          {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "Eli Geffen", "jobTitle": "Geffen Equity" },
+            "reviewBody": "Noah has created incredible efficiency in my platform through AI enablement utilizing an executive level top down approach."
+          },
+          {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "Daniel Milstein", "jobTitle": "Founder, Milstein Estates" },
+            "reviewBody": "Noah is a genius and an excellent guide. He has led me to amazing success in the AI sphere with his knowledge, precision and expertise."
+          },
+          {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "Justin Vom Steeg", "jobTitle": "AVP, Heffernan Insurance Brokers" },
+            "reviewBody": "As a former professional soccer player, I am all about speed and precision. Noah got me crushing AI in just an hour."
+          }
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://theaiagentagent.com/#noah",
+        "name": "Noah Weiss",
+        "jobTitle": "The AI Agent Agent",
+        "description": "Noah Weiss is The AI Agent Agent, a personal AI concierge in Los Angeles. He becomes your agent for all things AI.",
+        "url": "https://theaiagentagent.com/",
+        "worksFor": { "@id": "https://theaiagentagent.com/#business" },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of California, Santa Barbara" },
+        "hasCredential": {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Level 3 AI Agent Developer",
+          "credentialCategory": "certification",
+          "recognizedBy": { "@type": "Organization", "name": "MindStudio" }
+        },
+        "knowsAbout": [
+          "Artificial intelligence",
+          "AI agents",
+          "Workflow automation",
+          "AI adoption for professional services"
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/in/noaheweiss",
+          "https://x.com/theaiagentagent"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://theaiagentagent.com/#website",
+        "url": "https://theaiagentagent.com/",
+        "name": "The AI Agent Agent",
+        "inLanguage": "en-US",
+        "publisher": { "@id": "https://theaiagentagent.com/#business" }
+      }
+    ]
+  }
+  </script>
   <link rel="preconnect" href="https://api.fontshare.com">
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@500,700&display=swap" rel="stylesheet">
   <style>
@@ -286,7 +406,8 @@
       backdrop-filter: blur(2px);
     }
 
-    .panel-inner { animation: rise 0.4s var(--ease) both; }
+    .panel-inner.rise { animation: rise 0.4s var(--ease) both; }
+    .panel-inner[hidden] { display: none !important; }
 
     @keyframes rise {
       from { opacity: 0; transform: translateY(0.5rem); }
@@ -309,7 +430,7 @@
       margin-bottom: 0.9rem;
     }
 
-    .panel h1 {
+    .panel .sec {
       font-family: var(--grotesk);
       font-size: 0.78rem;
       font-weight: 700;
@@ -319,12 +440,12 @@
       margin-bottom: 0.85rem;
     }
 
-    .panel h1 .idx {
+    .panel .sec .idx {
       opacity: 0.55;
       margin-right: 0.6rem;
     }
 
-    .panel h2 {
+    .panel .sub {
       font-family: Georgia, "Times New Roman", Times, serif;
       font-size: 1.25rem;
       font-weight: 400;
@@ -332,11 +453,13 @@
       margin: 1rem 0 0.45rem;
     }
 
-    .panel h2:first-of-type { margin-top: 0.15rem; }
+    .panel .sub:first-of-type { margin-top: 0.15rem; }
 
-    .panel p {
+    .panel p,
+    .panel h1.lede {
       font-size: 1.02rem;
       line-height: 1.55;
+      font-weight: 400;
       color: rgba(255, 255, 255, 0.92);
       margin: 0 0 0.65rem;
     }
@@ -373,6 +496,71 @@
       margin-top: 1.1rem;
       opacity: 0.92;
       animation: sign 1s var(--ease) 0.35s both;
+    }
+
+    /* Service cards */
+    .svc { display: flex; flex-direction: column; gap: 0.7rem; margin-top: 0.9rem; }
+
+    .svc-card {
+      border: 1px solid var(--line);
+      border-radius: 0.85rem;
+      background: rgba(255, 255, 255, 0.045);
+      padding: 0.95rem 1rem 1rem;
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      .svc-card { transition: border-color 0.2s var(--ease), background 0.2s var(--ease), transform 0.2s var(--ease); }
+      .svc-card:hover {
+        border-color: rgba(255, 255, 255, 0.45);
+        background: rgba(255, 255, 255, 0.07);
+        transform: translateY(-2px);
+      }
+    }
+
+    .svc-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 0.6rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .svc-card .sub { margin: 0; }
+
+    .svc-tag {
+      font-family: var(--grotesk);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      opacity: 0.6;
+      white-space: nowrap;
+    }
+
+    .svc-card p { font-size: 0.98rem; margin-bottom: 0.5rem; }
+    .svc-card p:last-child { margin-bottom: 0; }
+
+    .svc-foot { font-size: 0.85rem !important; opacity: 0.7; }
+
+    .chips {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin: 0.65rem 0 0.55rem;
+      padding: 0;
+    }
+
+    .chip {
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.03);
+      padding: 0.3rem 0.75rem;
+      font-family: var(--grotesk);
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      color: rgba(255, 255, 255, 0.85);
     }
 
     /* Contact CTA */
@@ -538,8 +726,8 @@
       }
 
       .panel h1 { font-size: 0.8rem; margin-bottom: 1rem; }
-      .panel h2 { font-size: 1.35rem; }
-      .panel p { font-size: 1.08rem; }
+      .panel .sub { font-size: 1.35rem; }
+      .panel p, .panel h1.lede { font-size: 1.08rem; }
       .quote q { font-size: 1.15rem; }
       .portrait { width: 6.2rem; height: 6.2rem; }
 
@@ -611,14 +799,93 @@
     </nav>
 
     <section class="panel" id="panel" aria-live="polite">
-      <div class="panel-inner">
-        <h1><span class="idx">00</span>Who</h1>
-        <img class="portrait" src="assets/noah-avatar.jpg" alt="Noah Weiss" onerror="this.remove()">
-        <p>Noah Weiss is The AI Agent Agent.</p>
+      <div class="panel-inner rise" data-panel="who">
+        <h2 class="sec"><span class="idx">00</span>Who</h2>
+        <img class="portrait" src="assets/noah-avatar.jpg" alt="Noah Weiss, The AI Agent Agent" onerror="this.remove()">
+        <h1 class="lede">Noah Weiss is The AI Agent Agent.</h1>
         <p>I make AI your superpower.</p>
         <p>I become your agent for all things AI. Your AI Concierge.</p>
         <p>Kickoff. Build. Concierge.</p>
         <img class="signature" src="assets/sig-white.png" alt="" onerror="this.remove()">
+      </div>
+
+      <div class="panel-inner" data-panel="services" hidden>
+        <h2 class="sec"><span class="idx">01</span>Services</h2>
+        <p>Full-service AI representation for founders, operators, and professionals.</p>
+        <div class="svc">
+          <article class="svc-card">
+            <div class="svc-head"><h3 class="sub">AI Kickoff</h3><span class="svc-tag">Entry point</span></div>
+            <p>Comprehensive mapping and strategy session. I audit where you are, map the workflows that matter, and give you a clear plan for where to go next.</p>
+            <ul class="chips">
+              <li class="chip">Audit</li>
+              <li class="chip">Workflow map</li>
+              <li class="chip">Where-to-go plan</li>
+              <li class="chip">Comprehensive recap</li>
+            </ul>
+            <p class="svc-foot">Limited to a handful each month so every map stays real.</p>
+          </article>
+          <article class="svc-card">
+            <div class="svc-head"><h3 class="sub">Build</h3><span class="svc-tag">When the map says go</span></div>
+            <p>Scoped workflows and agents when something needs to exist. Automations and systems that remove real grunt work. No theater.</p>
+            <ul class="chips">
+              <li class="chip">Agents</li>
+              <li class="chip">Automations</li>
+              <li class="chip">Systems</li>
+            </ul>
+          </article>
+          <article class="svc-card">
+            <div class="svc-head"><h3 class="sub">Concierge</h3><span class="svc-tag">Ongoing</span></div>
+            <p>Ongoing representation. I stay in your corner across tools, workflows, vendors, and decisions. Bespoke. Hands-on. For people who want an agent, not another course.</p>
+            <ul class="chips">
+              <li class="chip">Newsletter</li>
+              <li class="chip">Meetups</li>
+              <li class="chip">Exclusive events</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+
+      <div class="panel-inner" data-panel="clients" hidden>
+        <h2 class="sec"><span class="idx">02</span>Clients</h2>
+        <p>Founders, operators, and professionals. Lawyers, CPAs, executives.</p>
+        <p>My clients have spanned beauty, insurance, law, and finance (and grandmas).</p>
+        <p>People who want an AI edge and someone accountable for it.</p>
+      </div>
+
+      <div class="panel-inner" data-panel="testimonials" hidden>
+        <h2 class="sec"><span class="idx">03</span>Testimonials</h2>
+        <div class="quotes">
+          <div class="quote">
+            <q>Highly recommend Noah Weiss!!</q>
+            <div class="by"><a href="https://www.linkedin.com/in/dmitry-shapiro-a2b1/" target="_blank" rel="noopener">Dmitry Shapiro</a> · CEO, MindStudio</div>
+            <div class="cred">ex-Product @ Google · ex-CTO, MySpace · 3x founder</div>
+          </div>
+          <div class="quote">
+            <q>Noah has created incredible efficiency in my platform through AI enablement utilizing an executive level top down approach.</q>
+            <div class="by">Eli Geffen · Geffen Equity</div>
+          </div>
+          <div class="quote">
+            <q>Noah is a genius and an excellent guide. He has led me to amazing success in the AI sphere with his knowledge, precision and expertise. He is the ultimate leader in this area and I wouldn't trust anyone else.</q>
+            <div class="by">Daniel Milstein · Founder, Milstein Estates</div>
+          </div>
+          <div class="quote">
+            <q>As a former professional soccer player, I am all about speed and precision. Noah got me crushing AI in just an hour.</q>
+            <div class="by">Justin Vom Steeg · AVP, Heffernan Insurance Brokers</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel-inner" data-panel="contact" hidden>
+        <h2 class="sec"><span class="idx">04</span>Contact</h2>
+        <p>Ready when you are.</p>
+        <p>DM me SESSION on LinkedIn or X, or email me. All three reach me directly.</p>
+        <div class="cta-row">
+          <a class="cta primary" href="https://www.linkedin.com/in/noaheweiss" target="_blank" rel="noopener">DM SESSION</a>
+          <a class="cta" href="https://x.com/theaiagentagent" target="_blank" rel="noopener">X @theaiagentagent</a>
+          <a class="cta" href="mailto:noah@theaiagentagent.com">noah@theaiagentagent.com</a>
+        </div>
+        <p>Los Angeles. Remote everywhere.</p>
+        <p>Let's get after it.</p>
       </div>
     </section>
 
@@ -642,82 +909,10 @@
   var ghosts = { who: 'Agent', services: 'Services', clients: 'Clients', testimonials: 'Proof', contact: 'Talk' };
   var current = 'who';
 
-  var content = {
-    who: {
-      label: 'Who',
-      html:
-        '<h1><span class="idx">00</span>Who</h1>' +
-        '<img class="portrait" src="assets/noah-avatar.jpg" alt="Noah Weiss" onerror="this.remove()">' +
-        '<p>Noah Weiss is The AI Agent Agent.</p>' +
-        '<p>I make AI your superpower.</p>' +
-        '<p>I become your agent for all things AI. Your AI Concierge.</p>' +
-        '<p>Kickoff. Build. Concierge.</p>' +
-        '<img class="signature" src="assets/sig-white.png" alt="" onerror="this.remove()">'
-    },
-    services: {
-      label: 'Services',
-      html:
-        '<h1><span class="idx">01</span>Services</h1>' +
-        '<p>Full-service AI representation for founders, operators, and professionals.</p>' +
-        '<h2>AI Kickoff</h2>' +
-        '<p>Comprehensive mapping and strategy session.</p>' +
-        '<p>I audit where you are, map the workflows that matter, and give you a clear plan for where to go next. Comprehensive recap.</p>' +
-        '<p>Limited to a handful each month so every map stays real. Entry point, not ongoing representation.</p>' +
-        '<h2>Build</h2>' +
-        '<p>Scoped workflows and agents when the map says something needs to exist.</p>' +
-        '<p>Automations and systems that remove real grunt work. No theater.</p>' +
-        '<h2>Concierge</h2>' +
-        '<p>Ongoing representation. I stay in your corner across tools, workflows, vendors, and decisions.</p>' +
-        '<p>Bespoke. Hands-on. For people who want an agent, not another course.</p>' +
-        '<p>Newsletter access. Meetups. Exclusive events.</p>'
-    },
-    clients: {
-      label: 'Clients',
-      html:
-        '<h1><span class="idx">02</span>Clients</h1>' +
-        '<p>Founders, operators, and professionals. Lawyers, CPAs, executives.</p>' +
-        '<p>My clients have spanned beauty, insurance, law, and finance (and grandmas).</p>' +
-        '<p>People who want an AI edge and someone accountable for it.</p>'
-    },
-    testimonials: {
-      label: 'Testimonials',
-      html:
-        '<h1><span class="idx">03</span>Testimonials</h1>' +
-        '<div class="quotes">' +
-          '<div class="quote">' +
-            '<q>Highly recommend Noah Weiss!!</q>' +
-            '<div class="by"><a href="https://www.linkedin.com/in/dmitry-shapiro-a2b1/" target="_blank" rel="noopener">Dmitry Shapiro</a> · CEO, MindStudio</div>' +
-            '<div class="cred">ex-Product @ Google · ex-CTO, MySpace · 3x founder</div>' +
-          '</div>' +
-          '<div class="quote">' +
-            '<q>Noah has created incredible efficiency in my platform through AI enablement utilizing an executive level top down approach.</q>' +
-            '<div class="by">Eli Geffen · Geffen Equity</div>' +
-          '</div>' +
-          '<div class="quote">' +
-            '<q>Noah is a genius and an excellent guide. He has led me to amazing success in the AI sphere with his knowledge, precision and expertise. He is the ultimate leader in this area and I wouldn\'t trust anyone else.</q>' +
-            '<div class="by">Daniel Milstein · Founder, Milstein Estates</div>' +
-          '</div>' +
-          '<div class="quote">' +
-            '<q>As a former professional soccer player, I am all about speed and precision. Noah got me crushing AI in just an hour.</q>' +
-            '<div class="by">Justin Vom Steeg · AVP, Heffernan Insurance Brokers</div>' +
-          '</div>' +
-        '</div>'
-    },
-    contact: {
-      label: 'Contact',
-      html:
-        '<h1><span class="idx">04</span>Contact</h1>' +
-        '<p>Ready when you are.</p>' +
-        '<p>DM me SESSION on LinkedIn or X, or email me. All three reach me directly.</p>' +
-        '<div class="cta-row">' +
-          '<a class="cta primary" href="https://www.linkedin.com/in/noaheweiss" target="_blank" rel="noopener">DM SESSION</a>' +
-          '<a class="cta" href="https://x.com/theaiagentagent" target="_blank" rel="noopener">X @theaiagentagent</a>' +
-          '<a class="cta" href="mailto:noah@theaiagentagent.com">noah@theaiagentagent.com</a>' +
-        '</div>' +
-        '<p>Los Angeles. Remote everywhere.</p>' +
-        '<p>Let\'s get after it.</p>'
-    }
-  };
+  var panels = {};
+  Array.prototype.forEach.call(panel.querySelectorAll('[data-panel]'), function (el) {
+    panels[el.getAttribute('data-panel')] = el;
+  });
 
   function setGhost(word) {
     if (ghost.textContent === word) return;
@@ -729,9 +924,21 @@
   }
 
   function show(section) {
-    var data = content[section] || content.who;
+    if (!panels[section]) section = 'who';
     current = section;
-    panel.innerHTML = '<div class="panel-inner">' + data.html + '</div>';
+
+    Object.keys(panels).forEach(function (key) {
+      var el = panels[key];
+      if (key === section) {
+        el.hidden = false;
+        el.classList.remove('rise');
+        void el.offsetWidth;
+        el.classList.add('rise');
+      } else {
+        el.hidden = true;
+      }
+    });
+
     setGhost(ghosts[section] || 'Agent');
 
     nav.querySelectorAll('button').forEach(function (btn) {
