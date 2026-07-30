@@ -748,6 +748,26 @@
       .panel { bottom: 5.25rem; }
     }
 
+    /* Services goes horizontal on wide desktops: cards in a row, clear of the nav */
+    @media (min-width: 1150px) {
+      .panel.wide { width: min(62rem, calc(100vw - 30rem)); }
+
+      .panel.wide .svc {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0.85rem;
+        align-items: stretch;
+      }
+
+      .panel.wide .svc-card {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+      }
+
+      .panel.wide .chips { margin-top: auto; padding-top: 0.7rem; }
+    }
+
     @media (min-width: 900px) and (max-height: 760px) {
       .seal-logo { width: 7rem; }
       .nav { top: 13rem; }
@@ -936,6 +956,7 @@
   function show(section) {
     if (!panels[section]) section = 'who';
     current = section;
+    panel.classList.toggle('wide', section === 'services');
 
     Object.keys(panels).forEach(function (key) {
       var el = panels[key];
