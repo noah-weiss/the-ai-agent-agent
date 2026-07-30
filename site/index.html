@@ -780,9 +780,69 @@
       .panel { bottom: 4.5rem; }
     }
 
+    /* Compact numbered nav on mobile: same concept, one wrapping row,
+       so the value proposition lands inside the first viewport */
+    @media (max-width: 899px) {
+      .seal-logo { width: min(6rem, 29vw); }
+      .nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0 1.5rem;
+        margin: 0.35rem 0 0.4rem;
+      }
+      .nav button {
+        font-size: 1.3rem;
+        line-height: 1.2;
+        letter-spacing: -0.01em;
+        padding: 0.6rem 0;
+        min-height: 44px;
+      }
+      .nav button::before { font-size: 0.68rem; margin-right: 0.4rem; }
+      .ghost { font-size: clamp(3.4rem, 17vw, 6rem); padding-top: 26vh; }
+    }
+
     @media (max-width: 380px) {
-      .nav button { font-size: 1.9rem; }
+      .nav { gap: 0 1.1rem; }
+      .nav button { font-size: 1.15rem; }
       .panel { padding: 1rem; }
+      .cta { padding: 0.7rem 1.1rem; font-size: 0.9rem; }
+    }
+
+    /* Keyboard focus, brand mint */
+    .nav button:focus-visible,
+    .cta:focus-visible,
+    .panel a:focus-visible,
+    .logo-link:focus-visible {
+      outline: 2px solid var(--mint);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    /* Compact proof line on Who */
+    .proof {
+      margin-top: 0.35rem !important;
+    }
+    .proof .pq {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-style: italic;
+      font-size: 1rem;
+      color: rgba(255, 255, 255, 0.92);
+    }
+    .proof .pby {
+      display: block;
+      margin-top: 0.25rem;
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* Expectation line under the CTA */
+    .cta-note {
+      font-size: 0.8rem !important;
+      color: var(--muted) !important;
+      margin-top: 0.55rem !important;
     }
   </style>
 </head>
@@ -834,16 +894,21 @@
 
     <section class="panel" id="panel" aria-live="polite">
       <div class="panel-inner rise" data-panel="who">
-        <h2 class="sec"><span class="idx">00</span>Who</h2>
+        <p class="sec"><span class="idx">00</span>Who</p>
         <img class="portrait" src="assets/noah-avatar.jpg" alt="Noah Weiss, The AI Agent Agent" onerror="this.remove()">
         <h1 class="lede">Noah Weiss is The AI Agent Agent.</h1>
         <p>I make AI your superpower.</p>
-        <p>I become your agent for all things AI. Your AI Concierge.</p>
+        <p>I become your agent for all things AI, from the first workflow audit to ongoing implementation.</p>
         <p>Kickoff. Build. Concierge.</p>
+        <p class="proof">
+          <span class="pq">&ldquo;Highly recommend Noah Weiss!!&rdquo;</span>
+          <span class="pby">Dmitry Shapiro · CEO, MindStudio</span>
+        </p>
         <div class="cta-row">
-          <a class="cta primary" href="https://www.linkedin.com/in/noaheweiss" target="_blank" rel="noopener">DM SESSION</a>
+          <a class="cta primary" href="https://www.linkedin.com/in/noaheweiss" target="_blank" rel="noopener">START AN AI KICKOFF</a>
           <a class="cta" href="mailto:noah@theaiagentagent.com">Email Noah</a>
         </div>
+        <p class="cta-note">60&ndash;90 minutes · Leave with a prioritized AI roadmap</p>
         <img class="signature" src="assets/sig-white.png" alt="" onerror="this.remove()">
       </div>
 
@@ -855,9 +920,9 @@
             <div class="svc-head"><h3 class="sub">AI Kickoff</h3><span class="svc-tag">Entry point</span></div>
             <p>Comprehensive mapping and strategy session.</p>
             <ul class="chips">
-              <li class="chip">Audit</li>
-              <li class="chip">Workflow map</li>
-              <li class="chip">Where-to-go plan</li>
+              <li class="chip">Workflow audit</li>
+              <li class="chip">Opportunity map</li>
+              <li class="chip">Prioritized plan</li>
               <li class="chip">Comprehensive recap</li>
             </ul>
           </article>
@@ -865,18 +930,19 @@
             <div class="svc-head"><h3 class="sub">Build</h3><span class="svc-tag">After the map</span></div>
             <p>Workflows and agents that remove real grunt work. No theater.</p>
             <ul class="chips">
-              <li class="chip">Agents</li>
-              <li class="chip">Automations</li>
-              <li class="chip">Systems</li>
+              <li class="chip">Agents &amp; automations</li>
+              <li class="chip">Workflow implementation</li>
+              <li class="chip">Systems integration</li>
             </ul>
           </article>
           <article class="svc-card">
             <div class="svc-head"><h3 class="sub">Concierge</h3><span class="svc-tag">Ongoing</span></div>
             <p>I stay in your corner across tools, vendors, and decisions.</p>
             <ul class="chips">
-              <li class="chip">Newsletter</li>
-              <li class="chip">Meetups</li>
-              <li class="chip">Exclusive events</li>
+              <li class="chip">Ongoing guidance</li>
+              <li class="chip">Tool &amp; vendor evaluation</li>
+              <li class="chip">Troubleshooting</li>
+              <li class="chip">Meetups &amp; newsletter</li>
             </ul>
           </article>
         </div>
@@ -885,9 +951,9 @@
 
       <div class="panel-inner" data-panel="clients" hidden>
         <h2 class="sec"><span class="idx">02</span>Clients</h2>
-        <p>Founders, operators, and professionals. Lawyers, CPAs, executives.</p>
+        <p>Founders, operators, and professionals who know AI matters but don't have time to test every tool, map every workflow, or manage every implementation.</p>
         <p>My clients have spanned beauty, insurance, law, and finance (and grandmas).</p>
-        <p>People who want an AI edge and someone accountable for it.</p>
+        <p>They want an AI edge and one person accountable for turning it into real results.</p>
       </div>
 
       <div class="panel-inner" data-panel="testimonials" hidden>
@@ -981,7 +1047,13 @@
     setGhost(ghosts[section] || 'Agent');
 
     nav.querySelectorAll('button').forEach(function (btn) {
-      btn.classList.toggle('active', btn.getAttribute('data-section') === section);
+      var isActive = btn.getAttribute('data-section') === section;
+      btn.classList.toggle('active', isActive);
+      if (isActive) {
+        btn.setAttribute('aria-current', 'true');
+      } else {
+        btn.removeAttribute('aria-current');
+      }
     });
 
     if (window.matchMedia('(max-width: 899px)').matches && section !== 'who') {
