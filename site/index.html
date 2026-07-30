@@ -901,7 +901,7 @@
         <p>I become your agent for all things AI, from kickoff call to ongoing implementation.</p>
         <p>Kickoff. Build. Concierge.</p>
         <div class="cta-row">
-          <a class="cta primary" href="https://www.linkedin.com/in/noaheweiss" target="_blank" rel="noopener">START AN AI KICKOFF</a>
+          <a class="cta primary" href="#contact" data-goto="contact">BOOK A KICKOFF</a>
           <a class="cta" href="mailto:noah@theaiagentagent.com">Email Noah</a>
         </div>
         <p class="cta-note">60&ndash;90 minutes · Leave with a prioritized AI roadmap</p>
@@ -1071,6 +1071,13 @@
     });
     btn.addEventListener('mouseleave', function () {
       setGhost(ghosts[current]);
+    });
+  });
+
+  document.querySelectorAll('[data-goto]').forEach(function (el) {
+    el.addEventListener('click', function (e) {
+      e.preventDefault();
+      show(el.getAttribute('data-goto'));
     });
   });
 
