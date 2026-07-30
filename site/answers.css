@@ -1,0 +1,50 @@
+:root {
+  --green: #0b6b3a;
+  --green-deep: #07422a;
+  --green-lift: #0e7d45;
+  --mint: #8fefb0;
+  --muted: rgba(255, 255, 255, 0.72);
+  --line: rgba(255, 255, 255, 0.16);
+  --grotesk: "Satoshi", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: radial-gradient(130% 100% at 80% 0%, var(--green-lift) 0%, var(--green) 42%, var(--green-deep) 100%) var(--green);
+  background-attachment: fixed;
+  color: #fff;
+  font-family: var(--grotesk);
+  line-height: 1.6;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 44rem; margin: 0 auto; padding: 2.2rem 1.4rem 4rem; }
+.crumb {
+  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--muted); margin-bottom: 2.4rem; display: inline-block; text-decoration: none;
+}
+.crumb:hover { color: #fff; }
+h1 { font-size: clamp(1.9rem, 5.5vw, 2.7rem); line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 1.2rem; }
+.answer {
+  font-size: 1.12rem; color: #fff; border-left: 2px solid var(--mint);
+  padding-left: 1rem; margin-bottom: 2rem;
+}
+h2 {
+  font-family: Georgia, "Times New Roman", Times, serif; font-weight: 400;
+  font-size: 1.35rem; margin: 2rem 0 0.6rem;
+}
+p { color: rgba(255, 255, 255, 0.92); margin-bottom: 0.9rem; }
+ul { margin: 0 0 0.9rem 1.2rem; }
+li { margin-bottom: 0.35rem; color: rgba(255, 255, 255, 0.92); }
+a { color: #fff; text-underline-offset: 0.15em; }
+.cta-row { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 2.2rem; }
+.cta {
+  display: inline-block; border: 1px solid rgba(255, 255, 255, 0.55); border-radius: 999px;
+  padding: 0.7rem 1.3rem; font-size: 0.95rem; font-weight: 500; text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+.cta:hover { background: #fff; color: var(--green-deep); }
+.cta.primary { background: #fff; color: var(--green-deep); border-color: #fff; }
+.more { margin-top: 2.6rem; padding-top: 1.2rem; border-top: 1px solid var(--line); }
+.more p { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
+.more a { display: block; margin-bottom: 0.4rem; font-size: 0.98rem; }
+.foot { margin-top: 3rem; font-size: 0.75rem; color: var(--muted); }

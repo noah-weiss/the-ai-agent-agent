@@ -668,6 +668,17 @@
       color: rgba(255, 255, 255, 0.5);
     }
 
+    .answers-nav { display: flex; flex-direction: column; gap: 0.45rem; margin-bottom: 0.9rem; }
+    .answers-nav a {
+      color: rgba(255, 255, 255, 0.65);
+      font-size: 0.8rem;
+      text-decoration: underline;
+      text-underline-offset: 0.15em;
+      min-height: 32px;
+      display: inline-flex;
+      align-items: center;
+    }
+
     /* Desktop */
     @media (min-width: 900px) {
       body { overflow: hidden; height: 100vh; }
@@ -991,7 +1002,15 @@
       </div>
     </section>
 
-    <footer class="site-footer">© 2026 The AI Agent Agent</footer>
+    <footer class="site-footer">
+      <nav class="answers-nav" aria-label="Answers">
+        <a href="/what-is-an-ai-kickoff.html">What is an AI Kickoff?</a>
+        <a href="/what-is-an-ai-concierge.html">What is an AI concierge?</a>
+        <a href="/what-does-an-ai-consultant-do.html">What does an AI consultant do?</a>
+        <a href="/ai-for-law-firms.html">AI for law firms</a>
+      </nav>
+      © 2026 The AI Agent Agent
+    </footer>
   </main>
 
 <script>

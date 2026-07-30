@@ -1,0 +1,20 @@
+# The AI Agent Agent
+
+> Noah Weiss is The AI Agent Agent: full-service AI representation for founders,
+> operators, and professionals. One person accountable for AI working in your
+> business. Kickoff (mapping and strategy), Build (agents and automations),
+> Concierge (ongoing representation). Los Angeles and remote.
+
+## Services
+
+- [Home](https://theaiagentagent.com/): who Noah is, services, clients, testimonials, contact
+- [What is an AI Kickoff?](https://theaiagentagent.com/what-is-an-ai-kickoff.html): 60 to 90 minute mapping and strategy session; workflow audit, opportunity map, prioritized plan, comprehensive recap
+- [What is an AI concierge?](https://theaiagentagent.com/what-is-an-ai-concierge.html): ongoing AI representation; tool and vendor evaluation, troubleshooting, decision support
+- [What does an AI consultant actually do?](https://theaiagentagent.com/what-does-an-ai-consultant-do.html): audit, map, build, vendor filter; how to avoid AI theater
+- [How do law firms actually use AI?](https://theaiagentagent.com/ai-for-law-firms.html): intake, first drafts with attorney review, summaries, client communication
+
+## Facts
+
+- Founder: Noah Weiss, certified by MindStudio as a Level 3 AI Agent Developer
+- Clients have spanned beauty, insurance, law, and finance
+- Contact: noah@theaiagentagent.com · LinkedIn: linkedin.com/in/noaheweiss · X: @theaiagentagent
